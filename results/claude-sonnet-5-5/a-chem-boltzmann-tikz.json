@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "a-chem-boltzmann",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T07:56:19.438Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth, line width=0.8pt]\n\\draw[->] (0,0) -- (0,6) node[midway, left=4pt, rotate=90, anchor=south] {number of molecules};\n\\draw[->] (0,0) -- (8.6,0) node[midway, below=6pt] {kinetic energy};\n% T1\n\\draw (0,0) .. controls (0.3,5.5) and (1.2,5.2) .. (2.0,3.2) .. controls (2.8,1.4) and (4.5,0.4) .. (8,0.12);\n% T2\n\\draw[dashed] (0,0) .. controls (1.0,4.0) and (2.0,3.6) .. (3.0,2.8) .. controls (4,2.0) and (5.5,1.0) .. (8,0.5);\n% Ea\n\\draw[dashed] (6,0) -- (6,4);\n\\node[anchor=south] at (6,4.05) {$E_\\mathrm{a}$};\n% labels\n\\node[anchor=south] at (1.0,4.9) {$T_1$};\n\\node[anchor=south] at (3.4,3.3) {$T_2$};\n\\node at (4.3,-1.2) {Fig. 5.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"350.806\" height=\"284.049\" viewBox=\"-72 -72 263.104 213.037\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".8\"><path fill=\"none\" d=\"M-54.26 98.846v-166.59\"></path><path d=\"m-54.26-70.73-1.576 4.168 1.576-1.382 1.577 1.382Z\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-54.26\" y=\"98.846\" transform=\"rotate(-90 -79.215 81.624)\">numb</text><text x=\"-30.537\" y=\"98.846\" transform=\"rotate(-90 -79.215 81.624)\">er</text><text x=\"-19.343\" y=\"98.846\" transform=\"rotate(-90 -79.215 81.624)\">of</text><text x=\"-7.954\" y=\"98.846\" transform=\"rotate(-90 -79.215 81.624)\">molecules</text></g><path fill=\"none\" d=\"M-54.26 98.846h240.568\"></path><path d=\"m189.295 98.846-4.17-1.576 1.383 1.576-1.382 1.577Z\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-54.26\" y=\"98.846\" transform=\"translate(93.472 16.677)\">kinetic</text><text x=\"-23.593\" y=\"98.846\" transform=\"translate(93.472 16.677)\">energy</text></g><path fill=\"none\" d=\"M-54.26 98.846C-45.724-57.644-20.116-49.108 2.646 7.798c22.762 51.215 71.132 79.668 170.716 87.634\"></path><path fill=\"none\" stroke-dasharray=\"3.0,3.0\" d=\"M-54.26 98.846C-25.807-14.964 2.646-3.584 31.1 19.18 59.55 41.94 102.23 70.394 173.362 84.62M116.457 98.846v-113.81\"></path><g stroke=\"none\"><text x=\"-54.26\" y=\"98.846\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(164.782 -120.467)\">E</text><text x=\"-46.878\" y=\"100.346\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(164.782 -120.467)\">a</text></g><g stroke=\"none\"><text x=\"-54.26\" y=\"98.846\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(23.288 -144.651)\">T</text><text x=\"-48.416\" y=\"100.346\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(23.288 -144.651)\">1</text></g><g stroke=\"none\"><text x=\"-54.26\" y=\"98.846\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(91.574 -99.127)\">T</text><text x=\"-48.416\" y=\"100.346\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(91.574 -99.127)\">2</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-54.26\" y=\"98.846\" transform=\"translate(105.805 36.643)\">Fig.</text><text x=\"-33.954\" y=\"98.846\" transform=\"translate(105.805 36.643)\">5.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 345,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

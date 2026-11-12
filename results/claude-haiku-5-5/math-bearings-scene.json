@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "scene",
+ "questionId": "math-bearings",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T08:02:54.651Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"serif\",\n  \"points\": {\n    \"B\": {\"at\": [0, 0], \"label\": \"B\", \"labelDir\": \"sw\"},\n    \"D\": {\"at\": [0, 10.74], \"label\": \"D\", \"labelDir\": \"nw\"},\n    \"C\": {\"at\": [4.89, 8.46], \"label\": \"C\", \"labelDir\": \"e\"},\n    \"A\": {\"at\": [-2.63, 8.29], \"label\": \"A\", \"labelDir\": \"w\"},\n    \"NT\": {\"at\": [0, 12.6], \"label\": \"N\", \"labelDir\": \"n\"}\n  },\n  \"elements\": [\n    {\"type\": \"polygon\", \"points\": [\"A\", \"B\", \"C\", \"D\"]},\n    {\"type\": \"segment\", \"from\": \"B\", \"to\": \"D\"},\n    {\"type\": \"segment\", \"from\": \"D\", \"to\": \"NT\", \"arrow\": \"end\", \"style\": \"dashed\"},\n    {\"type\": \"segment\", \"from\": \"A\", \"to\": \"B\", \"label\": {\"text\": \"14.5 m\", \"side\": \"auto\", \"pos\": 0.5}},\n    {\"type\": \"segment\", \"from\": \"A\", \"to\": \"D\", \"label\": {\"text\": \"6 m\", \"side\": \"auto\", \"pos\": 0.5}},\n    {\"type\": \"segment\", \"from\": \"C\", \"to\": \"D\", \"label\": {\"text\": \"9 m\", \"side\": \"auto\", \"pos\": 0.5}},\n    {\"type\": \"angle\", \"at\": \"B\", \"a\": \"D\", \"b\": \"C\", \"label\": \"30°\", \"r\": 1.3},\n    {\"type\": \"angle\", \"at\": \"C\", \"a\": \"D\", \"b\": \"B\", \"label\": \"85°\", \"r\": 1.1}\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-154.14 -640.05 416.76 671.6\" width=\"416.76\" height=\"671.6\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\"><rect x=\"-154.14\" y=\"-640.05\" width=\"416.76\" height=\"671.6\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M-126.24 -397.92L0 0L234.72 -406.08L0 -515.52Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L0 -515.52\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 -515.52L0 -597.8\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\" stroke-dasharray=\"8.6 6.2\"/><path d=\"M0 -604.8L4.44 -593.4L0 -595.91L-4.44 -593.4Z\" fill=\"#000\" stroke=\"none\"/><path d=\"M-126.24 -397.92L0 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M-126.24 -397.92L0 -515.52\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M234.72 -406.08L0 -515.52\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 -62.4L1.36 -62.39L2.72 -62.34L4.09 -62.27L5.44 -62.16L6.8 -62.03L8.15 -61.87L9.5 -61.67L10.85 -61.45L12.19 -61.2L13.52 -60.92L14.85 -60.61L16.17 -60.27L17.48 -59.9L18.78 -59.51L20.08 -59.08L21.36 -58.63L22.64 -58.15L23.9 -57.64L25.15 -57.11L26.39 -56.54L27.62 -55.95L28.84 -55.34L30.04 -54.69L31.23 -54.02\" stroke-width=\"1\"/><path d=\"M186.87 -428.39L185.58 -425.39L184.48 -422.32L183.57 -419.19L182.86 -416.01L182.35 -412.79L182.03 -409.54L181.92 -406.28L182.01 -403.02L182.3 -399.77L182.79 -396.54L183.48 -393.35L184.36 -390.21L185.44 -387.13L186.7 -384.13L188.15 -381.2L189.77 -378.38L191.57 -375.65L193.53 -373.05L195.65 -370.57L197.92 -368.22L200.32 -366.02L202.86 -363.97L205.52 -362.09L208.3 -360.37\" stroke-width=\"1\"/></g><text x=\"20.11\" y=\"-74.98\" font-size=\"13.5\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\">30°</text><text x=\"169.83\" y=\"-385.64\" font-size=\"13.5\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\">85°</text><text x=\"-6.33\" y=\"8.93\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\"><tspan font-style=\"italic\">B</tspan></text><text x=\"-6.33\" y=\"-524.45\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\"><tspan font-style=\"italic\">D</tspan></text><text x=\"243.67\" y=\"-406.08\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\"><tspan font-style=\"italic\">C</tspan></text><text x=\"-135.19\" y=\"-397.92\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\"><tspan font-style=\"italic\">A</tspan></text><text x=\"0\" y=\"-617.42\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\"><tspan font-style=\"italic\">N</tspan></text><text x=\"-39.27\" y=\"-203.08\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\">14.5 m</text><text x=\"-74.55\" y=\"-466.69\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\">6 m</text><text x=\"110.27\" y=\"-448.45\" font-size=\"15\" font-family=\"'Times New Roman', 'STIX Two Text', Times, serif\" text-anchor=\"middle\" dominant-baseline=\"central\">9 m</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

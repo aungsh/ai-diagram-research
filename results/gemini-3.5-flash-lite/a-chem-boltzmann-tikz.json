@@ -1,0 +1,44 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "a-chem-boltzmann",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T08:00:20.469Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1.0]\n  % Axes\n  \\draw[->, thick] (0,0) -- (7,0) node[anchor=north] {Kinetic energy};\n  \\draw[->, thick] (0,0) -- (0,5) node[anchor=east, align=right] {Number of\\\\molecules};\n\n  % Curves\n  % T1: taller, narrower peak to the left\n  \\draw[thick] (0,0) .. controls (1,5.5) and (2,4) .. (6.5,0.2) node[above right] {$T_1$};\n  \n  % T2: lower peak, further to the right, longer tail\n  \\draw[dashed, thick] (0,0) .. controls (1.5,3.2) and (2.8,2.8) .. (6.8,0.5) node[above right] {$T_2$};\n\n  % Activation energy line\n  \\draw[dashed, thick] (4.8,0) -- (4.8,4.5) node[above] {$E_a$};\n\n  % Caption\n  \\node at (3.5,-0.8) {Fig. 5.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"379.147\" height=\"249.906\" viewBox=\"-72 -72 284.36 187.43\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 84.62h198.37\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M175.894 81.498c.468 1.873 1.51 2.758 2.56 3.122-1.05.364-2.092 1.25-2.56 3.123\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"84.62\" transform=\"translate(169.266 10.677)\">Kinetic</text><text x=\"12.407\" y=\"84.62\" transform=\"translate(169.266 10.677)\">energy</text></g></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 84.62V-56.844\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M-23.438-54.684c1.874-.467 2.759-1.51 3.123-2.56.364 1.05 1.249 2.093 3.123 2.56\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"72.62\" transform=\"translate(-48.622 -132.792)\">Numb</text><text x=\"5.324\" y=\"72.62\" transform=\"translate(-48.622 -132.792)\">er</text><text x=\"16.518\" y=\"72.62\" transform=\"translate(-48.622 -132.792)\">of</text><text x=\"-15.482\" y=\"84.62\" transform=\"translate(-48.622 -132.792)\">molecules</text></g></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 84.62C8.138-71.87 36.59-29.19 164.628 78.93\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"84.62\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(188.676 -10.923)\">T</text><text x=\"-14.471\" y=\"86.12\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(188.676 -10.923)\">1</text></g></g><g stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 84.62C22.365-6.429 59.353 4.952 173.164 70.394\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"84.62\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(197.212 -19.46)\">T</text><text x=\"-14.471\" y=\"86.12\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(197.212 -19.46)\">2</text></g></g><g stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\"><path fill=\"none\" d=\"M116.258 84.62V-43.417\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"84.62\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(130.463 -133.27)\">E</text><text x=\"-12.933\" y=\"86.12\" font-family=\"cmmi7\" font-size=\"7\" transform=\"translate(130.463 -133.27)\">a</text></g></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"84.62\" transform=\"translate(83.043 25.262)\">Fig.</text><text x=\"-.009\" y=\"84.62\" transform=\"translate(83.043 25.262)\">5.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The solid curve representing T1 is incorrectly described as having a 'tall, narrow peak' with the dashed curve T2 having a 'lower peak, further to the right'. In the diagram, the solid curve T1 is actually the lower and broader curve with its peak further to the right, and the dashed curve is the taller peak further to the left, which reverses the standard Boltzmann distribution temperature properties."
+    ]
+   },
+   "accepted": false,
+   "ms": 5926,
+   "inputTokens": 2155,
+   "outputTokens": 407
+  },
+  {
+   "n": 2,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1.0]\n  % Axes\n  \\draw[->, thick] (0,0) -- (7.5,0) node[anchor=north east] {Kinetic energy};\n  \\draw[->, thick] (0,0) -- (0,5) node[anchor=east, align=right] {Number of\\\\molecules};\n\n  % Curves\n  % T1: lower temperature -> taller, narrower peak, further to the left\n  \\draw[thick] (0,0) .. controls (1.2,4.8) and (1.8,4.5) .. (6.5,0.1) node[right] {$T_1$};\n  \n  % T2: higher temperature -> lower peak, further to the right, longer tail\n  \\draw[dashed, thick] (0,0) .. controls (2.2,2.8) and (2.8,2.8) .. (7.0,0.3) node[right] {$T_2$};\n\n  % Activation energy line\n  \\draw[dashed, thick] (5.2,0) -- (5.2,4.5) node[above] {$E_a$};\n\n  % Caption\n  \\node at (3.75,-0.8) {Fig. 5.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"358.027\" height=\"247.478\" viewBox=\"-72 -72 268.52 185.609\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 82.799h212.596\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M190.12 79.676c.468 1.874 1.51 2.759 2.56 3.123-1.05.364-2.092 1.249-2.56 3.122\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"82.799\" transform=\"translate(149.857 10.677)\">Kinetic</text><text x=\"12.407\" y=\"82.799\" transform=\"translate(149.857 10.677)\">energy</text></g></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 82.799V-58.665\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M-23.438-56.505c1.874-.468 2.759-1.51 3.123-2.56.364 1.05 1.249 2.092 3.123 2.56\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"70.799\" transform=\"translate(-48.622 -132.792)\">Numb</text><text x=\"5.324\" y=\"70.799\" transform=\"translate(-48.622 -132.792)\">er</text><text x=\"16.518\" y=\"70.799\" transform=\"translate(-48.622 -132.792)\">of</text><text x=\"-15.482\" y=\"82.799\" transform=\"translate(-48.622 -132.792)\">molecules</text></g></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 82.799C13.828-53.774 30.9-45.238 164.628 79.953\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"82.799\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(188.676 -.179)\">T</text><text x=\"-14.471\" y=\"84.299\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(188.676 -.179)\">1</text></g></g><g stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\"><path fill=\"none\" d=\"M-20.315 82.799C42.281 3.13 59.353 3.13 178.855 74.263\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"82.799\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(202.902 -5.87)\">T</text><text x=\"-14.471\" y=\"84.299\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(202.902 -5.87)\">2</text></g></g><g stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\"><path fill=\"none\" d=\"M127.64 82.799V-45.238\"></path><g stroke=\"none\"><text x=\"-20.315\" y=\"82.799\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(141.844 -133.27)\">E</text><text x=\"-12.933\" y=\"84.299\" font-family=\"cmmi7\" font-size=\"7\" transform=\"translate(141.844 -133.27)\">a</text></g></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-20.315\" y=\"82.799\" transform=\"translate(90.156 25.262)\">Fig.</text><text x=\"-.009\" y=\"82.799\" transform=\"translate(90.156 25.262)\">5.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 3965,
+   "inputTokens": 3653,
+   "outputTokens": 336
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

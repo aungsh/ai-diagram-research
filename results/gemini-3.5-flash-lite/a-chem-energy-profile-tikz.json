@@ -1,0 +1,27 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "a-chem-energy-profile",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T08:02:12.672Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, thick, >=stealth]\n\n  % Axes\n  \\draw[->] (0,0) coordinate (origin) -- (7,0) node[anchor=north] {Progress of reaction};\n  \\draw[->] (0,0) -- (0,6.5) node[anchor=east] {Energy};\n\n  % Levels\n  \\coordinate (R) at (0.8, 2.0);\n  \\coordinate (P) at (6.2, 0.8);\n  \n  \\draw (R) -- ++(1.2,0) node[midway, above] {};\n  \\draw (P) -- ++(-1.2,0) node[midway, above] {};\n\n  % Curves\n  % Uncatalysed peak (higher)\n  \\coordinate (PeakU) at (3.5, 5.2);\n  \\draw[solid] (R) to[out=10, in=170] (PeakU) to[out=-10, in=160] (P);\n\n  % Catalysed peak (lower)\n  \\coordinate (PeakC) at (3.5, 3.8);\n  \\draw[dashed] (R) to[out=25, in=155] (PeakC) to[out=-25, in=145] (P);\n\n  % Labels for reactants and products\n  \\node[anchor=east] at (R) {Reactants};\n  \\node[anchor=west] at (P) {Products};\n\n  % Labels for curves\n  \\node[anchor=south] at (3.5, 5.2) {without catalyst};\n  \\node[anchor=south, yshift=2mm] at (3.5, 3.8) {with catalyst};\n\n  % Double-headed arrow for Ea (from reactants to uncatalysed peak)\n  \\draw[<->] (2.2, 2.0) -- (2.2, 5.2) node[midway, right] {$E_a$};\n\n  % Arrow for Delta H (from reactants level down to products level)\n  \\draw[<->] (5.0, 2.0) -- (5.0, 0.8) node[midway, right] {$\\Delta H$};\n\n  % Caption\n  \\node[anchor=north] at (3.5, -0.8) {Fig. 4.1};\n\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"373.128\" height=\"308.583\" viewBox=\"-72 -72 279.846 231.437\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".8\"><path fill=\"none\" d=\"M-36.593 120.45h196.57\"></path><path stroke=\"none\" d=\"m162.576 120.45-4.16-2.08 1.56 2.08-1.56 2.08\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" transform=\"translate(157.502 10.677)\">Progress</text><text x=\"2.074\" y=\"120.45\" transform=\"translate(157.502 10.677)\">of</text><text x=\"13.463\" y=\"120.45\" transform=\"translate(157.502 10.677)\">reaction</text></g><path fill=\"none\" d=\"M-36.593 120.45V-61.893\"></path><path stroke=\"none\" d=\"m-36.593-64.493-2.08 4.16 2.08-1.56 2.08 1.56\"></path><text x=\"-36.593\" y=\"120.45\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-32.344 -182.443)\">Energy</text><path fill=\"none\" d=\"M-13.83 63.545h34.143M139.814 97.688h-34.143M-13.83 63.545c45.85-8.085 30.972-99.133 76.822-91.049 56.422 9.949 22.984 105.596 76.822 125.192\"></path><path fill=\"none\" stroke-dasharray=\"3.0,3.0\" d=\"M-13.83 63.545C18.93 48.268 30.23-2.947 62.991 12.33c40.593 18.929 40.132 59.668 76.822 85.358\"></path><text x=\"-36.593\" y=\"120.45\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-22.151 -53.433)\">Reactants</text><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" transform=\"translate(180.14 -19.29)\">Pro</text><text x=\"-21.509\" y=\"120.45\" transform=\"translate(180.14 -19.29)\">ducts</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" transform=\"translate(65.973 -153.632)\">without</text><text x=\"-1.482\" y=\"120.45\" transform=\"translate(65.973 -153.632)\">catalyst</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" transform=\"translate(72.862 -119.488)\">with</text><text x=\"-15.259\" y=\"120.45\" transform=\"translate(72.862 -119.488)\">catalyst</text></g><path fill=\"none\" d=\"M26.003 60.945v-85.849\"></path><path stroke=\"none\" d=\"m26.003 63.545 2.08-4.16-2.08 1.56-2.08-1.56M26.003-27.504l-2.08 4.16 2.08-1.56 2.08 1.56\"></path><g stroke=\"none\"><text x=\"-36.593\" y=\"120.45\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(66.329 -99.763)\">E</text><text x=\"-29.211\" y=\"121.95\" font-family=\"cmmi7\" font-size=\"7\" transform=\"translate(66.329 -99.763)\">a</text></g><path fill=\"none\" d=\"M105.67 66.145v28.943\"></path><path stroke=\"none\" d=\"m105.67 63.545-2.08 4.16 2.08-1.56 2.08 1.56M105.67 97.688l2.08-4.16-2.08 1.56-2.08-1.56\"></path><g stroke=\"none\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" font-family=\"cmr10\" transform=\"translate(145.997 -36.417)\">¢</text><text x=\"-28.26\" y=\"120.45\" font-family=\"cmmi10\" transform=\"translate(145.997 -36.417)\">H</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-36.593\" y=\"120.45\" transform=\"translate(83.043 33.44)\">Fig.</text><text x=\"-16.287\" y=\"120.45\" transform=\"translate(83.043 33.44)\">4.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 4930,
+   "inputTokens": 2204,
+   "outputTokens": 596
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

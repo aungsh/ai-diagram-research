@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "bio-plant-cell",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T07:44:09.612Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, line cap=round]\n  % cell wall\n  \\draw[line width=1.6pt, rounded corners=14pt] (0,0) rectangle (5,7);\n  % cell membrane + cytoplasm\n  \\filldraw[line width=0.6pt, fill=black!10, rounded corners=11pt] (0.25,0.25) rectangle (4.75,6.75);\n  % vacuole\n  \\filldraw[fill=white, draw=black, line width=0.6pt] (2.5,2.9) ellipse (1.2 and 1.7);\n  % nucleus\n  \\filldraw[fill=black!35, draw=black] (3.4,5.8) circle (0.6);\n  \\filldraw[fill=black!75, draw=black] (3.5,5.85) circle (0.2);\n  % chloroplasts\n  \\foreach \\x/\\y in {0.8/1.3, 4.2/1.2, 0.75/2.7, 4.25/2.6, 0.8/4.2, 4.25/4.0, 1.0/5.4, 1.6/0.7, 3.4/0.7, 1.4/6.4}{\n    \\filldraw[fill=black!45, draw=black, line width=0.5pt] (\\x,\\y) ellipse (0.3 and 0.17);\n  }\n  % labels\n  \\draw (-0.9,3.5) node[left] {A} -- (0,3.5);\n  \\draw (-0.9,5.0) node[left] {B} -- (0.25,5.0);\n  \\draw (5.9,4.0) node[right] {C} -- (4.55,4.0);\n  \\draw (5.9,6.0) node[right] {D} -- (3.9,6.0);\n  \\draw (5.9,2.9) node[right] {E} -- (2.5,2.9);\n  \\node at (2.5,-0.9) {\\textbf{Fig. 1.1}};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"294.799\" height=\"311.139\" viewBox=\"-72 -72 221.099 233.354\"><g stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" stroke-width=\"1.6\" d=\"M-33.13 113.7V-57.47c0-7.732 6.268-14 14-14H95.134c7.732 0 14 6.268 14 14V113.7c0 7.731-6.268 14-14 14H-19.13c-7.732 0-14-6.269-14-14ZM109.134-71.47\"></path><path fill=\"#e6e6e6\" stroke-width=\".6\" d=\"M-26.017 109.586V-53.357c0-6.075 4.925-11 11-11H91.02c6.076 0 11 4.925 11 11v162.943c0 6.075-4.924 11-11 11H-15.017c-6.075 0-11-4.925-11-11ZM102.02-64.357\"></path><path fill=\"#fff\" stroke-width=\".6\" d=\"M72.145 45.186c0-26.714-15.286-48.37-34.143-48.37S3.859 18.473 3.859 45.187c0 26.715 15.286 48.37 34.143 48.37s34.143-21.655 34.143-48.37Zm-34.143 0\"></path><path fill=\"#a6a6a6\" d=\"M80.68-37.327c0-9.428-7.642-17.072-17.07-17.072-9.43 0-17.073 7.644-17.073 17.072 0 9.429 7.643 17.072 17.072 17.072s17.072-7.643 17.072-17.072Zm-17.07 0\"></path><path fill=\"#404040\" d=\"M72.145-38.75a5.69 5.69 0 1 0-11.38 0 5.69 5.69 0 0 0 11.38 0Zm-5.69 0\"></path><path fill=\"#8c8c8c\" stroke-width=\".5\" d=\"M-1.8320000000000007 90.71c0-2.67-3.822-4.836-8.536-4.836s-8.536 2.165-8.536 4.837c0 2.67 3.822 4.836 8.536 4.836s8.536-2.165 8.536-4.836ZM94.907 93.556c0-2.671-3.821-4.837-8.536-4.837s-8.536 2.166-8.536 4.837 3.822 4.837 8.536 4.837c4.715 0 8.536-2.166 8.536-4.837ZM-3.254999999999999 50.877c0-2.671-3.821-4.837-8.536-4.837s-8.535 2.166-8.535 4.837 3.821 4.837 8.535 4.837 8.536-2.166 8.536-4.837ZM96.33 53.722c0-2.671-3.822-4.837-8.536-4.837s-8.536 2.166-8.536 4.837 3.822 4.837 8.536 4.837 8.536-2.166 8.536-4.837ZM-1.8320000000000007 8.198c0-2.672-3.822-4.837-8.536-4.837s-8.536 2.165-8.536 4.837 3.822 4.837 8.536 4.837 8.536-2.166 8.536-4.837ZM96.33 13.888c0-2.671-3.822-4.837-8.536-4.837s-8.536 2.166-8.536 4.837c0 2.672 3.822 4.837 8.536 4.837s8.536-2.165 8.536-4.837ZM3.859-25.945c0-2.672-3.822-4.837-8.536-4.837-4.715 0-8.536 2.165-8.536 4.837s3.821 4.836 8.536 4.836 8.536-2.165 8.536-4.836ZM20.93 107.782c0-2.671-3.821-4.837-8.536-4.837s-8.535 2.166-8.535 4.837c0 2.672 3.821 4.837 8.535 4.837s8.536-2.165 8.536-4.837ZM72.145 107.782c0-2.671-3.822-4.837-8.536-4.837s-8.536 2.166-8.536 4.837c0 2.672 3.822 4.837 8.536 4.837s8.536-2.165 8.536-4.837ZM15.239-54.398c0-2.672-3.821-4.837-8.535-4.837s-8.536 2.165-8.536 4.837 3.821 4.837 8.536 4.837 8.535-2.166 8.535-4.837Zm-8.535 0\"></path><path fill=\"none\" d=\"M-58.737 28.115h25.607\"></path><text x=\"-33.13\" y=\"127.699\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-35.807 -96.112)\">A</text><path fill=\"none\" d=\"M-58.737-14.565h32.72\"></path><text x=\"-33.13\" y=\"127.699\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-35.807 -138.792)\">B</text><path fill=\"none\" d=\"M134.74 13.888H96.33\"></path><text x=\"-33.13\" y=\"127.699\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(171.404 -110.339)\">C</text><path fill=\"none\" d=\"M134.74-43.017H77.836\"></path><text x=\"-33.13\" y=\"127.699\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(171.404 -167.244)\">D</text><path fill=\"none\" d=\"M134.74 45.186H38.003\"></path><text x=\"-33.13\" y=\"127.699\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(171.404 -79.04)\">E</text><g stroke=\"none\" font-family=\"cmssbx10\" font-size=\"10\"><text x=\"-33.13\" y=\"127.699\" transform=\"translate(53.048 28.107)\">Fig.</text><text x=\"-11.019\" y=\"127.699\" transform=\"translate(53.048 28.107)\">1.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 511,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

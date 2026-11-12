@@ -1,0 +1,54 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "phys-vt-graph",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T08:19:23.436Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily]\n    \\begin{axis}[\n        xmin=0, xmax=3.0,\n        ymin=-8, ymax=12,\n        xtick={0,0.5,1.0,1.5,2.0,2.5,3.0},\n        xticklabels={0,0.5,1.0,1.5,2.0,2.5,},\n        ytick={-5,0,5,10},\n        xlabel={time / s},\n        ylabel={velocity / m/s},\n        axis x line=center,\n        axis y line=center,\n        xlabel style={right},\n        ylabel style={above},\n        grid=both,\n        grid style={line, thin, gray!30},\n        major grid style={line, thick, gray!50},\n        width=12cm, height=8cm,\n        every axis x label/.style={at={(current axis.right of origin)},anchor=west},\n        every axis y label/.style={at={(current axis.above origin)},anchor=south},\n    ]\n\n        % Line from origin to X(1.0, 10)\n        \\addplot[thick, domain=0:1.0] {10*x};\n\n        % Dashed line from X(1.0, 10) to Y(1.2, -6)\n        % Equation of line: y - 10 = (( -6 - 10 ) / ( 1.2 - 1.0 )) * (x - 1.0)\n        % y - 10 = (-16 / 0.2) * (x - 1.0) = -80*(x - 1.0) = -80x + 80\n        % y = -80x + 90\n        \\addplot[thick, dashed, domain=1.0:1.2] {-80*x + 90};\n\n        % Line from Y(1.2, -6) to Z(1.8, 0)\n        % Equation of line: y - (-6) = ((0 - (-6)) / (1.8 - 1.2)) * (x - 1.2)\n        % y + 6 = (6 / 0.6) * (x - 1.2) = 10*(x - 1.2) = 10x - 12\n        % y = 10x - 18\n        \\addplot[thick, domain=1.2:1.8] {10*x - 18};\n\n        % Labels for points X, Y, Z\n        \\node[above right] at (axis cs:1.0, 10) {X};\n        \\node[below left] at (axis cs:1.2, -6) {Y};\n        \\node[above right] at (axis cs:1.8, 0) {Z};\n\n        % Coordinate markers / dots for clarity at key points\n        \\fill (axis cs:1.0, 10) circle (1.5pt);\n        \\fill (axis cs:1.2, -6) circle (1.5pt);\n        \\fill (axis cs:1.8, 0) circle (1.5pt);\n\n    end{axis}\n\n    % Caption below the figure\n    \\node at (6.2,-4.7) {Fig. 1.1};\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Extra }, or forgotten \\endgroup.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from...\n! Emergency stop.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from..."
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 4968,
+   "inputTokens": 687,
+   "outputTokens": 814
+  },
+  {
+   "n": 2,
+   "source": "\\begin{tikzpicture}[font=\\sffamily]\n    \\begin{axis}[\n        xmin=0, xmax=3.0,\n        ymin=-8, ymax=12,\n        xtick={0,0.5,1.0,1.5,2.0,2.5,3.0},\n        xticklabels={0,0.5,1.0,1.5,2.0,2.5,},\n        ytick={-5,0,5,10},\n        xlabel={time / s},\n        ylabel={velocity / m/s},\n        axis x line=center,\n        axis y line=center,\n        xlabel style={right},\n        ylabel style={above},\n        grid=both,\n        grid style={line width=0.1pt, gray!30},\n        major grid style={line width=0.3pt, gray!50},\n        width=12cm, height=8cm,\n        every axis x label/.style={at={(current axis.right of origin)},anchor=west},\n        every axis y label/.style={at={(current axis.above origin)},anchor=south}\n    ]\n\n        % Line from origin to X(1.0, 10)\n        \\addplot[thick, domain=0:1.0] {10*x};\n\n        % Dashed line from X(1.0, 10) to Y(1.2, -6)\n        \\addplot[thick, dashed, domain=1.0:1.2] {-80*x + 90};\n\n        % Line from Y(1.2, -6) to Z(1.8, 0)\n        \\addplot[thick, domain=1.2:1.8] {10*x - 18};\n\n        % Labels for points X, Y, Z\n        \\node[above right] at (axis cs:1.0, 10) {X};\n        \\node[below left] at (axis cs:1.2, -6) {Y};\n        \\node[above right] at (axis cs:1.8, 0) {Z};\n\n        % Coordinate markers for key points\n        \\fill (axis cs:1.0, 10) circle (1.5pt);\n        \\fill (axis cs:1.2, -6) circle (1.5pt);\n        \\fill (axis cs:1.8, 0) circle (1.5pt);\n\n    end{axis}\n\n    % Caption below the figure\n    \\node at (6.2,-1.2) {Fig. 1.1};\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Extra }, or forgotten \\endgroup.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from...\n! Emergency stop.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from..."
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 2513,
+   "inputTokens": 1619,
+   "outputTokens": 617
+  },
+  {
+   "n": 3,
+   "source": "\\begin{tikzpicture}[font=\\sffamily]\n    \\begin{axis}[\n        xmin=0, xmax=3.0,\n        ymin=-8, ymax=12,\n        xtick={0,0.5,1.0,1.5,2.0,2.5,3.0},\n        xticklabels={0,0.5,1.0,1.5,2.0,2.5,3.0},\n        ytick={-5,0,5,10},\n        xlabel={time / s},\n        ylabel={velocity / m/s},\n        axis x line=center,\n        axis y line=center,\n        grid=both,\n        grid style={line width=0.1pt, gray!30},\n        major grid style={line width=0.3pt, gray!50},\n        width=12cm, height=8cm,\n        xlabel style={at={(current axis.right of origin)}, anchor=west},\n        ylabel style={at={(current axis.above origin)}, anchor=south}\n    ]\n\n        % Line from origin to X(1.0, 10)\n        \\addplot[thick, domain=0:1.0, samples=2] {10*x};\n\n        % Dashed line from X(1.0, 10) to Y(1.2, -6)\n        \\addplot[thick, dashed, domain=1.0:1.2, samples=2] {-80*x + 90};\n\n        % Line from Y(1.2, -6) to Z(1.8, 0)\n        \\addplot[thick, domain=1.2:1.8, samples=2] {10*x - 18};\n\n        % Labels for points X, Y, Z\n        \\node[above right] at (axis cs:1.0, 10) {X};\n        \\node[below left] at (axis cs:1.2, -6) {Y};\n        \\node[above right] at (axis cs:1.8, 0) {Z};\n\n        % Coordinate markers for key points\n        \\fill (axis cs:1.0, 10) circle (1.5pt);\n        \\fill (axis cs:1.2, -6) circle (1.5pt);\n        \\fill (axis cs:1.8, 0) circle (1.5pt);\n\n    end{axis}\n\n    % Caption below the figure\n    \\node at (6.2,-1.2) {Fig. 1.1};\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Extra }, or forgotten \\endgroup.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from...\n! Emergency stop.\n\\endpgfpicture ... \\endgroup \\hss \\egroup \n                                          \\pgf@restore@layerlist@from..."
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 2661,
+   "inputTokens": 2354,
+   "outputTokens": 610
+  }
+ ],
+ "chosen": 3,
+ "accepted": false
+}

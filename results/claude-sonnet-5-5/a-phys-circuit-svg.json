@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "a-phys-circuit",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T08:00:14.401Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 470\" width=\"500\" height=\"470\">\n  <rect width=\"500\" height=\"470\" fill=\"#fff\"/>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" fill=\"#000\">\n    <g stroke=\"#000\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"butt\">\n      <polyline points=\"100,308 100,400 400,400 400,325\"/>\n      <polyline points=\"400,275 400,200 290,200\"/>\n      <polyline points=\"210,200 100,200 100,292\"/>\n      <line x1=\"75\" y1=\"292\" x2=\"125\" y2=\"292\"/>\n      <line x1=\"87\" y1=\"308\" x2=\"113\" y2=\"308\" stroke-width=\"5\"/>\n      <rect x=\"210\" y=\"190\" width=\"80\" height=\"20\" fill=\"#fff\"/>\n      <rect x=\"390\" y=\"275\" width=\"20\" height=\"50\" fill=\"#fff\"/>\n      <line x1=\"375\" y1=\"335\" x2=\"425\" y2=\"265\"/>\n      <polyline points=\"175,200 175,110 230,110\"/>\n      <polyline points=\"325,200 325,110 270,110\"/>\n      <circle cx=\"250\" cy=\"110\" r=\"20\" fill=\"#fff\"/>\n    </g>\n    <circle cx=\"175\" cy=\"200\" r=\"4\" fill=\"#000\"/>\n    <circle cx=\"325\" cy=\"200\" r=\"4\" fill=\"#000\"/>\n    <text x=\"250\" y=\"116\" text-anchor=\"middle\">V</text>\n    <text x=\"62\" y=\"306\" text-anchor=\"end\">12 V</text>\n    <text x=\"250\" y=\"240\" text-anchor=\"middle\">R</text>\n    <text x=\"440\" y=\"306\">T</text>\n    <text x=\"250\" y=\"450\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 2.1</text>\n  </g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 470\" width=\"500\" height=\"470\">\n  <rect width=\"500\" height=\"470\" fill=\"#fff\"></rect>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"18\" fill=\"#000\">\n    <g stroke=\"#000\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"butt\">\n      <polyline points=\"100,308 100,400 400,400 400,325\"></polyline>\n      <polyline points=\"400,275 400,200 290,200\"></polyline>\n      <polyline points=\"210,200 100,200 100,292\"></polyline>\n      <line x1=\"75\" y1=\"292\" x2=\"125\" y2=\"292\"></line>\n      <line x1=\"87\" y1=\"308\" x2=\"113\" y2=\"308\" stroke-width=\"5\"></line>\n      <rect x=\"210\" y=\"190\" width=\"80\" height=\"20\" fill=\"#fff\"></rect>\n      <rect x=\"390\" y=\"275\" width=\"20\" height=\"50\" fill=\"#fff\"></rect>\n      <line x1=\"375\" y1=\"335\" x2=\"425\" y2=\"265\"></line>\n      <polyline points=\"175,200 175,110 230,110\"></polyline>\n      <polyline points=\"325,200 325,110 270,110\"></polyline>\n      <circle cx=\"250\" cy=\"110\" r=\"20\" fill=\"#fff\"></circle>\n    </g>\n    <circle cx=\"175\" cy=\"200\" r=\"4\" fill=\"#000\"></circle>\n    <circle cx=\"325\" cy=\"200\" r=\"4\" fill=\"#000\"></circle>\n    <text x=\"250\" y=\"116\" text-anchor=\"middle\">V</text>\n    <text x=\"62\" y=\"306\" text-anchor=\"end\">12 V</text>\n    <text x=\"250\" y=\"240\" text-anchor=\"middle\">R</text>\n    <text x=\"440\" y=\"306\">T</text>\n    <text x=\"250\" y=\"450\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 2.1</text>\n  </g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 6,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

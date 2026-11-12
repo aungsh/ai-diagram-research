@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "a-chem-energy-profile",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T07:45:21.182Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 420\" width=\"560\" height=\"420\">\n<rect width=\"560\" height=\"420\" fill=\"#fff\"/>\n<defs>\n<marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#000\"/></marker>\n<marker id=\"b\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\"><path d=\"M8,0 L0,4 L8,8 z\" fill=\"#000\"/></marker>\n</defs>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"15\" fill=\"#000\" stroke=\"none\">\n<g stroke=\"#000\" stroke-width=\"1.8\" fill=\"none\">\n<line x1=\"70\" y1=\"340\" x2=\"70\" y2=\"28\" marker-end=\"url(#a)\"/>\n<line x1=\"70\" y1=\"340\" x2=\"525\" y2=\"340\" marker-end=\"url(#a)\"/>\n<path d=\"M110 170 L170 170 C220 170 215 70 250 70 C290 70 285 270 335 270 L480 270\"/>\n<path d=\"M170 170 C205 170 210 115 250 115 C290 115 285 270 335 270\" stroke-dasharray=\"7 5\"/>\n</g>\n<g stroke=\"#000\" stroke-width=\"1.2\" fill=\"none\">\n<line x1=\"120\" y1=\"170\" x2=\"120\" y2=\"70\" marker-start=\"url(#b)\" marker-end=\"url(#a)\"/>\n<line x1=\"440\" y1=\"170\" x2=\"440\" y2=\"270\" marker-end=\"url(#a)\"/>\n<line x1=\"240\" y1=\"210\" x2=\"240\" y2=\"123\" marker-end=\"url(#a)\"/>\n<line x1=\"392\" y1=\"92\" x2=\"283\" y2=\"108\" marker-end=\"url(#a)\"/>\n</g>\n<g stroke=\"#777\" stroke-width=\"1\" stroke-dasharray=\"2 3\" fill=\"none\">\n<line x1=\"120\" y1=\"70\" x2=\"250\" y2=\"70\"/>\n<line x1=\"312\" y1=\"170\" x2=\"440\" y2=\"170\"/>\n</g>\n<text x=\"106\" y=\"125\" text-anchor=\"end\" font-family=\"Times New Roman, serif\" font-style=\"italic\">E<tspan font-size=\"11\" dy=\"4\" font-style=\"normal\">a</tspan></text>\n<text x=\"452\" y=\"225\" font-family=\"Times New Roman, serif\">ΔH</text>\n<text x=\"140\" y=\"195\" text-anchor=\"middle\">reactants</text>\n<text x=\"410\" y=\"294\" text-anchor=\"middle\">products</text>\n<text x=\"240\" y=\"230\" text-anchor=\"middle\">with catalyst</text>\n<text x=\"398\" y=\"96\">without catalyst</text>\n<text x=\"30\" y=\"185\" text-anchor=\"middle\" transform=\"rotate(-90 30 185)\">energy</text>\n<text x=\"297\" y=\"370\" text-anchor=\"middle\">progress of reaction</text>\n<text x=\"297\" y=\"405\" text-anchor=\"middle\">Fig. 4.1</text>\n</g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 560 420\" width=\"560\" height=\"420\">\n<rect width=\"560\" height=\"420\" fill=\"#fff\"></rect>\n<defs>\n<marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#000\"></path></marker>\n<marker id=\"b\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\"><path d=\"M8,0 L0,4 L8,8 z\" fill=\"#000\"></path></marker>\n</defs>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"15\" fill=\"#000\" stroke=\"none\">\n<g stroke=\"#000\" stroke-width=\"1.8\" fill=\"none\">\n<line x1=\"70\" y1=\"340\" x2=\"70\" y2=\"28\" marker-end=\"url(#a)\"></line>\n<line x1=\"70\" y1=\"340\" x2=\"525\" y2=\"340\" marker-end=\"url(#a)\"></line>\n<path d=\"M110 170 L170 170 C220 170 215 70 250 70 C290 70 285 270 335 270 L480 270\"></path>\n<path d=\"M170 170 C205 170 210 115 250 115 C290 115 285 270 335 270\" stroke-dasharray=\"7 5\"></path>\n</g>\n<g stroke=\"#000\" stroke-width=\"1.2\" fill=\"none\">\n<line x1=\"120\" y1=\"170\" x2=\"120\" y2=\"70\" marker-start=\"url(#b)\" marker-end=\"url(#a)\"></line>\n<line x1=\"440\" y1=\"170\" x2=\"440\" y2=\"270\" marker-end=\"url(#a)\"></line>\n<line x1=\"240\" y1=\"210\" x2=\"240\" y2=\"123\" marker-end=\"url(#a)\"></line>\n<line x1=\"392\" y1=\"92\" x2=\"283\" y2=\"108\" marker-end=\"url(#a)\"></line>\n</g>\n<g stroke=\"#777\" stroke-width=\"1\" stroke-dasharray=\"2 3\" fill=\"none\">\n<line x1=\"120\" y1=\"70\" x2=\"250\" y2=\"70\"></line>\n<line x1=\"312\" y1=\"170\" x2=\"440\" y2=\"170\"></line>\n</g>\n<text x=\"106\" y=\"125\" text-anchor=\"end\" font-family=\"Times New Roman, serif\" font-style=\"italic\">E<tspan font-size=\"11\" dy=\"4\" font-style=\"normal\">a</tspan></text>\n<text x=\"452\" y=\"225\" font-family=\"Times New Roman, serif\">ΔH</text>\n<text x=\"140\" y=\"195\" text-anchor=\"middle\">reactants</text>\n<text x=\"410\" y=\"294\" text-anchor=\"middle\">products</text>\n<text x=\"240\" y=\"230\" text-anchor=\"middle\">with catalyst</text>\n<text x=\"398\" y=\"96\">without catalyst</text>\n<text x=\"30\" y=\"185\" text-anchor=\"middle\" transform=\"rotate(-90 30 185)\">energy</text>\n<text x=\"297\" y=\"370\" text-anchor=\"middle\">progress of reaction</text>\n<text x=\"297\" y=\"405\" text-anchor=\"middle\">Fig. 4.1</text>\n</g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

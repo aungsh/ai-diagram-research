@@ -1,0 +1,202 @@
+  a-bio-action-potential scene try 1: did not draw
+  a-bio-action-potential scene try 2: 2 problems
+  a-bio-action-potential scene try 3: 4 problems
+a-bio-action-potential scene: not accepted (86 s)
+  a-bio-action-potential tikz try 1: accepted
+a-bio-action-potential tikz: accepted on try 1 (7 s)
+  a-bio-action-potential svg try 1: accepted
+a-bio-action-potential svg: accepted on try 1 (51 s)
+  a-bio-membrane scene try 1: did not draw
+  a-bio-membrane scene try 2: 6 problems
+  a-bio-membrane scene try 3: accepted
+a-bio-membrane scene: accepted on try 3 (54 s)
+  a-bio-membrane tikz try 1: did not draw
+  a-bio-membrane tikz try 2: 1 problems
+  a-bio-membrane tikz try 3: accepted
+a-bio-membrane tikz: accepted on try 3 (429 s)
+  a-bio-membrane svg try 1: accepted
+a-bio-membrane svg: accepted on try 1 (11 s)
+  a-bio-o2-dissociation scene try 1: 1 problems
+  a-bio-o2-dissociation scene try 2: accepted
+a-bio-o2-dissociation scene: accepted on try 2 (107 s)
+  a-bio-o2-dissociation tikz try 1: accepted
+a-bio-o2-dissociation tikz: accepted on try 1 (123 s)
+  a-bio-o2-dissociation svg try 1: accepted
+a-bio-o2-dissociation svg: accepted on try 1 (12 s)
+  a-chem-boltzmann scene try 1: did not draw
+  a-chem-boltzmann scene try 2: accepted
+a-chem-boltzmann scene: accepted on try 2 (213 s)
+  a-chem-boltzmann tikz try 1: 1 problems
+  a-chem-boltzmann tikz try 2: accepted
+a-chem-boltzmann tikz: accepted on try 2 (10 s)
+  a-chem-boltzmann svg try 1: accepted
+a-chem-boltzmann svg: accepted on try 1 (5 s)
+  a-chem-cell scene try 1: 1 problems
+  a-chem-cell scene try 2: 1 problems
+  a-chem-cell scene try 3: accepted
+a-chem-cell scene: accepted on try 3 (23 s)
+  a-chem-cell tikz try 1: accepted
+a-chem-cell tikz: accepted on try 1 (13 s)
+  a-chem-cell svg try 1: accepted
+a-chem-cell svg: accepted on try 1 (51 s)
+  a-chem-energy-profile scene try 1: 1 problems
+  a-chem-energy-profile scene try 2: accepted
+a-chem-energy-profile scene: accepted on try 2 (15 s)
+  a-chem-energy-profile tikz try 1: accepted
+a-chem-energy-profile tikz: accepted on try 1 (5 s)
+  a-chem-energy-profile svg try 1: 1 problems
+  a-chem-energy-profile svg try 2: accepted
+a-chem-energy-profile svg: accepted on try 2 (13 s)
+  a-phys-circuit scene try 1: 1 problems
+  a-phys-circuit scene try 2: accepted
+a-phys-circuit scene: accepted on try 2 (14 s)
+  a-phys-circuit tikz try 1: did not draw
+  a-phys-circuit tikz try 2: 1 problems
+  a-phys-circuit tikz try 3: accepted
+a-phys-circuit tikz: accepted on try 3 (36 s)
+  a-phys-circuit svg try 1: 1 problems
+  a-phys-circuit svg try 2: accepted
+a-phys-circuit svg: accepted on try 2 (13 s)
+  a-phys-incline scene try 1: accepted
+a-phys-incline scene: accepted on try 1 (4 s)
+  a-phys-incline tikz try 1: 1 problems
+  a-phys-incline tikz try 2: accepted
+a-phys-incline tikz: accepted on try 2 (15 s)
+  a-phys-incline svg try 1: 2 problems
+  a-phys-incline svg try 2: 2 problems
+  a-phys-incline svg try 3: 2 problems
+a-phys-incline svg: not accepted (64 s)
+  a-phys-magnetic scene try 1: did not draw
+  a-phys-magnetic scene try 2: 1 problems
+  a-phys-magnetic scene try 3: 4 problems
+a-phys-magnetic scene: not accepted (18 s)
+  a-phys-magnetic tikz try 1: 1 problems
+  a-phys-magnetic tikz try 2: accepted
+a-phys-magnetic tikz: accepted on try 2 (27 s)
+  a-phys-magnetic svg try 1: accepted
+a-phys-magnetic svg: accepted on try 1 (71 s)
+  bio-osmosis scene try 1: accepted
+bio-osmosis scene: accepted on try 1 (16 s)
+  bio-osmosis tikz try 1: 2 problems
+  bio-osmosis tikz try 2: accepted
+bio-osmosis tikz: accepted on try 2 (26 s)
+  bio-osmosis svg try 1: accepted
+bio-osmosis svg: accepted on try 1 (11 s)
+  bio-plant-cell scene try 1: 2 problems
+  bio-plant-cell scene try 2: 2 problems
+  bio-plant-cell scene try 3: 2 problems
+bio-plant-cell scene: not accepted (45 s)
+  bio-plant-cell tikz try 1: accepted
+bio-plant-cell tikz: accepted on try 1 (6 s)
+  bio-plant-cell svg try 1: accepted
+bio-plant-cell svg: accepted on try 1 (11 s)
+  chem-distillation scene try 1: 6 problems
+  chem-distillation scene try 2: 4 problems
+  chem-distillation scene try 3: 4 problems
+chem-distillation scene: not accepted (43 s)
+  chem-distillation tikz try 1: 3 problems
+  chem-distillation tikz try 2: accepted
+chem-distillation tikz: accepted on try 2 (26 s)
+  chem-distillation svg try 1: 1 problems
+  chem-distillation svg try 2: 1 problems
+  chem-distillation svg try 3: 1 problems
+chem-distillation svg: not accepted (53 s)
+  chem-electrolysis scene try 1: 1 problems
+  chem-electrolysis scene try 2: 1 problems
+  chem-electrolysis scene try 3: 1 problems
+chem-electrolysis scene: not accepted (30 s)
+  chem-electrolysis tikz try 1: 1 problems
+  chem-electrolysis tikz try 2: 3 problems
+  chem-electrolysis tikz try 3: 2 problems
+chem-electrolysis tikz: not accepted (31 s)
+  chem-electrolysis svg try 1: 1 problems
+  chem-electrolysis svg try 2: 1 problems
+  chem-electrolysis svg try 3: 1 problems
+chem-electrolysis svg: not accepted (41 s)
+  math-bearings scene try 1: did not draw
+  math-bearings scene try 2: 1 problems
+  math-bearings scene try 3: 1 problems
+math-bearings scene: not accepted (27 s)
+  math-bearings tikz try 1: did not draw
+  math-bearings tikz try 2: accepted
+math-bearings tikz: accepted on try 2 (11 s)
+  math-bearings svg try 1: 2 problems
+  math-bearings svg try 2: accepted
+math-bearings svg: accepted on try 2 (16 s)
+  math-circles scene try 1: 4 problems
+  math-circles scene try 2: did not draw
+  math-circles scene try 3: 3 problems
+math-circles scene: not accepted (18 s)
+  math-circles tikz try 1: accepted
+math-circles tikz: accepted on try 1 (11 s)
+  math-circles svg try 1: accepted
+math-circles svg: accepted on try 1 (30 s)
+  math-quadratic scene try 1: 1 problems
+  math-quadratic scene try 2: 1 problems
+  math-quadratic scene try 3: 1 problems
+math-quadratic scene: not accepted (42 s)
+  math-quadratic tikz try 1: did not draw
+  math-quadratic tikz try 2: accepted
+math-quadratic tikz: accepted on try 2 (15 s)
+  math-quadratic svg try 1: 1 problems
+  math-quadratic svg try 2: accepted
+math-quadratic svg: accepted on try 2 (30 s)
+  math-vectors scene try 1: 4 problems
+  math-vectors scene try 2: 1 problems
+  math-vectors scene try 3: 5 problems
+math-vectors scene: not accepted (21 s)
+  math-vectors tikz try 1: 2 problems
+  math-vectors tikz try 2: 2 problems
+  math-vectors tikz try 3: 2 problems
+math-vectors tikz: not accepted (20 s)
+  math-vectors svg try 1: 2 problems
+  math-vectors svg try 2: 1 problems
+  math-vectors svg try 3: 2 problems
+math-vectors svg: not accepted (57 s)
+  phys-barometer scene try 1: did not draw
+  phys-barometer scene try 2: 4 problems
+  phys-barometer scene try 3: 8 problems
+phys-barometer scene: not accepted (20 s)
+  phys-barometer tikz try 1: 1 problems
+  phys-barometer tikz try 2: accepted
+phys-barometer tikz: accepted on try 2 (15 s)
+  phys-barometer svg try 1: 2 problems
+  phys-barometer svg try 2: 2 problems
+  phys-barometer svg try 3: 3 problems
+phys-barometer svg: not accepted (24 s)
+  phys-climber scene try 1: 2 problems
+  phys-climber scene try 2: accepted
+phys-climber scene: accepted on try 2 (12 s)
+  phys-climber tikz try 1: did not draw
+  phys-climber tikz try 2: accepted
+phys-climber tikz: accepted on try 2 (25 s)
+  phys-climber svg try 1: accepted
+phys-climber svg: accepted on try 1 (7 s)
+  phys-vt-graph scene try 1: accepted
+phys-vt-graph scene: accepted on try 1 (5 s)
+  phys-vt-graph tikz try 1: did not draw
+  phys-vt-graph tikz try 2: did not draw
+  phys-vt-graph tikz try 3: did not draw
+phys-vt-graph tikz: not accepted (10 s)
+  phys-vt-graph svg try 1: 2 problems
+  phys-vt-graph svg try 2: accepted
+phys-vt-graph svg: accepted on try 2 (27 s)
+  phys-water-gun scene try 1: 1 problems
+  phys-water-gun scene try 2: accepted
+phys-water-gun scene: accepted on try 2 (13 s)
+  phys-water-gun tikz try 1: accepted
+phys-water-gun tikz: accepted on try 1 (6 s)
+  phys-water-gun svg try 1: accepted
+phys-water-gun svg: accepted on try 1 (6 s)
+  phys-wave scene try 1: 2 problems
+  phys-wave scene try 2: 2 problems
+  phys-wave scene try 3: accepted
+phys-wave scene: accepted on try 3 (20 s)
+  phys-wave tikz try 1: did not draw
+  phys-wave tikz try 2: 3 problems
+  phys-wave tikz try 3: accepted
+phys-wave tikz: accepted on try 3 (22 s)
+  phys-wave svg try 1: 3 problems
+  phys-wave svg try 2: 1 problems
+  phys-wave svg try 3: accepted
+phys-wave svg: accepted on try 3 (37 s)

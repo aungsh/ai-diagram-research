@@ -1,0 +1,41 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "phys-climber",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T08:19:01.320Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1]\n\n  % --- Cliff drawing ---\n  % Vertical cliff on the left, jagged near the top\n  \\draw[thick] (0, 4.5) -- (0, -3.5);\n  % Add surface hatch marks on the left side of x=0 (inside the rock)\n  \\foreach \\y in {-3.2, -2.8, ..., 4.2} {\n    \\draw (\\0, \\y) -- (-0.3, \\y + 0.3);\n  }\n  % Make the top jagged\n  \\draw[thick] (0, 4.5) -- (-0.2, 4.8) -- (0.1, 5.2) -- (-0.5, 5.6) -- (0, 6.0);\n  \\node[above right] at (0, 5.5) {cliff};\n\n  % --- Rope ---\n  \\draw[thick] (0, 5.8) -- (1.5, 2.0);\n  \\node[above] at (0.8, 4.2) {rope};\n\n  % --- Rock Climber ---\n  % Hands holding rope at (1.5, 2.0)\n  % Feet on cliff at (0, 0.5)\n  % Centre of gravity dot roughly in the middle of the torso\n  \\coordinate (feet) at (0, 0.5);\n  \\coordinate (hands) at (1.5, 2.0);\n  \\coordinate (cog) at (1.1, 1.2);\n  \\coordinate (head) at (1.8, 2.6);\n  \\coordinate (hips) at (0.8, 0.3);\n  \n  % Body parts (stick-figure style with body thickness, or simplified shapes)\n  % Let's draw a simplified outline of a climber leaning back\n  \n  % Head\n  \\draw[thick, fill=white] (head) circle (0.3);\n  \n  % Torso & Limbs\n  % Straight legs from feet to hips\n  \\draw[thick] (feet) -- (hips);\n  % Torso from hips to head/hands\n  \\draw[thick] (hips) -- (1.5, 2.0);\n  % Arms\n  \\draw[thick] (hands) -- (1.6, 2.2); % holding rope\n  % Helmet/Hair detail or just simple head is fine.\n  \n  % Centre of gravity dot\n  \\fill (cog) circle (2pt);\n  \\node[above left] at (cog) {centre of gravity};\n\n  % Climber label\n  \\node[right] at (2.2, 1.0) {rock climber};\n\n  % --- Caption ---\n  \\node[below, align=center] at (1.0, -4.2) {Fig. 2.1};\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Undefined control sequence.\n<argument> \\0\n             , \\y \n! Emergency stop.\n<argument> \\0\n             , \\y "
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 2818,
+   "inputTokens": 682,
+   "outputTokens": 690
+  },
+  {
+   "n": 2,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1]\n\n  % --- Cliff drawing ---\n  % Vertical cliff on the left, jagged near the top\n  \\draw[thick] (0, 4.5) -- (0, -3.5);\n  % Add surface hatch marks on the left side of x=0 (inside the rock)\n  \\foreach \\y in {-3.2, -2.8, ..., 4.2} {\n    \\draw (0, \\y) -- (-0.3, \\y + 0.3);\n  }\n  % Make the top jagged\n  \\draw[thick] (0, 4.5) -- (-0.2, 4.8) -- (0.1, 5.2) -- (-0.5, 5.6) -- (0, 6.0);\n  \\node[above right] at (0, 5.5) {cliff};\n\n  % --- Rope ---\n  \\draw[thick] (0, 5.8) -- (1.5, 2.0);\n  \\node[above] at (0.8, 4.2) {rope};\n\n  % --- Rock Climber ---\n  % Hands holding rope at (1.5, 2.0)\n  % Feet on cliff at (0, 0.5)\n  % Centre of gravity dot roughly in the middle of the torso\n  \\coordinate (feet) at (0, 0.5);\n  \\coordinate (hands) at (1.5, 2.0);\n  \\coordinate (cog) at (1.1, 1.2);\n  \\coordinate (head) at (1.8, 2.6);\n  \\coordinate (hips) at (0.8, 0.3);\n  \n  % Head\n  \\draw[thick, fill=white] (head) circle (0.3);\n  \n  % Torso & Limbs\n  \\draw[thick] (feet) -- (hips);\n  \\draw[thick] (hips) -- (1.5, 2.0);\n  \\draw[thick] (hands) -- (1.6, 2.2);\n  \n  % Centre of gravity dot\n  \\fill (cog) circle (2pt);\n  \\node[above left] at (cog) {centre of gravity};\n\n  % Climber label\n  \\node[right] at (2.2, 1.0) {rock climber};\n\n  % --- Caption ---\n  \\node[below, align=center] at (1.0, -4.2) {Fig. 2.1};\n\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"220.373\" height=\"408.497\" viewBox=\"-72 -72 165.28 306.373\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" stroke-width=\".8\" d=\"M-28.285-29.19V198.43\"></path><path fill=\"none\" d=\"m-28.285 189.895-8.536-8.536M-28.285 178.514l-8.536-8.536M-28.285 167.133l-8.536-8.536M-28.285 155.752l-8.536-8.536M-28.285 144.371l-8.536-8.535M-28.285 132.99l-8.536-8.535M-28.285 121.61l-8.536-8.536M-28.285 110.229l-8.536-8.536M-28.285 98.848l-8.536-8.536M-28.285 87.467l-8.536-8.536M-28.285 76.086l-8.536-8.536M-28.285 64.705l-8.536-8.536M-28.285 53.324l-8.536-8.536M-28.285 41.943l-8.536-8.536M-28.285 30.562l-8.536-8.536M-28.285 19.181l-8.536-8.536M-28.285 7.8l-8.536-8.536M-28.285-3.58l-8.536-8.536M-28.285-14.961l-8.536-8.536\"></path><path fill=\"none\" stroke-width=\".8\" d=\"m-28.285-29.19-5.69-8.537 8.535-11.38-17.072-11.382 14.227-11.381\"></path><text x=\"-28.285\" y=\"98.846\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(3.533 -160.023)\">cli®</text><path fill=\"none\" stroke-width=\".8\" d=\"M-28.285-66.18 14.394 41.941\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-28.285\" y=\"98.846\" transform=\"translate(13.61 -124.979)\">rop</text><text x=\"-14.424\" y=\"98.846\" transform=\"translate(13.61 -124.979)\">e</text></g><path fill=\"#fff\" stroke-width=\".8\" d=\"M31.465 24.87a8.536 8.536 0 1 0-17.071-.001 8.536 8.536 0 0 0 17.071 0Zm-8.535 0\"></path><path fill=\"none\" stroke-width=\".8\" d=\"m-28.285 84.62 22.762 5.69M-5.523 90.31l19.917-48.369M14.394 41.941l2.845-5.69\"></path><path stroke=\"none\" d=\"M5.013 64.703a2 2 0 1 0-4 0 2 2 0 0 0 4 0m-2 0\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-28.285\" y=\"98.846\" transform=\"translate(-40.652 -39.62)\">centre</text><text x=\".576\" y=\"98.846\" transform=\"translate(-40.652 -39.62)\">of</text><text x=\"11.965\" y=\"98.846\" transform=\"translate(-40.652 -39.62)\">gravit</text><text x=\"35.52\" y=\"98.846\" transform=\"translate(-40.652 -39.62)\">y</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-28.285\" y=\"98.846\" transform=\"translate(66.129 -24.98)\">ro</text><text x=\"-19.591\" y=\"98.846\" transform=\"translate(66.129 -24.98)\">ck</text><text x=\"-6.924\" y=\"98.846\" transform=\"translate(66.129 -24.98)\">climb</text><text x=\"15.687\" y=\"98.846\" transform=\"translate(66.129 -24.98)\">er</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-28.285\" y=\"98.846\" transform=\"translate(11.911 129.979)\">Fig.</text><text x=\"-7.98\" y=\"98.846\" transform=\"translate(11.911 129.979)\">2.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 21913,
+   "inputTokens": 3049,
+   "outputTokens": 630
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

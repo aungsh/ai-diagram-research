@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "phys-water-gun",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T08:06:57.875Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 380\" width=\"520\" height=\"380\">\n  <defs>\n    <pattern id=\"dots\" width=\"8\" height=\"8\" patternUnits=\"userSpaceOnUse\">\n      <circle cx=\"4\" cy=\"4\" r=\"0.9\" fill=\"#000\"/>\n    </pattern>\n  </defs>\n  <rect width=\"520\" height=\"380\" fill=\"#fff\"/>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000\">\n    <!-- water -->\n    <polygon points=\"92,170 244.8,170 244.8,194 280,194 280,170 304,170 304,152 384,152 384,142 304,142 304,114 92,114\" fill=\"url(#dots)\" stroke=\"#000\" stroke-width=\"1.2\"/>\n    <!-- body -->\n    <g fill=\"none\" stroke=\"#000\" stroke-width=\"2.5\" stroke-linejoin=\"round\">\n      <polyline points=\"328,152 328,200 156,200\"/>\n      <polyline points=\"152,200 80,200 80,100 328,100 328,142\"/>\n    </g>\n    <!-- cylinder, piston -->\n    <g fill=\"none\" stroke=\"#000\" stroke-width=\"1.2\">\n      <polyline points=\"160,186 160,194 244.8,194\"/>\n      <polyline points=\"244.8,176 160,176 160,184\"/>\n    </g>\n    <rect x=\"240\" y=\"176\" width=\"4.8\" height=\"18\" fill=\"#888\" stroke=\"#000\" stroke-width=\"1\"/>\n    <!-- rod and trigger -->\n    <polyline points=\"240,185 154,185 154,216\" fill=\"none\" stroke=\"#000\" stroke-width=\"3\"/>\n    <polygon points=\"144,216 164,216 168,256 152,258\" fill=\"#ccc\" stroke=\"#000\" stroke-width=\"1.2\"/>\n    <!-- handle -->\n    <polyline points=\"88,200 72,298 108,300 128,200\" fill=\"none\" stroke=\"#000\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <!-- stopper -->\n    <rect x=\"384\" y=\"138\" width=\"12\" height=\"18\" fill=\"#888\" stroke=\"#000\" stroke-width=\"1.2\"/>\n    <!-- leaders -->\n    <g stroke=\"#000\" stroke-width=\"1\">\n      <line x1=\"180\" y1=\"76\" x2=\"180\" y2=\"128\"/>\n      <line x1=\"352\" y1=\"94\" x2=\"352\" y2=\"142\"/>\n      <line x1=\"414\" y1=\"147\" x2=\"396\" y2=\"147\"/>\n      <line x1=\"242\" y1=\"270\" x2=\"242\" y2=\"194\"/>\n      <line x1=\"156\" y1=\"270\" x2=\"156\" y2=\"257\"/>\n    </g>\n    <g text-anchor=\"middle\">\n      <text x=\"180\" y=\"68\">water</text>\n      <text x=\"352\" y=\"88\">nozzle</text>\n      <text x=\"242\" y=\"288\">piston</text>\n      <text x=\"156\" y=\"288\">trigger</text>\n    </g>\n    <text x=\"418\" y=\"152\">stopper</text>\n    <text x=\"240\" y=\"352\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\">Fig. 5.1</text>\n  </g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 380\" width=\"520\" height=\"380\">\n  <defs>\n    <pattern id=\"dots\" width=\"8\" height=\"8\" patternUnits=\"userSpaceOnUse\">\n      <circle cx=\"4\" cy=\"4\" r=\"0.9\" fill=\"#000\"></circle>\n    </pattern>\n  </defs>\n  <rect width=\"520\" height=\"380\" fill=\"#fff\"></rect>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000\">\n    \n    <polygon points=\"92,170 244.8,170 244.8,194 280,194 280,170 304,170 304,152 384,152 384,142 304,142 304,114 92,114\" fill=\"url(#dots)\" stroke=\"#000\" stroke-width=\"1.2\"></polygon>\n    \n    <g fill=\"none\" stroke=\"#000\" stroke-width=\"2.5\" stroke-linejoin=\"round\">\n      <polyline points=\"328,152 328,200 156,200\"></polyline>\n      <polyline points=\"152,200 80,200 80,100 328,100 328,142\"></polyline>\n    </g>\n    \n    <g fill=\"none\" stroke=\"#000\" stroke-width=\"1.2\">\n      <polyline points=\"160,186 160,194 244.8,194\"></polyline>\n      <polyline points=\"244.8,176 160,176 160,184\"></polyline>\n    </g>\n    <rect x=\"240\" y=\"176\" width=\"4.8\" height=\"18\" fill=\"#888\" stroke=\"#000\" stroke-width=\"1\"></rect>\n    \n    <polyline points=\"240,185 154,185 154,216\" fill=\"none\" stroke=\"#000\" stroke-width=\"3\"></polyline>\n    <polygon points=\"144,216 164,216 168,256 152,258\" fill=\"#ccc\" stroke=\"#000\" stroke-width=\"1.2\"></polygon>\n    \n    <polyline points=\"88,200 72,298 108,300 128,200\" fill=\"none\" stroke=\"#000\" stroke-width=\"2.5\" stroke-linejoin=\"round\"></polyline>\n    \n    <rect x=\"384\" y=\"138\" width=\"12\" height=\"18\" fill=\"#888\" stroke=\"#000\" stroke-width=\"1.2\"></rect>\n    \n    <g stroke=\"#000\" stroke-width=\"1\">\n      <line x1=\"180\" y1=\"76\" x2=\"180\" y2=\"128\"></line>\n      <line x1=\"352\" y1=\"94\" x2=\"352\" y2=\"142\"></line>\n      <line x1=\"414\" y1=\"147\" x2=\"396\" y2=\"147\"></line>\n      <line x1=\"242\" y1=\"270\" x2=\"242\" y2=\"194\"></line>\n      <line x1=\"156\" y1=\"270\" x2=\"156\" y2=\"257\"></line>\n    </g>\n    <g text-anchor=\"middle\">\n      <text x=\"180\" y=\"68\">water</text>\n      <text x=\"352\" y=\"88\">nozzle</text>\n      <text x=\"242\" y=\"288\">piston</text>\n      <text x=\"156\" y=\"288\">trigger</text>\n    </g>\n    <text x=\"418\" y=\"152\">stopper</text>\n    <text x=\"240\" y=\"352\" text-anchor=\"middle\" font-size=\"15\" font-weight=\"bold\">Fig. 5.1</text>\n  </g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

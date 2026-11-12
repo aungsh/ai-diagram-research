@@ -1,0 +1,1 @@
+STOP: Daily free quota used up for gemini-3.5-flash.
