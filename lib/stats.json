@@ -1,0 +1,472 @@
+{
+ "measuredAt": "2026-11-12",
+ "instructions": {
+  "scene": 11127,
+  "tikz": 970,
+  "svg": 0
+ },
+ "rows": [
+  {
+   "id": "a-bio-action-potential",
+   "method": "scene",
+   "chars": 1261,
+   "drawMs": 12.268249999999966,
+   "ok": true
+  },
+  {
+   "id": "a-bio-action-potential",
+   "method": "tikz",
+   "chars": 869,
+   "drawMs": 960,
+   "ok": true
+  },
+  {
+   "id": "a-bio-action-potential",
+   "method": "svg",
+   "chars": 2470,
+   "drawMs": 7.029457999999977,
+   "ok": true
+  },
+  {
+   "id": "a-bio-membrane",
+   "method": "scene",
+   "chars": 7532,
+   "drawMs": 137.00304199999982,
+   "ok": true
+  },
+  {
+   "id": "a-bio-membrane",
+   "method": "tikz",
+   "chars": 1537,
+   "drawMs": 275,
+   "ok": true
+  },
+  {
+   "id": "a-bio-membrane",
+   "method": "svg",
+   "chars": 9054,
+   "drawMs": 5.001082999999653,
+   "ok": true
+  },
+  {
+   "id": "a-bio-o2-dissociation",
+   "method": "scene",
+   "chars": 646,
+   "drawMs": 13.252750000000106,
+   "ok": true
+  },
+  {
+   "id": "a-bio-o2-dissociation",
+   "method": "tikz",
+   "chars": 651,
+   "drawMs": 1304,
+   "ok": true
+  },
+  {
+   "id": "a-bio-o2-dissociation",
+   "method": "svg",
+   "chars": 6280,
+   "drawMs": 2.400833999999577,
+   "ok": true
+  },
+  {
+   "id": "a-chem-boltzmann",
+   "method": "scene",
+   "chars": 823,
+   "drawMs": 11.21462500000007,
+   "ok": true
+  },
+  {
+   "id": "a-chem-boltzmann",
+   "method": "tikz",
+   "chars": 693,
+   "drawMs": 1082,
+   "ok": true
+  },
+  {
+   "id": "a-chem-boltzmann",
+   "method": "svg",
+   "chars": 5988,
+   "drawMs": 1.5586670000002414,
+   "ok": true
+  },
+  {
+   "id": "a-chem-cell",
+   "method": "scene",
+   "chars": 1383,
+   "drawMs": 7.40283399999953,
+   "ok": true
+  },
+  {
+   "id": "a-chem-cell",
+   "method": "tikz",
+   "chars": 1016,
+   "drawMs": 425,
+   "ok": true
+  },
+  {
+   "id": "a-chem-cell",
+   "method": "svg",
+   "chars": 2857,
+   "drawMs": 1.77087500000016,
+   "ok": true
+  },
+  {
+   "id": "a-chem-energy-profile",
+   "method": "scene",
+   "chars": 1098,
+   "drawMs": 1.9591669999999795,
+   "ok": true
+  },
+  {
+   "id": "a-chem-energy-profile",
+   "method": "tikz",
+   "chars": 1005,
+   "drawMs": 152,
+   "ok": true
+  },
+  {
+   "id": "a-chem-energy-profile",
+   "method": "svg",
+   "chars": 2290,
+   "drawMs": 1.3311670000002778,
+   "ok": true
+  },
+  {
+   "id": "a-phys-circuit",
+   "method": "scene",
+   "chars": 1121,
+   "drawMs": 0.302375000000211,
+   "ok": true
+  },
+  {
+   "id": "a-phys-circuit",
+   "method": "tikz",
+   "chars": 350,
+   "drawMs": 404,
+   "ok": true
+  },
+  {
+   "id": "a-phys-circuit",
+   "method": "svg",
+   "chars": 1794,
+   "drawMs": 1.10674999999992,
+   "ok": true
+  },
+  {
+   "id": "a-phys-incline",
+   "method": "scene",
+   "chars": 1191,
+   "drawMs": 5.180957999999919,
+   "ok": true
+  },
+  {
+   "id": "a-phys-incline",
+   "method": "tikz",
+   "chars": 1235,
+   "drawMs": 223,
+   "ok": true
+  },
+  {
+   "id": "a-phys-incline",
+   "method": "svg",
+   "chars": 2345,
+   "drawMs": 1.250875000000633,
+   "ok": true
+  },
+  {
+   "id": "a-phys-magnetic",
+   "method": "scene",
+   "chars": 2343,
+   "drawMs": 1.2551249999996799,
+   "ok": true
+  },
+  {
+   "id": "a-phys-magnetic",
+   "method": "tikz",
+   "chars": 990,
+   "drawMs": 268,
+   "ok": true
+  },
+  {
+   "id": "a-phys-magnetic",
+   "method": "svg",
+   "chars": 3425,
+   "drawMs": 1.7807920000004742,
+   "ok": true
+  },
+  {
+   "id": "bio-osmosis",
+   "method": "scene",
+   "chars": 1344,
+   "drawMs": 10.897500000000036,
+   "ok": true
+  },
+  {
+   "id": "bio-osmosis",
+   "method": "tikz",
+   "chars": 1469,
+   "drawMs": 429,
+   "ok": true
+  },
+  {
+   "id": "bio-osmosis",
+   "method": "svg",
+   "chars": 2653,
+   "drawMs": 1.793166999999812,
+   "ok": true
+  },
+  {
+   "id": "bio-plant-cell",
+   "method": "scene",
+   "chars": 1961,
+   "drawMs": 54.39366599999994,
+   "ok": true
+  },
+  {
+   "id": "bio-plant-cell",
+   "method": "tikz",
+   "chars": 1083,
+   "drawMs": 159,
+   "ok": true
+  },
+  {
+   "id": "bio-plant-cell",
+   "method": "svg",
+   "chars": 3043,
+   "drawMs": 1.2335830000001806,
+   "ok": true
+  },
+  {
+   "id": "chem-distillation",
+   "method": "scene",
+   "chars": 3724,
+   "drawMs": 17.67712500000016,
+   "ok": true
+  },
+  {
+   "id": "chem-distillation",
+   "method": "tikz",
+   "chars": 2232,
+   "drawMs": 179,
+   "ok": true
+  },
+  {
+   "id": "chem-distillation",
+   "method": "svg",
+   "chars": 3143,
+   "drawMs": 1.8540419999999358,
+   "ok": true
+  },
+  {
+   "id": "chem-electrolysis",
+   "method": "scene",
+   "chars": 1771,
+   "drawMs": 2.793666999999914,
+   "ok": true
+  },
+  {
+   "id": "chem-electrolysis",
+   "method": "tikz",
+   "chars": 1665,
+   "drawMs": 167,
+   "ok": true
+  },
+  {
+   "id": "chem-electrolysis",
+   "method": "svg",
+   "chars": 3276,
+   "drawMs": 1.4272499999997308,
+   "ok": true
+  },
+  {
+   "id": "math-bearings",
+   "method": "scene",
+   "chars": 733,
+   "drawMs": 0.8122089999997115,
+   "ok": true
+  },
+  {
+   "id": "math-bearings",
+   "method": "tikz",
+   "chars": 1155,
+   "drawMs": 180,
+   "ok": true
+  },
+  {
+   "id": "math-bearings",
+   "method": "svg",
+   "chars": 1168,
+   "drawMs": 0.8771660000002157,
+   "ok": true
+  },
+  {
+   "id": "math-circles",
+   "method": "scene",
+   "chars": 1234,
+   "drawMs": 1.3313749999997526,
+   "ok": true
+  },
+  {
+   "id": "math-circles",
+   "method": "tikz",
+   "chars": 1297,
+   "drawMs": 217,
+   "ok": true
+  },
+  {
+   "id": "math-circles",
+   "method": "svg",
+   "chars": 1580,
+   "drawMs": 2.0860419999999067,
+   "ok": true
+  },
+  {
+   "id": "math-quadratic",
+   "method": "scene",
+   "chars": 480,
+   "drawMs": 3.2781250000007276,
+   "ok": true
+  },
+  {
+   "id": "math-quadratic",
+   "method": "tikz",
+   "chars": 635,
+   "drawMs": 622,
+   "ok": true
+  },
+  {
+   "id": "math-quadratic",
+   "method": "svg",
+   "chars": 3479,
+   "drawMs": 1.6927920000007362,
+   "ok": true
+  },
+  {
+   "id": "math-vectors",
+   "method": "scene",
+   "chars": 656,
+   "drawMs": 0.5988749999996799,
+   "ok": true
+  },
+  {
+   "id": "math-vectors",
+   "method": "tikz",
+   "chars": 1001,
+   "drawMs": 186,
+   "ok": true
+  },
+  {
+   "id": "math-vectors",
+   "method": "svg",
+   "chars": 1104,
+   "drawMs": 0.9400000000005093,
+   "ok": true
+  },
+  {
+   "id": "phys-barometer",
+   "method": "scene",
+   "chars": 1567,
+   "drawMs": 3.5209169999998267,
+   "ok": true
+  },
+  {
+   "id": "phys-barometer",
+   "method": "tikz",
+   "chars": 1278,
+   "drawMs": 160,
+   "ok": true
+  },
+  {
+   "id": "phys-barometer",
+   "method": "svg",
+   "chars": 2159,
+   "drawMs": 1.1465409999982512,
+   "ok": true
+  },
+  {
+   "id": "phys-climber",
+   "method": "scene",
+   "chars": 1393,
+   "drawMs": 6.425124999999753,
+   "ok": true
+  },
+  {
+   "id": "phys-climber",
+   "method": "tikz",
+   "chars": 1077,
+   "drawMs": 193,
+   "ok": true
+  },
+  {
+   "id": "phys-climber",
+   "method": "svg",
+   "chars": 1780,
+   "drawMs": 1.0279160000009142,
+   "ok": true
+  },
+  {
+   "id": "phys-vt-graph",
+   "method": "scene",
+   "chars": 605,
+   "drawMs": 0.451666999999361,
+   "ok": true
+  },
+  {
+   "id": "phys-vt-graph",
+   "method": "tikz",
+   "chars": 995,
+   "drawMs": 489,
+   "ok": true
+  },
+  {
+   "id": "phys-vt-graph",
+   "method": "svg",
+   "chars": 2381,
+   "drawMs": 1.0925000000006548,
+   "ok": true
+  },
+  {
+   "id": "phys-water-gun",
+   "method": "scene",
+   "chars": 1485,
+   "drawMs": 2.468124999999418,
+   "ok": true
+  },
+  {
+   "id": "phys-water-gun",
+   "method": "tikz",
+   "chars": 1148,
+   "drawMs": 1126,
+   "ok": true
+  },
+  {
+   "id": "phys-water-gun",
+   "method": "svg",
+   "chars": 2020,
+   "drawMs": 1.3700000000008004,
+   "ok": true
+  },
+  {
+   "id": "phys-wave",
+   "method": "scene",
+   "chars": 741,
+   "drawMs": 1.123874999999316,
+   "ok": true
+  },
+  {
+   "id": "phys-wave",
+   "method": "tikz",
+   "chars": 1004,
+   "drawMs": 808,
+   "ok": true
+  },
+  {
+   "id": "phys-wave",
+   "method": "svg",
+   "chars": 4246,
+   "drawMs": 1.0965410000007978,
+   "ok": true
+  }
+ ]
+}
