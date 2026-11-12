@@ -1,0 +1,290 @@
+{
+  "unit": 56,
+  "font": "sans",
+  "caption": "Fig. 1.1",
+  "points": {},
+  "elements": [
+    {
+      "type": "rect",
+      "at": [
+        0,
+        0
+      ],
+      "w": 4,
+      "h": 6,
+      "round": 0.35,
+      "weight": "thick",
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        0.12,
+        0.12
+      ],
+      "w": 3.76,
+      "h": 5.76,
+      "round": 0.3,
+      "weight": "thin",
+      "fill": {
+        "grey": 0.08
+      }
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          0.75,
+          1.0
+        ],
+        [
+          2.0,
+          0.72
+        ],
+        [
+          3.25,
+          1.0
+        ],
+        [
+          3.35,
+          2.8
+        ],
+        [
+          3.25,
+          4.4
+        ],
+        [
+          2.3,
+          4.72
+        ],
+        [
+          1.05,
+          4.6
+        ],
+        [
+          0.7,
+          2.8
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        2.6,
+        5.25
+      ],
+      "rx": 0.6,
+      "ry": 0.38,
+      "fill": {
+        "grey": 0.35
+      }
+    },
+    {
+      "type": "circle",
+      "center": [
+        2.75,
+        5.3
+      ],
+      "r": 0.1,
+      "fill": {
+        "grey": 0.8
+      }
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        0.4,
+        1.3
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        0.4,
+        2.5
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        0.4,
+        3.7
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        0.42,
+        4.9
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        3.6,
+        1.5
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        3.6,
+        2.8
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        3.6,
+        4.1
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 90,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        1.25,
+        0.4
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 0,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        2.7,
+        0.4
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 0,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "ellipse",
+      "center": [
+        1.1,
+        5.55
+      ],
+      "rx": 0.25,
+      "ry": 0.12,
+      "rotate": 0,
+      "fill": {
+        "grey": 0.55
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "callout",
+      "target": [
+        4.0,
+        3.4
+      ],
+      "text": "A",
+      "dir": "e",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        0.12,
+        3.1
+      ],
+      "text": "B",
+      "dir": "w",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.65,
+        4.1
+      ],
+      "text": "C",
+      "dir": "e",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.9,
+        5.4
+      ],
+      "text": "D",
+      "dir": "ne",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.6,
+        2.6
+      ],
+      "text": "E",
+      "dir": "w",
+      "dist": 2.0
+    }
+  ]
+}

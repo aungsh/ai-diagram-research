@@ -1,0 +1,232 @@
+{
+  "unit": 56,
+  "font": "sans",
+  "caption": "Fig. 2.1",
+  "points": {
+    "j1": {
+      "at": [
+        1.6,
+        4
+      ],
+      "dot": true
+    },
+    "j2": {
+      "at": [
+        4.4,
+        4
+      ],
+      "dot": true
+    }
+  },
+  "elements": [
+    {
+      "type": "polygon",
+      "points": [
+        [
+          0,
+          1.85
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1.3
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          6,
+          2.7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          3.6,
+          4
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          2.4,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          2.15
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "segment",
+      "from": [
+        -0.45,
+        2.15
+      ],
+      "to": [
+        0.45,
+        2.15
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        -0.22,
+        1.85
+      ],
+      "to": [
+        0.22,
+        1.85
+      ],
+      "weight": "heavy"
+    },
+    {
+      "type": "text",
+      "at": [
+        -0.6,
+        2.0
+      ],
+      "text": "12 V",
+      "anchor": "w"
+    },
+    {
+      "type": "rect",
+      "at": [
+        2.4,
+        3.8
+      ],
+      "w": 1.2,
+      "h": 0.4,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "text",
+      "at": [
+        3.0,
+        3.75
+      ],
+      "text": "R",
+      "anchor": "s"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          1.6,
+          4
+        ],
+        [
+          1.6,
+          5.4
+        ],
+        [
+          2.6,
+          5.4
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          3.4,
+          5.4
+        ],
+        [
+          4.4,
+          5.4
+        ],
+        [
+          4.4,
+          4
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "circle",
+      "center": [
+        3.0,
+        5.4
+      ],
+      "r": 0.4,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "text",
+      "at": [
+        3.0,
+        5.4
+      ],
+      "text": "V"
+    },
+    {
+      "type": "rect",
+      "at": [
+        5.8,
+        1.3
+      ],
+      "w": 0.4,
+      "h": 1.4,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "segment",
+      "from": [
+        5.45,
+        1.15
+      ],
+      "to": [
+        6.55,
+        2.85
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        5.2,
+        1.15
+      ],
+      "to": [
+        5.45,
+        1.15
+      ]
+    },
+    {
+      "type": "text",
+      "at": [
+        6.75,
+        2.0
+      ],
+      "text": "T",
+      "anchor": "e"
+    }
+  ]
+}

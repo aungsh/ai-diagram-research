@@ -1,0 +1,32 @@
+{
+  "unit": 46,
+  "points": {
+    "O": { "at": [0, 0], "label": "O", "dot": true },
+    "B": { "polar": { "center": "O", "r": 2.2, "deg": 82 }, "label": "B" },
+    "A": { "polar": { "center": "O", "r": 2.2, "deg": 138 }, "label": "A" },
+    "C": { "polar": { "center": "O", "r": 2.2, "deg": 290 }, "label": "C" },
+    "D": { "polar": { "center": "O", "r": 2.2, "deg": 195 }, "label": "D" },
+    "E": { "polar": { "center": "O", "r": 2.2, "deg": 335 }, "label": "E" },
+    "I": { "tangentsMeet": { "center": "O", "a": "B", "b": "C" }, "label": "I" },
+    "H": { "along": { "from": "I", "to": "C", "t": 1.22 }, "label": "H" },
+    "G": { "intersect": [["B", "C"], ["A", "E"]], "label": "G" }
+  },
+  "elements": [
+    { "type": "circle", "center": "O", "r": 2.2 },
+    { "type": "segment", "from": "A", "to": "B" },
+    { "type": "segment", "from": "B", "to": "C" },
+    { "type": "segment", "from": "A", "to": "O" },
+    { "type": "segment", "from": "A", "to": "E" },
+    { "type": "segment", "from": "A", "to": "D" },
+    { "type": "segment", "from": "D", "to": "C" },
+    { "type": "segment", "from": "C", "to": "E" },
+    { "type": "segment", "from": "O", "to": "B" },
+    { "type": "segment", "from": "O", "to": "C" },
+    { "type": "segment", "from": "O", "to": "I" },
+    { "type": "segment", "from": "B", "to": "I" },
+    { "type": "segment", "from": "I", "to": "H" },
+    { "type": "angle", "at": "B", "a": "A", "b": "C", "label": "76°" },
+    { "type": "angle", "at": "A", "a": "O", "b": "B", "label": "62°", "r": 0.42 },
+    { "type": "angle", "at": "A", "a": "D", "b": "E", "label": "70°", "r": 0.3 }
+  ]
+}

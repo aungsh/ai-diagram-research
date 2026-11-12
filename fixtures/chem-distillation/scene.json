@@ -1,0 +1,611 @@
+{
+  "unit": 50,
+  "font": "sans",
+  "caption": "Fig. 4.1",
+  "points": {
+    "S": {
+      "at": [
+        0.22,
+        3.3
+      ]
+    },
+    "T": {
+      "move": {
+        "from": "S",
+        "d": 5.2,
+        "deg": -21.8
+      }
+    },
+    "S1": {
+      "move": {
+        "from": "S",
+        "d": 0.07,
+        "deg": 68.2
+      }
+    },
+    "T1": {
+      "move": {
+        "from": "T",
+        "d": 0.07,
+        "deg": 68.2
+      }
+    },
+    "S2": {
+      "move": {
+        "from": "S",
+        "d": 0.07,
+        "deg": -111.8
+      }
+    },
+    "T2": {
+      "move": {
+        "from": "T",
+        "d": 0.07,
+        "deg": -111.8
+      }
+    },
+    "J0": {
+      "move": {
+        "from": "S",
+        "d": 1.3,
+        "deg": -21.8
+      }
+    },
+    "J1": {
+      "move": {
+        "from": "S",
+        "d": 4.1,
+        "deg": -21.8
+      }
+    },
+    "J0u": {
+      "move": {
+        "from": "J0",
+        "d": 0.32,
+        "deg": 68.2
+      }
+    },
+    "J0d": {
+      "move": {
+        "from": "J0",
+        "d": 0.32,
+        "deg": -111.8
+      }
+    },
+    "J1u": {
+      "move": {
+        "from": "J1",
+        "d": 0.32,
+        "deg": 68.2
+      }
+    },
+    "J1d": {
+      "move": {
+        "from": "J1",
+        "d": 0.32,
+        "deg": -111.8
+      }
+    },
+    "Wi": {
+      "move": {
+        "from": "S",
+        "d": 3.75,
+        "deg": -21.8
+      }
+    },
+    "WiD": {
+      "move": {
+        "from": "Wi",
+        "d": 0.32,
+        "deg": -111.8
+      }
+    },
+    "WiP": {
+      "offset": {
+        "from": "WiD",
+        "dx": 0,
+        "dy": -0.55
+      }
+    },
+    "WiA": {
+      "offset": {
+        "from": "WiD",
+        "dx": 0,
+        "dy": -1.25
+      }
+    },
+    "Wo": {
+      "move": {
+        "from": "S",
+        "d": 1.65,
+        "deg": -21.8
+      }
+    },
+    "WoU": {
+      "move": {
+        "from": "Wo",
+        "d": 0.32,
+        "deg": 68.2
+      }
+    },
+    "WoP": {
+      "offset": {
+        "from": "WoU",
+        "dx": 0,
+        "dy": 0.55
+      }
+    },
+    "WoA": {
+      "offset": {
+        "from": "WoU",
+        "dx": 0,
+        "dy": 1.2
+      }
+    },
+    "Xm": {
+      "move": {
+        "from": "S",
+        "d": 2.7,
+        "deg": -21.8
+      }
+    },
+    "Xt": {
+      "move": {
+        "from": "Xm",
+        "d": 0.32,
+        "deg": 68.2
+      }
+    },
+    "L0": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 192
+      }
+    },
+    "L1": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 205
+      }
+    },
+    "L2": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 220
+      }
+    },
+    "L3": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 235
+      }
+    },
+    "L4": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 250
+      }
+    },
+    "L5": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 265
+      }
+    },
+    "L6": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 280
+      }
+    },
+    "L7": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 295
+      }
+    },
+    "L8": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 310
+      }
+    },
+    "L9": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 325
+      }
+    },
+    "L10": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 340
+      }
+    },
+    "L11": {
+      "polar": {
+        "center": [
+          0,
+          1.2
+        ],
+        "r": 0.96,
+        "deg": 348
+      }
+    }
+  },
+  "elements": [
+    {
+      "type": "liquid",
+      "points": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8",
+        "L9",
+        "L10",
+        "L11"
+      ],
+      "fill": {
+        "grey": 0.18
+      }
+    },
+    {
+      "type": "arc",
+      "center": [
+        0,
+        1.2
+      ],
+      "r": 1.0,
+      "from": 102.7,
+      "to": 437.3
+    },
+    {
+      "type": "segment",
+      "from": [
+        -0.22,
+        2.175
+      ],
+      "to": [
+        -0.22,
+        3.6
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.22,
+        2.175
+      ],
+      "to": [
+        0.22,
+        3.225
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.22,
+        3.375
+      ],
+      "to": [
+        0.22,
+        3.6
+      ]
+    },
+    {
+      "type": "rect",
+      "at": [
+        -0.3,
+        3.6
+      ],
+      "w": 0.6,
+      "h": 0.35,
+      "fill": {
+        "grey": 0.5
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        -0.06,
+        3.2
+      ],
+      "w": 0.12,
+      "h": 2.0,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "circle",
+      "center": [
+        0,
+        3.2
+      ],
+      "r": 0.1,
+      "fill": {
+        "grey": 0.6
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        "J0u",
+        "J1u",
+        "J1d",
+        "J0d"
+      ]
+    },
+    {
+      "type": "segment",
+      "from": "S1",
+      "to": "T1"
+    },
+    {
+      "type": "segment",
+      "from": "S2",
+      "to": "T2"
+    },
+    {
+      "type": "segment",
+      "from": "WiD",
+      "to": "WiP",
+      "weight": "thick"
+    },
+    {
+      "type": "segment",
+      "from": "WoU",
+      "to": "WoP",
+      "weight": "thick"
+    },
+    {
+      "type": "arrow",
+      "from": "WiA",
+      "to": "WiP",
+      "kind": "flow",
+      "label": "water in",
+      "labelAt": "tail"
+    },
+    {
+      "type": "arrow",
+      "from": "WoP",
+      "to": "WoA",
+      "kind": "flow",
+      "label": "water out",
+      "labelAt": "tip"
+    },
+    {
+      "type": "liquid",
+      "points": [
+        [
+          4.15,
+          -0.56
+        ],
+        [
+          6.05,
+          -0.56
+        ],
+        [
+          5.82,
+          0.0
+        ],
+        [
+          4.38,
+          0.0
+        ]
+      ],
+      "fill": {
+        "grey": 0.18
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          4.1,
+          -0.6
+        ],
+        [
+          6.1,
+          -0.6
+        ],
+        [
+          5.35,
+          1.0
+        ],
+        [
+          5.35,
+          1.6
+        ],
+        [
+          4.85,
+          1.6
+        ],
+        [
+          4.85,
+          1.0
+        ]
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        -1.2,
+        0.18
+      ],
+      "to": [
+        1.2,
+        0.18
+      ],
+      "weight": "thick"
+    },
+    {
+      "type": "segment",
+      "from": [
+        -1.0,
+        0.18
+      ],
+      "to": [
+        -1.25,
+        -1.75
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.0,
+        0.18
+      ],
+      "to": [
+        1.25,
+        -1.75
+      ]
+    },
+    {
+      "type": "rect",
+      "at": [
+        -0.18,
+        -1.6
+      ],
+      "w": 0.36,
+      "h": 0.85
+    },
+    {
+      "type": "rect",
+      "at": [
+        -0.55,
+        -1.75
+      ],
+      "w": 1.1,
+      "h": 0.15,
+      "fill": {
+        "grey": 0.6
+      }
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          -0.17,
+          -0.74
+        ],
+        [
+          -0.08,
+          -0.35
+        ],
+        [
+          0,
+          -0.05
+        ],
+        [
+          0.08,
+          -0.35
+        ],
+        [
+          0.17,
+          -0.74
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "grey": 0.12
+      }
+    },
+    {
+      "type": "callout",
+      "target": [
+        0.06,
+        4.8
+      ],
+      "text": "thermometer",
+      "dir": "w",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": "Xt",
+      "text": "X",
+      "dir": "n",
+      "dist": 0.7
+    },
+    {
+      "type": "callout",
+      "target": [
+        -0.45,
+        0.6
+      ],
+      "text": "sea water",
+      "dir": "w",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        5.1,
+        -0.3
+      ],
+      "text": "pure water",
+      "dir": "e",
+      "dist": 1.1
+    },
+    {
+      "type": "callout",
+      "target": [
+        -0.12,
+        -0.45
+      ],
+      "text": "heat",
+      "dir": "w",
+      "dist": 1.4
+    }
+  ]
+}

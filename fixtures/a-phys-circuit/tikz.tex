@@ -1,0 +1,8 @@
+\usepackage[european]{circuitikz}
+\begin{tikzpicture}[font=\sffamily]
+  \draw (0,0) to[battery1, l=12 V] (0,4)
+        -- (1.6,4) to[R, l_=R, *-*] (4.4,4)
+        -- (6,4) to[thermistor, l=T] (6,0) -- (0,0);
+  \draw (1.6,4) -- (1.6,5.4) to[rmeter, t=V] (4.4,5.4) -- (4.4,4);
+  \node[font=\sffamily\bfseries] at (3,-0.9) {Fig. 2.1};
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+{
+  "unit": 44,
+  "points": {
+    "B": { "at": [0, 0], "label": "B" },
+    "C": { "at": [4.4, 3.1], "label": "C" },
+    "D": { "at": [7.5, 0.8], "label": "D" },
+    "A": { "at": [3.1, -2.3], "label": "A" },
+    "E": { "along": { "from": "C", "to": "D", "t": 2 }, "label": "E" },
+    "N": { "along": { "from": "B", "to": "C", "t": 0.25 }, "label": "N" },
+    "M": { "mid": ["A", "D"], "label": "M" }
+  },
+  "elements": [
+    { "type": "polygon", "points": ["B", "C", "D", "A"] },
+    { "type": "segment", "from": "D", "to": "E" },
+    { "type": "segment", "from": "N", "to": "D" },
+    { "type": "segment", "from": "B", "to": "M" },
+    { "type": "segment", "from": "B", "to": "N", "arrow": "mid", "label": { "text": "**a**", "side": "left" } },
+    { "type": "segment", "from": "C", "to": "D", "arrow": "mid", "label": { "text": "**b**", "side": "left" } }
+  ]
+}

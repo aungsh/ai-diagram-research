@@ -1,0 +1,30 @@
+{
+  "unit": 50,
+  "font": "sans",
+  "caption": "Fig. 5.1",
+  "points": {
+    "pistonFace": { "at": [2.55, 2.6] },
+    "trig": { "at": [3.6, 1.35] },
+    "noz": { "at": [7.55, 3.85] },
+    "stop": { "at": [8.15, 4.3] },
+    "waterLab": { "at": [5.0, 4.0] }
+  },
+  "elements": [
+    { "type": "polygon", "points": [[0.7, 2.0], [3.1, 2.0], [3.1, 1.6], [2.1, 1.6], [1.1, -0.9], [-0.15, -0.65]], "weight": "thick", "fill": { "grey": 0 } },
+    { "type": "rect", "at": [0, 2.0], "w": 7.95, "h": 3.0, "round": 0.12, "weight": "thick" },
+    { "type": "liquid", "points": [[0.35, 2.3], [7.3, 2.3], [7.3, 4.7], [0.35, 4.7]], "fill": { "pattern": "dots" } },
+    { "type": "rect", "at": [0.35, 2.3], "w": 6.95, "h": 2.4, "weight": "normal" },
+    { "type": "rect", "at": [0.35, 2.3], "w": 3.2, "h": 0.65, "fill": { "grey": 0 }, "weight": "normal" },
+    { "type": "rect", "at": [0.35, 2.3], "w": 0.3, "h": 0.65, "fill": { "grey": 0.3 }, "weight": "thin" },
+    { "type": "segment", "from": [0.65, 2.62], "to": [2.55, 2.62], "weight": "thick" },
+    { "type": "segment", "from": [2.55, 2.32], "to": [2.55, 2.93], "weight": "heavy" },
+    { "type": "segment", "from": [2.6, 2.45], "to": [3.6, 1.35], "weight": "heavy" },
+    { "type": "rect", "at": [7.3, 3.78], "w": 0.45, "h": 0.14, "fill": { "grey": 0 }, "weight": "thin" },
+    { "type": "rect", "at": [7.75, 3.35], "w": 0.4, "h": 1.0, "fill": { "grey": 0.45 }, "weight": "normal" },
+    { "type": "text", "at": "waterLab", "text": "water", "size": "large", "halo": true },
+    { "type": "callout", "target": "pistonFace", "text": "piston", "dir": "sw", "dist": 1.6 },
+    { "type": "callout", "target": "trig", "text": "trigger", "dir": "e", "dist": 0.9 },
+    { "type": "callout", "target": "noz", "text": "nozzle", "dir": "s", "dist": 1.6 },
+    { "type": "callout", "target": "stop", "text": "stopper", "dir": "ne", "dist": 1.0 }
+  ]
+}

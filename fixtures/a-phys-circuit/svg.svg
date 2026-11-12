@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" width="520" height="440" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="520" height="440" fill="#fff"/>
+<path d="M90.0 246.4 L90.0 350.0 L426.0 350.0 L426.0 277.2" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M426.0 198.8 L426.0 126.0 L291.6 126.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M224.4 126.0 L90.0 126.0 L90.0 229.6" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M64.8 229.6 L115.2 229.6" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M77.7 246.4 L102.3 246.4" stroke-width="4.5" fill="none" stroke="#000"/>
+<text x="56.4" y="243.0" text-anchor="end" font-size="16" >12 V</text>
+<path d="M224.4 114.8 L291.6 114.8 L291.6 137.2 L224.4 137.2 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="258.0" y="161.8" text-anchor="middle" font-size="16" >R</text>
+<path d="M179.6 126.0 L179.6 47.6 L235.6 47.6" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M280.4 47.6 L336.4 47.6 L336.4 126.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<circle cx="258.0" cy="47.6" r="22.4" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="258.0" y="53.6" text-anchor="middle" font-size="17" >V</text>
+<circle cx="179.6" cy="126.0" r="2.8" fill="#000" stroke="#000" stroke-width="1.4"/>
+<circle cx="336.4" cy="126.0" r="2.8" fill="#000" stroke="#000" stroke-width="1.4"/>
+<path d="M414.8 198.8 L437.2 198.8 L437.2 277.2 L414.8 277.2 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M381.2 285.6 L395.2 285.6 L456.8 190.4" fill="none" stroke="#000" stroke-width="1.4"/>
+<text x="468.0" y="243.0" text-anchor="start" font-size="16" >T</text>
+<text x="258" y="426" text-anchor="middle" font-weight="bold" font-size="15">Fig. 2.1</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="Helvetica, Arial, sans-serif" font-size="14">
+<rect width="640" height="420" fill="#fff"/>
+<path d="M70.0 40.0V283.0M89.0 40.0V283.0M108.0 40.0V283.0M127.0 40.0V283.0M146.0 40.0V283.0M165.0 40.0V283.0M184.0 40.0V283.0M203.0 40.0V283.0M222.0 40.0V283.0M241.0 40.0V283.0M260.0 40.0V283.0M279.0 40.0V283.0M298.0 40.0V283.0M317.0 40.0V283.0M336.0 40.0V283.0M355.0 40.0V283.0M374.0 40.0V283.0M393.0 40.0V283.0M412.0 40.0V283.0M431.0 40.0V283.0M450.0 40.0V283.0M469.0 40.0V283.0M488.0 40.0V283.0M507.0 40.0V283.0M526.0 40.0V283.0M545.0 40.0V283.0M564.0 40.0V283.0M583.0 40.0V283.0M602.0 40.0V283.0M70.0 283.0H602.0M70.0 269.5H602.0M70.0 256.0H602.0M70.0 242.5H602.0M70.0 229.0H602.0M70.0 215.5H602.0M70.0 202.0H602.0M70.0 188.5H602.0M70.0 175.0H602.0M70.0 161.5H602.0M70.0 148.0H602.0M70.0 134.5H602.0M70.0 121.0H602.0M70.0 107.5H602.0M70.0 94.0H602.0M70.0 80.5H602.0M70.0 67.0H602.0M70.0 53.5H602.0M70.0 40.0H602.0" stroke="#d0d0d0" stroke-width="0.5" fill="none"/>
+<path d="M165.0 40.0V283.0M260.0 40.0V283.0M355.0 40.0V283.0M450.0 40.0V283.0M545.0 40.0V283.0M70.0 256.0H602.0M70.0 121.0H602.0M70.0 53.5H602.0" stroke="#8a8a8a" stroke-width="0.8" fill="none"/>
+<path d="M70 188.5H616.0M70 283.0V26.0" stroke="#000" stroke-width="1.3" fill="none"/>
+<path d="M620.0 188.5 L610.0 192.5 L610.0 184.5 Z" fill="#000"/>
+<path d="M70.0 22.0 L74.0 32.0 L66.0 32.0 Z" fill="#000"/>
+<path d="M70 188.5L260 53.5M298.0 269.5L412.0 188.5" stroke="#000" stroke-width="2.2" fill="none"/>
+<path d="M260 53.5L298.0 269.5" stroke="#000" stroke-width="2.2" stroke-dasharray="9 6" fill="none"/>
+<g text-anchor="middle" font-size="13">
+<text x="165.0" y="205.5">0.5</text>
+<text x="260.0" y="205.5">1</text>
+<text x="355.0" y="205.5">1.5</text>
+<text x="450.0" y="205.5">2</text>
+<text x="545.0" y="205.5">2.5</text>
+<text x="54.0" y="261.0">−5</text>
+<text x="54.0" y="126.0">5</text>
+<text x="54.0" y="58.5">10</text>
+<text x="58.0" y="205.5">0</text></g>
+<text x="78.0" y="28.0">velocity / m/s</text>
+<text x="612.0" y="178.5" text-anchor="end">time / s</text>
+<g text-anchor="middle" font-size="15"><text x="260" y="45.5">X</text><text x="298.0" y="287.5">Y</text><text x="412.0" y="180.5">Z</text></g>
+<text x="320.0" y="406" text-anchor="middle" font-weight="bold" font-size="15">Fig. 1.1</text></svg>

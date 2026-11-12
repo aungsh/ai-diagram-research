@@ -1,0 +1,73 @@
+{
+  "unit": 50,
+  "font": "sans",
+  "caption": "Fig. 7.1",
+  "points": {
+    "a": {
+      "graph": [
+        2.6,
+        30.947
+      ]
+    },
+    "b": {
+      "graph": [
+        6.0,
+        64.623
+      ]
+    }
+  },
+  "elements": [
+    {
+      "type": "axes",
+      "x": {
+        "min": 0,
+        "max": 14,
+        "step": 2,
+        "label": "partial pressure of oxygen / kPa"
+      },
+      "y": {
+        "min": 0,
+        "max": 100,
+        "step": 20,
+        "label": "saturation of haemoglobin / %"
+      },
+      "grid": "major",
+      "mode": "box",
+      "sx": 0.5,
+      "sy": 0.045
+    },
+    {
+      "type": "plot",
+      "fn": "100*x^2.7/(x^2.7+3.5^2.7)",
+      "domain": [
+        0,
+        14
+      ],
+      "weight": "thick"
+    },
+    {
+      "type": "plot",
+      "fn": "100*x^2.7/(x^2.7+4.8^2.7)",
+      "domain": [
+        0,
+        14
+      ],
+      "weight": "thick",
+      "style": "dashed"
+    },
+    {
+      "type": "callout",
+      "target": "a",
+      "text": "A",
+      "dir": "nw",
+      "dist": 0.6
+    },
+    {
+      "type": "callout",
+      "target": "b",
+      "text": "B",
+      "dir": "se",
+      "dist": 0.6
+    }
+  ]
+}

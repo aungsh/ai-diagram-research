@@ -1,0 +1,30 @@
+{
+  "id": "phys-barometer",
+  "subject": "O Level Physics",
+  "topic": "Pressure",
+  "title": "Mercury barometer in a bell jar",
+  "question": "The density of mercury is 13 600 kg/m³ and the gravitational field strength is 10 N/kg. Fig. 6.1 shows the apparatus.\n(b) An air pump is now connected at B. Explain, using ideas about molecules, how the height of the mercury in the glass tube would change when more air is pumped into the bell jar.",
+  "reference": "/reference/phys-barometer.png",
+  "referenceNote": "The original figure from the physics paper. Notice that A sits on the arrow, mercury points at nothing and pipe B is outside the jar.",
+  "notes": {
+    "scene": [
+      "The mercury column is drawn to scale, 760 mm out of a 100 cm tube.",
+      "First try: the top of the jar was drawn across the mercury column, and the label A overlapped the tube.",
+      "Second try: left a gap in the jar outline for the tube and let the renderer place A."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "First try: the 760 mm label was placed outside the edge of the image, so it showed as 60 mm.",
+      "Second try: made the image wider.",
+      "This kind of mistake cannot happen with the scene spec, because the renderer sizes the image to fit."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 1,
+    "svg": 2
+  },
+  "figure": "A mercury barometer inside a bell jar, side view.\nA bell jar sits on a flat base. Inside it, a dish of mercury sits on the base.\nA glass tube 100 cm long stands upright with its open bottom end under the mercury in the dish. It passes up through a narrow neck at the top of the jar.\nMercury fills the tube up to 760 mm above the level of the mercury in the dish. The space above that is empty.\nThe top of the tube, A, connects to a pipe labelled to vacuum pump.\nA side pipe B comes out of the side of the jar near the bottom, for an air pump.\nDraw a dashed level line at the mercury surface in the dish and another at the top of the mercury column, with a double headed arrow between them labelled 760 mm.\nMark point Y at the bottom of the tube, inside the mercury.\nLabel: A, B, Y, glass tube 100 cm long, mercury, bell jar, to vacuum pump.\nCaption: Fig. 6.1."
+}

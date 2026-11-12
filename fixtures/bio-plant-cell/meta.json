@@ -1,0 +1,26 @@
+{
+  "id": "bio-plant-cell",
+  "subject": "O Level Biology",
+  "topic": "Cell structure",
+  "title": "Plant cell",
+  "question": "Fig. 1.1 shows a plant cell as seen under a light microscope.\n(a) Identify the structures labelled A to E.\n(b) State one function of structure C.\n(c) Name the structure, labelled with a letter, that is partially permeable.",
+  "notes": {
+    "scene": [
+      "First try: label E was placed inside the vacuole. In exams the labels sit outside the cell with a line pointing in.",
+      "Second try: the renderer now prefers to put labels outside the drawing."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "First try: label D was placed above the top edge of the image and got cut off.",
+      "Second try: made the image taller."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 1,
+    "svg": 2
+  },
+  "figure": "A plant cell as seen under a light microscope, a rounded rectangle taller than it is wide.\nA cell wall on the outside and a cell membrane just inside it. Cytoplasm lightly shaded.\nA large central vacuole. A nucleus with a nucleolus, pressed to one side near the top. About ten chloroplasts in the cytoplasm around the edges.\nUse label lines with letters only, not names: A to the cell wall, B to the cell membrane, C to a chloroplast, D to the nucleus and E to the vacuole.\nCaption: Fig. 1.1."
+}

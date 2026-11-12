@@ -1,0 +1,32 @@
+{
+  "unit": 52,
+  "font": "sans",
+  "caption": "Fig. 2.1",
+  "points": {
+    "cliffBase": { "at": [0, 0] },
+    "cliffTop": { "at": [0, 4.8] },
+    "anchor": { "at": [2.3, 7.6] },
+    "hands": { "at": [4.5, 3.55] },
+    "shoulder": { "at": [5.45, 2.85] },
+    "hip": { "at": [5.55, 1.95] },
+    "foot": { "at": [0.0, 2.3] },
+    "knee": { "at": [0.75, 2.6] },
+    "cg": { "at": [5.5, 2.15], "dot": true },
+    "ropeMid": { "along": { "from": "anchor", "to": "hands", "t": 0.35 } }
+  },
+  "elements": [
+    { "type": "surface", "from": "cliffBase", "to": "cliffTop", "side": "left" },
+    { "type": "polygon", "points": [[0, 4.8], [0.35, 5.7], [-0.15, 6.6], [0.2, 7.6]], "closed": false, "weight": "thick" },
+    { "type": "segment", "from": "anchor", "to": "hands", "weight": "normal" },
+    { "type": "segment", "from": "hands", "to": "shoulder", "weight": "heavy", "grey": 0.75 },
+    { "type": "polygon", "points": [[5.0, 1.5], [6.15, 1.6], [6.15, 2.85], [5.25, 2.65]], "fill": { "grey": 0.45 }, "weight": "normal" },
+    { "type": "circle", "center": [6.5, 3.15], "r": 0.4, "fill": { "grey": 0.2 } },
+    { "type": "rect", "at": [6.08, 3.5], "w": 0.8, "h": 0.22, "fill": { "grey": 0.7 }, "weight": "thin" },
+    { "type": "segment", "from": "hip", "to": "knee", "weight": "heavy", "grey": 0.75 },
+    { "type": "segment", "from": "knee", "to": "foot", "weight": "heavy" },
+    { "type": "callout", "target": [-0.35, 4.0], "text": "cliff", "dir": "w", "dist": 0.9 },
+    { "type": "callout", "target": "ropeMid", "text": "rope", "dir": "e", "dist": 0.8 },
+    { "type": "callout", "target": [5.95, 1.62], "text": "rock climber", "dir": "se", "dist": 1.0 },
+    { "type": "callout", "target": "cg", "text": "centre of gravity", "dir": "s", "dist": 1.3 }
+  ]
+}

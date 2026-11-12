@@ -1,0 +1,29 @@
+{
+  "subject": "A Level Physics",
+  "topic": "Dynamics",
+  "title": "Block on a slope with a pulley",
+  "question": "A block of mass 4.0 kg rests on a rough plane inclined at 30° to the horizontal, as shown in Fig. 1.1. It is joined by a light inextensible string, passing over a smooth pulley at the top of the plane, to a mass of 3.0 kg hanging vertically. The frictional force on the block is 6.0 N.\n(a) Draw a free body diagram for the 4.0 kg block.\n(b) Calculate the acceleration of the system.\n(c) Calculate the tension in the string.",
+  "notes": {
+    "scene": [
+      "The block is a rectangle turned to 30°, and the string runs parallel to the slope to the top of the pulley.",
+      "Claude had to work out where the pulley sits so the string meets it at the right height. The renderer has no helper for that.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "The block is drawn in a rotated scope, so its position comes straight from the slope angle.",
+      "First try: the label 3.0 kg was wider than the hanging mass.",
+      "Second try: made the mass wider."
+    ],
+    "svg": [
+      "First try: the label rough plane was placed past the left edge of the image and got cut off.",
+      "Second try: made the image wider."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 2
+  },
+  "id": "a-phys-incline",
+  "figure": "A rough plane inclined at 30° to the horizontal, drawn as a right angled wedge sitting on the ground, with the slope rising to the right.\nA 4.0 kg block rests on the slope.\nA light string runs from the block, parallel to the slope, up to a smooth pulley fixed at the top corner of the wedge. It passes over the pulley and hangs straight down beside the vertical side of the wedge to a 3.0 kg mass.\nMark the 30° angle at the bottom of the slope. Write the masses on the block and on the hanging mass.\nLabel: smooth pulley, rough plane.\nDo not draw force arrows.\nCaption: Fig. 1.1."
+}

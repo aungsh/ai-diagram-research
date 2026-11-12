@@ -1,0 +1,30 @@
+{
+  "id": "math-circles",
+  "subject": "O Level E-Math",
+  "topic": "Properties of Circles",
+  "title": "Tangents to a circle",
+  "question": "The points A, B, C, D and E lie on a circle with centre O. The lines HI and BI are tangents to the circle at C and B respectively. BC intersects AE at G. Given that ∠ABC = 76°, ∠OAB = 62° and ∠DAE = 70°.\n(i) Show that triangle OBI is congruent to triangle OCI.\n(ii) Find angle DCB, angle GCO and angle BCH.",
+  "reference": "/reference/math-circles.png",
+  "referenceNote": "The original figure from the exam paper. It is not drawn to scale.",
+  "notes": {
+    "scene": [
+      "Claude worked out where each point sits from the angles in the question, and the renderer placed the tangents and intersections exactly.",
+      "Drawn to scale, point I ends up far from the circle. The original figure pulls it closer so it fits on the page.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "The tangents and intersections are calculated by TikZ, so the geometry is exact.",
+      "Correct on the first try. The lines are a little thinner than in a printed exam."
+    ],
+    "svg": [
+      "Every coordinate and angle arc had to be calculated by hand.",
+      "Correct on the first try, but changing any angle means redoing about twenty numbers."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "figure": "A circle with centre O, marked with a dot. Points A, B, C, D and E lie on the circle: B near the top, A on the upper left, D on the left, C near the bottom and E on the lower right.\nDraw the chords AB, BC, AD, DC and CE, the radii OA, OB and OC, and the line AE.\nG is where BC crosses AE.\nBI and HI are tangents to the circle at B and C. They meet at I, outside the circle to the right. H is on the tangent at C, on the other side of C from I.\nDraw the line OI.\nMark the angles ∠ABC = 76°, ∠OAB = 62° and ∠DAE = 70°.\nLabel every point. Maths style, serif italic letters. Not to scale is fine, but nothing may contradict the angles given."
+}

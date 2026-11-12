@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" width="620" height="500" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" width="620" height="500" fill="#fff"/>
+<defs><pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#eee"/><circle cx="2" cy="2" r="1" fill="#000"/><circle cx="5.5" cy="5.5" r="1" fill="#000"/></pattern></defs>
+<rect x="171.5" y="260.0" width="197.0" height="168.5" fill="#e8e8e8"/>
+<path d="M171.5 260.0 L368.5 260.0" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M170.0 210.0 L170.0 430.0 L370.0 430.0 L370.0 210.0" fill="none" stroke="#000" stroke-width="2.2"/>
+<path d="M262.5 257.5 C250.0 257.5 245.0 265.0 242.5 270.0 C235.0 290.0 234.0 305.0 235.0 320.0 C236.0 350.0 235.0 365.0 240.0 382.5 C245.0 400.0 257.5 405.0 270.0 405.0 C282.5 405.0 295.0 400.0 300.0 382.5 C305.0 365.0 304.0 350.0 305.0 320.0 C306.0 305.0 305.0 290.0 297.5 270.0 C295.0 265.0 290.0 257.5 277.5 257.5 Z" fill="url(#dots)" stroke="#000" stroke-width="1.4"/>
+<rect x="265.0" y="40.0" width="10.0" height="230.0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="266.0" y="120.0" width="8.0" height="150.0" fill="url(#dots)"/>
+<path d="M257.5 262.5 L282.5 262.5" fill="none" stroke="#000" stroke-width="4.5"/>
+<path d="M247.5 215.0 L292.5 215.0" fill="none" stroke="#000" stroke-width="1.2" stroke-dasharray="6 4"/>
+<g stroke="#000" stroke-width="0.9"><path d="M275.0 70.0 L320.0 70.0" fill="none" stroke="#000" /><path d="M274.0 120.0 L320.0 120.0" fill="none" stroke="#000" /><path d="M292.5 215.0 L320.0 200.0" fill="none" stroke="#000" /><path d="M257.5 262.5 L215.0 225.0" fill="none" stroke="#000" /><path d="M304.5 340.0 L390.0 340.0" fill="none" stroke="#000" /><path d="M250.0 360.0 L140.0 380.0" fill="none" stroke="#000" /><path d="M205.0 405.0 L140.0 425.0" fill="none" stroke="#000" /></g>
+<text x="322.5" y="75.0" text-anchor="start" font-size="16">capillary tube</text>
+<text x="322.5" y="125.0" text-anchor="start" font-size="16">liquid level after 30 min</text>
+<text x="322.5" y="205.0" text-anchor="start" font-size="16">liquid level at start</text>
+<text x="212.5" y="227.5" text-anchor="end" font-size="16">thread</text>
+<text x="392.5" y="345.0" text-anchor="start" font-size="16">Visking tubing</text>
+<text x="137.5" y="375.0" text-anchor="end" font-size="16">concentrated</text>
+<text x="137.5" y="392.5" text-anchor="end" font-size="16">sucrose solution</text>
+<text x="137.5" y="430.0" text-anchor="end" font-size="16">distilled water</text>
+<text x="270.0" y="485" text-anchor="middle" font-weight="bold" font-size="15">Fig. 2.1</text></svg>

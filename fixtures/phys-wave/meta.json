@@ -1,0 +1,30 @@
+{
+  "id": "phys-wave",
+  "subject": "O Level Physics",
+  "topic": "Waves",
+  "title": "Wave on a rope",
+  "question": "A horizontal rope is vibrated up and down 2.5 times per second. Fig. 9.1 shows the displacement-distance graph of the wave formed in the rope at t = 0 s. Two points A and B are marked on the rope.\n(b) Describe the motion of point A for the next 0.30 s.\n(e) Explain what will happen to the speed and wavelength of the wave if the rope is vibrated at twice its original frequency.",
+  "reference": "/reference/phys-wave.png",
+  "referenceNote": "The original figure from the physics paper.",
+  "notes": {
+    "scene": [
+      "The wave has a wavelength of 0.4 m, the same as the original, and B sits exactly on the curve.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "First try: it failed to compile because of the way the two dots were drawn inside the graph.",
+      "Second try: drew the dots a different way.",
+      "With the API, this is the kind of error Claude could fix by itself after reading the error message."
+    ],
+    "svg": [
+      "The wave is drawn as 141 points joined together.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "A displacement distance graph on a grid. Distance in m on the horizontal axis from 0 to 0.7, marked every 0.1. Displacement on the vertical axis, with only 0 marked.\nA sine wave of wavelength 0.4 m. It crosses zero going down at 0.25 m, and has crests at 0.15 m and 0.55 m.\nPoint A is on the curve at 0.25 m, where the displacement is zero. Point B is on the curve at 0.5 m, on the rising part before the crest.\nAbove the graph, an arrow pointing right labelled direction of travel of the wave.\nCaption: Fig. 9.1."
+}

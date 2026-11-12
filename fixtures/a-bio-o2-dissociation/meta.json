@@ -1,0 +1,25 @@
+{
+  "subject": "A Level Biology",
+  "topic": "Transport in mammals",
+  "title": "Oxygen dissociation curves",
+  "question": "Fig. 7.1 shows the oxygen dissociation curves for haemoglobin at two different partial pressures of carbon dioxide.\n(a) State the percentage saturation of haemoglobin at 4 kPa for curve A.\n(b) Explain why curve B is to the right of curve A.\n(c) Suggest how this shift helps respiring muscle tissue.",
+  "notes": {
+    "scene": [
+      "Both curves come from the same S shaped formula. Curve B uses a higher half saturation point, which shifts it to the right.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "id": "a-bio-o2-dissociation",
+  "figure": "A graph on a grid. Horizontal axis: partial pressure of oxygen / kPa, from 0 to 14, marked every 2. Vertical axis: saturation of haemoglobin / %, from 0 to 100, marked every 20.\nTwo S shaped oxygen dissociation curves, both rising from near 0 and levelling off near 100 %.\nCurve A, solid, reaches 50 % at about 3.5 kPa. Curve B, dashed, is shifted to the right and reaches 50 % at about 4.8 kPa.\nLabel the curves A and B.\nCaption: Fig. 7.1."
+}

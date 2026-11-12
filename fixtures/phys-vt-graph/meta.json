@@ -1,0 +1,29 @@
+{
+  "id": "phys-vt-graph",
+  "subject": "O Level Physics",
+  "topic": "Kinematics",
+  "title": "Trampoline velocity time graph",
+  "question": "Fig. 1.1 shows the velocity-time graph of a child playing with a trampoline. The child jumps off from a high platform and lands on the trampoline at X. Between X and Y, the child is in contact with the trampoline. Z is the highest position reached by the child as she rises. Air resistance is negligible.\n(a) Describe the motion of the child between Y and Z.\n(b) Explain, in terms of forces, why the graph between Y and Z is a straight line.\n(c) Calculate the maximum height from position Y reached by the child after rebounding.",
+  "reference": "/reference/phys-vt-graph.png",
+  "referenceNote": "The original figure from the physics paper.",
+  "notes": {
+    "scene": [
+      "The graph lines are given as data points and the renderer scales them onto the grid.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "First try: the label Y was cut off because it sat below the edge of the graph.",
+      "Second try: allowed labels to go past the edge."
+    ],
+    "svg": [
+      "About fifty grid lines and every tick position were written out by hand.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "A velocity time graph on a grid. Time in seconds on the horizontal axis from 0 to 2.8 s, marked every 0.5 s. Velocity in m/s on the vertical axis from −7 to 11, marked every 5.\nA straight line from (0, 0) up to X at (1.0, 10). A dashed line from X down to Y at (1.2, −6). A straight line from Y up to Z at (1.8, 0).\nLabel X, Y and Z. Axis labels: time / s and velocity / m/s. Caption: Fig. 1.1."
+}

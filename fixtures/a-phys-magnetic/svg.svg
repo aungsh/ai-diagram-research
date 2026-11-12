@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 410" width="520" height="410" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="520" height="410" fill="#fff"/>
+<rect x="150" y="50" width="336" height="280" fill="none" stroke="#000" stroke-width="0.9" stroke-dasharray="6 4"/>
+<text x="178.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="178.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="178.0" y="196.0" text-anchor="middle" font-size="18" >×</text>
+<text x="178.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="178.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<text x="234.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="234.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="234.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="234.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<text x="290.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="290.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="290.0" y="196.0" text-anchor="middle" font-size="18" >×</text>
+<text x="290.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="290.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<text x="346.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="346.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="346.0" y="196.0" text-anchor="middle" font-size="18" >×</text>
+<text x="346.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="346.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<text x="402.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="402.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="402.0" y="196.0" text-anchor="middle" font-size="18" >×</text>
+<text x="402.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="402.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<text x="458.0" y="308.0" text-anchor="middle" font-size="18" >×</text>
+<text x="458.0" y="252.0" text-anchor="middle" font-size="18" >×</text>
+<text x="458.0" y="196.0" text-anchor="middle" font-size="18" >×</text>
+<text x="458.0" y="140.0" text-anchor="middle" font-size="18" >×</text>
+<text x="458.0" y="84.0" text-anchor="middle" font-size="18" >×</text>
+<path d="M26.8 106.0 L150.0 106.0" stroke-width="2.4" fill="none" stroke="#000"/>
+<path d="M94.0 106.0 L83.0 110.5 L83.0 101.5 Z" fill="#000"/>
+<path d="M150 106 A84 84 0 0 1 150 274" fill="none" stroke="#000" stroke-width="2.4"/>
+<path d="M150.0 274.0 L26.8 274.0" stroke-width="2.4" fill="none" stroke="#000"/>
+<path d="M82.8 274.0 L93.8 269.5 L93.8 278.5 Z" fill="#000"/>
+<circle cx="150.0" cy="190.0" r="2.8" fill="#000" stroke="#000" stroke-width="1.4"/>
+<path d="M150.0 190.0 L213.2 145.7" stroke-width="1" fill="none" stroke="#000"/>
+<path d="M218.8 141.8 L213.4 149.8 L209.4 144.1 Z" fill="#000"/>
+<text x="192.0" y="181.0" text-anchor="middle" font-size="16" ><tspan font-style="italic">r</tspan></text>
+<text x="77.2" y="91.4" text-anchor="middle" font-size="16" >electron, speed <tspan font-style="italic">v</tspan></text>
+<text x="318.0" y="38.2" text-anchor="middle" font-size="14" >uniform magnetic field into the page</text>
+<text x="262" y="396" text-anchor="middle" font-weight="bold" font-size="15">Fig. 3.1</text>
+</svg>

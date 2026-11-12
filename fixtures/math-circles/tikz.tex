@@ -1,0 +1,36 @@
+\begin{tikzpicture}[scale=1.15, line cap=round, line join=round]
+  \def\r{2.2}
+  \coordinate (O) at (0,0);
+  \coordinate (B) at (82:\r);
+  \coordinate (A) at (138:\r);
+  \coordinate (C) at (290:\r);
+  \coordinate (D) at (195:\r);
+  \coordinate (E) at (335:\r);
+  % tangents at B and C: perpendicular to the radii
+  \coordinate (Bt) at ($(B)!1cm!90:(O)$);
+  \coordinate (Ct) at ($(C)!1cm!-90:(O)$);
+  \coordinate (I) at (intersection of B--Bt and C--Ct);
+  \coordinate (H) at ($(I)!1.22!(C)$);
+  \coordinate (G) at (intersection of B--C and A--E);
+
+  \draw (O) circle (\r);
+  \draw (A)--(B)--(C);
+  \draw (A)--(O) (A)--(E) (A)--(D)--(C)--(E);
+  \draw (O)--(B) (O)--(C) (O)--(I);
+  \draw (B)--(I)--(H);
+  \fill (O) circle (1.4pt);
+
+  \pic[draw, angle radius=6mm, "$76^\circ$", angle eccentricity=1.55] {angle = A--B--C};
+  \pic[draw, angle radius=5mm, "$62^\circ$", angle eccentricity=1.7] {angle = O--A--B};
+  \pic[draw, angle radius=3.5mm, "$70^\circ$", angle eccentricity=2.1] {angle = D--A--E};
+
+  \node[above] at (B) {$B$};
+  \node[above left] at (A) {$A$};
+  \node[below] at (C) {$C$};
+  \node[left] at (D) {$D$};
+  \node[right] at (E) {$E$};
+  \node[right] at (I) {$I$};
+  \node[below left] at (H) {$H$};
+  \node[below left] at (O) {$O$};
+  \node[above right] at (G) {$G$};
+\end{tikzpicture}

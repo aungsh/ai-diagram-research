@@ -1,0 +1,27 @@
+{
+  "subject": "A Level Biology",
+  "topic": "Nervous communication",
+  "title": "Action potential",
+  "question": "Fig. 9.1 shows the changes in potential across the membrane of a neurone during an action potential.\n(a) Name the stages labelled A, B, C and D.\n(b) Explain the movement of ions that causes stage A.\n(c) Explain why stage C occurs.",
+  "notes": {
+    "scene": [
+      "The curve uses the graph option that never overshoots, so it stays flat at rest.",
+      "First try: label C sat on top of the curve.",
+      "Second try: moved C below and to the right."
+    ],
+    "tikz": [
+      "First try: label D sat on the dashed threshold line.",
+      "Second try: moved D below the resting line."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 2,
+    "svg": 1
+  },
+  "id": "a-bio-action-potential",
+  "figure": "A graph on a grid. Horizontal axis: time / ms, from 0 to 5. Vertical axis: membrane potential / mV, from −90 to +50, marked every 20 from −80 to 40.\nThe membrane potential starts flat at −70 mV, rises sharply after about 0.8 ms to a peak of about +35 mV at 1.6 ms, and falls quickly to dip below rest to about −80 mV at about 2.6 ms. It then recovers back to −70 mV by about 3.6 ms and stays flat.\nA dashed horizontal line at −55 mV, labelled threshold.\nUse label lines with letters only: A to the rising phase, B to the falling phase, C to the dip below rest and D to the flat resting part after recovery.\nCaption: Fig. 9.1."
+}

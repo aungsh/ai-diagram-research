@@ -1,0 +1,26 @@
+{
+  "subject": "A Level Chemistry",
+  "topic": "Reaction kinetics",
+  "title": "Energy profile with a catalyst",
+  "question": "Fig. 4.1 shows the energy profile for an exothermic reaction, with and without a catalyst.\n(a) State what is meant by the term activation energy.\n(b) Use Fig. 4.1 to explain how a catalyst increases the rate of reaction.\n(c) State the sign of ΔH for this reaction and explain your answer.",
+  "notes": {
+    "scene": [
+      "First try: the smooth curve dipped below the reactant level before rising and bumped up again near the products, which is wrong for an energy profile.",
+      "Second try: the renderer now has a curve option for graphs that never overshoots its points."
+    ],
+    "tikz": [
+      "The curves are drawn with hand placed control points, so they cannot overshoot.",
+      "Correct on the first try."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 1,
+    "svg": 1
+  },
+  "id": "a-chem-energy-profile",
+  "figure": "An energy profile diagram. The vertical axis is labelled energy and the horizontal axis progress of reaction, with no numbers.\nThe reactants start on a flat level. The curve rises to a single peak and falls to a flat products level, lower than the reactants because the reaction is exothermic.\nA solid curve without a catalyst, and a dashed curve with a catalyst that has a lower peak. Both start and end at the same levels.\nA double headed arrow from the reactant level to the top of the uncatalysed peak, labelled Ea. An arrow from the reactant level down to the product level, labelled ΔH.\nLabel: reactants, products, with catalyst, without catalyst.\nCaption: Fig. 4.1."
+}

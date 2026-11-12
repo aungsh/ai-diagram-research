@@ -1,0 +1,27 @@
+{
+  "subject": "A Level Biology",
+  "topic": "Cell membranes",
+  "title": "Fluid mosaic model",
+  "question": "Fig. 8.1 shows part of a cell surface membrane.\n(a) Identify the structures labelled A to E.\n(b) Explain why the membrane is described as fluid mosaic.\n(c) Suggest why ions cross the membrane through C and not between the phospholipids.",
+  "notes": {
+    "scene": [
+      "The renderer cannot repeat shapes, so Claude listed all 64 phospholipids one by one. It works, but the description is long.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "TikZ can repeat shapes in a loop, so the bilayer takes only a few lines.",
+      "Correct on the first try."
+    ],
+    "svg": [
+      "First try: label A was placed above the top edge of the image and got cut off.",
+      "Second try: made the image taller."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 2
+  },
+  "id": "a-bio-membrane",
+  "figure": "Part of a cell surface membrane in the fluid mosaic model, side view.\nA phospholipid bilayer: two rows of round heads facing outwards, each with two tails pointing into the middle.\nOne large protein spans the whole bilayer. It has a carbohydrate chain, a short chain of small circles, attached on top, making a glycoprotein.\nA channel protein made of two parts spans the bilayer with a gap between them.\nA small cholesterol molecule sits among the tails in one layer.\nUse label lines with letters only: A to the carbohydrate chain, B to a phospholipid head, C to the channel through the channel protein, D to the cholesterol and E to the tails.\nCaption: Fig. 8.1."
+}

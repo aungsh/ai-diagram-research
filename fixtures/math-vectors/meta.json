@@ -1,0 +1,29 @@
+{
+  "id": "math-vectors",
+  "subject": "O Level E-Math",
+  "topic": "Vectors",
+  "title": "Vectors in a parallelogram",
+  "question": "ABCD is a parallelogram, and E lies on CD produced such that CD : CE = 1 : 2. M is the midpoint of AD. N is a point on BC such that BN : BC = 1 : 4. BN = a and CD = b.\nExpress, as simply as possible, in terms of a and/or b, (i) AM, (ii) BM, (iii) BE.",
+  "reference": "/reference/math-vectors.png",
+  "referenceNote": "The original figure from the exam paper.",
+  "notes": {
+    "scene": [
+      "The ratios in the question are given directly to the renderer, so E, M and N land in exactly the right places.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "A is placed using the other three corners, so the shape is always a parallelogram.",
+      "Correct on the first try."
+    ],
+    "svg": [
+      "The arrowheads on a and b were calculated by hand.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "figure": "Parallelogram ABCD with B on the left, C at the top, D on the right and A at the bottom.\nCD is extended beyond D to E, so that CE is twice CD.\nN is on BC with BN a quarter of BC. M is the midpoint of AD.\nDraw the lines ND and BM.\nShow vector a along BN and vector b along CD, each with an arrow in the middle of the line and a bold letter beside it.\nLabel A, B, C, D, E, M and N."
+}

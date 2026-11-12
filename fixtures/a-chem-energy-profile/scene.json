@@ -1,0 +1,165 @@
+{
+  "unit": 54,
+  "font": "sans",
+  "caption": "Fig. 4.1",
+  "points": {},
+  "elements": [
+    {
+      "type": "axes",
+      "x": {
+        "min": 0,
+        "max": 6.2,
+        "step": 1,
+        "label": "progress of reaction",
+        "numbers": false
+      },
+      "y": {
+        "min": 0,
+        "max": 8,
+        "step": 1,
+        "label": "energy",
+        "numbers": false
+      },
+      "mode": "box"
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          0.3,
+          3
+        ],
+        [
+          1.4,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4.6,
+          1.2
+        ],
+        [
+          5.8,
+          1.2
+        ]
+      ],
+      "weight": "thick",
+      "monotone": true
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          1.4,
+          3
+        ],
+        [
+          3,
+          5.0
+        ],
+        [
+          4.6,
+          1.2
+        ]
+      ],
+      "weight": "thick",
+      "style": "dashed",
+      "monotone": true
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.4,
+        3
+      ],
+      "to": [
+        5.6,
+        3
+      ],
+      "style": "dotted",
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.9,
+        7
+      ],
+      "to": [
+        3,
+        7
+      ],
+      "style": "dotted",
+      "weight": "thin"
+    },
+    {
+      "type": "arrow",
+      "from": [
+        2.0,
+        3
+      ],
+      "to": [
+        2.0,
+        7
+      ],
+      "kind": "dimension",
+      "label": "*E*_{a}",
+      "labelAt": "mid"
+    },
+    {
+      "type": "arrow",
+      "from": [
+        5.3,
+        3
+      ],
+      "to": [
+        5.3,
+        1.2
+      ],
+      "kind": "pointer",
+      "label": "Δ*H*",
+      "labelAt": "mid"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.85,
+        3.45
+      ],
+      "text": "reactants",
+      "size": "small"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.2,
+        0.75
+      ],
+      "text": "products",
+      "size": "small"
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.55,
+        4.25
+      ],
+      "text": "with catalyst",
+      "dir": "e",
+      "dist": 1.2
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.55,
+        5.9
+      ],
+      "text": "without catalyst",
+      "dir": "e",
+      "dist": 1.2
+    }
+  ]
+}

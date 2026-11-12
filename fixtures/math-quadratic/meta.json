@@ -1,0 +1,30 @@
+{
+  "id": "math-quadratic",
+  "subject": "O Level E-Math",
+  "topic": "Graphs of Functions",
+  "title": "Graph of a quadratic",
+  "question": "(a) Complete the table of values for y = x² − 2x − 3 for −2 ≤ x ≤ 4.\n(b) On the grid, draw the graph of y = x² − 2x − 3.\n(c) Use your graph to solve x² − 2x − 3 = 0.\n(d) Write down the coordinates of the minimum point.",
+  "notes": {
+    "scene": [
+      "The curve is calculated by the renderer from the equation.",
+      "First try: the marked points had to be scaled by hand to match the graph, which is easy to get wrong.",
+      "Second try: the renderer now accepts points in graph units and scales them itself. The axis numbers also got a white background so grid lines do not run through them."
+    ],
+    "tikz": [
+      "pgfplots handles the grid, ticks and curve.",
+      "First try: the equation label was cut off at the edge of the graph.",
+      "Second try: moved the label to the top of the graph."
+    ],
+    "svg": [
+      "A parabola can be drawn as a single curve, so the whole graph line is one short path.",
+      "First try: the equation label sat on top of the curve.",
+      "Second try: moved the label to the top of the grid."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 2,
+    "svg": 2
+  },
+  "figure": "A grid of graph paper with x from −2 to 4 and y from −4 to 5, with axes through the origin, numbered every 1 unit, and labelled x and y.\nDraw the curve y = x² − 2x − 3 for −2 ≤ x ≤ 4, and label it with its equation.\nThis is the answer key version, so the curve is drawn."
+}

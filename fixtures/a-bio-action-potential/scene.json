@@ -1,0 +1,204 @@
+{
+  "unit": 50,
+  "font": "sans",
+  "caption": "Fig. 9.1",
+  "points": {
+    "p0": {
+      "graph": [
+        0,
+        -70
+      ]
+    },
+    "p1": {
+      "graph": [
+        0.8,
+        -70
+      ]
+    },
+    "p2": {
+      "graph": [
+        1.0,
+        -60
+      ]
+    },
+    "p3": {
+      "graph": [
+        1.2,
+        -20
+      ]
+    },
+    "p4": {
+      "graph": [
+        1.45,
+        30
+      ]
+    },
+    "p5": {
+      "graph": [
+        1.6,
+        35
+      ]
+    },
+    "p6": {
+      "graph": [
+        1.8,
+        10
+      ]
+    },
+    "p7": {
+      "graph": [
+        2.05,
+        -40
+      ]
+    },
+    "p8": {
+      "graph": [
+        2.35,
+        -78
+      ]
+    },
+    "p9": {
+      "graph": [
+        2.6,
+        -80
+      ]
+    },
+    "p10": {
+      "graph": [
+        3.1,
+        -74
+      ]
+    },
+    "p11": {
+      "graph": [
+        3.6,
+        -70
+      ]
+    },
+    "p12": {
+      "graph": [
+        5,
+        -70
+      ]
+    },
+    "ta": {
+      "graph": [
+        1.3,
+        5
+      ]
+    },
+    "tb": {
+      "graph": [
+        1.9,
+        -5
+      ]
+    },
+    "tc": {
+      "graph": [
+        2.6,
+        -80
+      ]
+    },
+    "td": {
+      "graph": [
+        4.3,
+        -70
+      ]
+    },
+    "th0": {
+      "graph": [
+        0,
+        -55
+      ]
+    },
+    "th1": {
+      "graph": [
+        5,
+        -55
+      ]
+    }
+  },
+  "elements": [
+    {
+      "type": "axes",
+      "x": {
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "label": "time / ms"
+      },
+      "y": {
+        "min": -90,
+        "max": 50,
+        "step": 20,
+        "label": "membrane potential / mV"
+      },
+      "grid": "major",
+      "mode": "box",
+      "sx": 1.5,
+      "sy": 0.034
+    },
+    {
+      "type": "curve",
+      "points": [
+        "p0",
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5",
+        "p6",
+        "p7",
+        "p8",
+        "p9",
+        "p10",
+        "p11",
+        "p12"
+      ],
+      "weight": "thick",
+      "monotone": true
+    },
+    {
+      "type": "segment",
+      "from": "th0",
+      "to": "th1",
+      "style": "dashed",
+      "weight": "thin"
+    },
+    {
+      "type": "callout",
+      "target": "th1",
+      "text": "threshold",
+      "dir": "e",
+      "dist": 0.4
+    },
+    {
+      "type": "callout",
+      "target": "ta",
+      "text": "A",
+      "dir": "w",
+      "dist": 0.8
+    },
+    {
+      "type": "callout",
+      "target": "tb",
+      "text": "B",
+      "dir": "e",
+      "dist": 0.8
+    },
+    {
+      "type": "callout",
+      "target": "tc",
+      "text": "C",
+      "dir": "se",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": "td",
+      "text": "D",
+      "dir": "n",
+      "dist": 0.8
+    }
+  ]
+}

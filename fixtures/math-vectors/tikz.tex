@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=1.05, line cap=round, line join=round, semithick,
+  midarrow/.style={decoration={markings, mark=at position 0.6 with {\arrow{Stealth[length=2.6mm]}}}, postaction={decorate}}]
+  \coordinate (B) at (0,0);
+  \coordinate (C) at (4.4,3.1);
+  \coordinate (D) at (7.5,0.8);
+  \coordinate (A) at ($(B)+(D)-(C)$);       % ABCD is a parallelogram
+  \coordinate (E) at ($(C)!2!(D)$);          % CD : CE = 1 : 2
+  \coordinate (N) at ($(B)!0.25!(C)$);       % BN : BC = 1 : 4
+  \coordinate (M) at ($(A)!0.5!(D)$);        % midpoint of AD
+
+  \draw (B)--(C)--(D)--(A)--cycle;
+  \draw (D)--(E);
+  \draw (N)--(D) (B)--(M);
+  \draw[midarrow] (B)--(N) node[midway, above left] {$\mathbf{a}$};
+  \draw[midarrow] (C)--(D) node[midway, above right] {$\mathbf{b}$};
+
+  \node[left] at (B) {$B$};
+  \node[above] at (C) {$C$};
+  \node[above right] at (D) {$D$};
+  \node[below] at (A) {$A$};
+  \node[right] at (E) {$E$};
+  \node[above left] at (N) {$N$};
+  \node[below] at (M) {$M$};
+\end{tikzpicture}

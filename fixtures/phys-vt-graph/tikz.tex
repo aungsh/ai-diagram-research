@@ -1,0 +1,22 @@
+\begin{tikzpicture}[font=\sffamily]
+  \begin{axis}[
+    width=12cm, height=7cm, clip=false,
+    axis lines=middle,
+    xmin=0, xmax=2.85, ymin=-7, ymax=11.5,
+    xtick={0.5,1,...,2.5}, ytick={-5,0,5,10},
+    minor x tick num=4, minor y tick num=4,
+    grid=both, major grid style={gray!70}, minor grid style={gray!25},
+    xlabel={time / s}, ylabel={velocity / m/s},
+    every axis x label/.style={at={(ticklabel* cs:1.0)}, anchor=south east, yshift=4pt},
+    every axis y label/.style={at={(ticklabel* cs:1.0)}, anchor=south west},
+    ticklabel style={font=\sffamily\small, fill=white, inner sep=1pt},
+  ]
+    \addplot[very thick] coordinates {(0,0) (1,10)};
+    \addplot[very thick, dashed] coordinates {(1,10) (1.2,-6)};
+    \addplot[very thick] coordinates {(1.2,-6) (1.8,0)};
+    \node[above] at (axis cs:1,10) {X};
+    \node[below] at (axis cs:1.2,-6) {Y};
+    \node[above] at (axis cs:1.8,0) {Z};
+  \end{axis}
+  \node[font=\sffamily\bfseries] at (5.2,-0.9) {Fig. 1.1};
+\end{tikzpicture}

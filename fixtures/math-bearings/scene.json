@@ -1,0 +1,20 @@
+{
+  "unit": 23,
+  "points": {
+    "B": { "at": [0, 0], "label": "B" },
+    "C": { "at": [16.31, 0], "label": "C" },
+    "D": { "move": { "from": "B", "d": 17.93, "deg": 30 }, "label": "D" },
+    "A": { "move": { "from": "B", "d": 14.5, "deg": 47.55 }, "label": "A" },
+    "N": { "along": { "from": "B", "to": "D", "t": 1.28 }, "label": "N", "labelDir": "e" }
+  },
+  "elements": [
+    { "type": "segment", "from": "B", "to": "C" },
+    { "type": "segment", "from": "C", "to": "D", "label": { "text": "9 m" } },
+    { "type": "segment", "from": "D", "to": "A", "label": { "text": "6 m" } },
+    { "type": "segment", "from": "A", "to": "B", "label": { "text": "14.5 m" } },
+    { "type": "segment", "from": "B", "to": "D" },
+    { "type": "segment", "from": "D", "to": "N", "arrow": "end" },
+    { "type": "angle", "at": "B", "a": "C", "b": "D", "label": "30°", "r": 1.6 },
+    { "type": "angle", "at": "C", "a": "D", "b": "B", "label": "85°", "r": 1.2 }
+  ]
+}

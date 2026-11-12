@@ -1,0 +1,28 @@
+{
+  "id": "phys-water-gun",
+  "subject": "O Level Physics",
+  "topic": "Pressure (hydraulics)",
+  "title": "Water gun",
+  "question": "Fig. 5.1 shows a water gun that makes use of pressure exerted on a trigger to spray water out of a nozzle. The nozzle is initially covered with a stopper.\n(a) The cross-sectional areas of the piston and nozzle are 2.0 cm² and 0.080 cm² respectively. If a force of 5.0 N is exerted on the trigger, calculate the force exerted on the water leaving the nozzle.\n(b)(i) When the force of 5.0 N is applied, the piston moves 0.60 cm in one second. Calculate the work done by the 5.0 N force on the water.",
+  "reference": "/reference/phys-water-gun.png",
+  "referenceNote": "The original figure from the physics paper.",
+  "notes": {
+    "scene": [
+      "First try: the labels for piston and nozzle were placed inside the dotted water, where they were hard to read.",
+      "Second try: the renderer now keeps labels off shaded areas."
+    ],
+    "tikz": [
+      "First try: it failed to compile because of a bug in our dotted fill helper, not in Claude's code.",
+      "Second try: with the helper fixed, the piston label overlapped the handle, so it was moved above the gun."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 2,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "A water gun, side view, facing right.\nA long rectangular body holds a tank of water, shown with a dotted fill and labelled water.\nInside the bottom of the tank is a narrow cylinder with a piston on a rod.\nA trigger below the body is linked to the piston. A handle angles down and back from under the body.\nAt the right end, a narrow nozzle leads out of the tank and is closed by a stopper.\nLabel: water, piston, trigger, nozzle, stopper.\nCaption: Fig. 5.1."
+}

@@ -1,0 +1,325 @@
+{
+  "unit": 52,
+  "font": "sans",
+  "caption": "Fig. 3.1",
+  "points": {},
+  "elements": [
+    {
+      "type": "liquid",
+      "points": [
+        [
+          0.03,
+          0.03
+        ],
+        [
+          4.97,
+          0.03
+        ],
+        [
+          4.97,
+          3.0
+        ],
+        [
+          0.03,
+          3.0
+        ]
+      ],
+      "fill": {
+        "grey": 0.2
+      }
+    },
+    {
+      "type": "liquid",
+      "points": [
+        [
+          0.97,
+          2.95
+        ],
+        [
+          1.78,
+          2.95
+        ],
+        [
+          1.78,
+          4.2
+        ],
+        [
+          0.97,
+          4.2
+        ]
+      ],
+      "fill": {
+        "grey": 0.2
+      }
+    },
+    {
+      "type": "liquid",
+      "points": [
+        [
+          3.22,
+          2.95
+        ],
+        [
+          4.03,
+          2.95
+        ],
+        [
+          4.03,
+          3.55
+        ],
+        [
+          3.22,
+          3.55
+        ]
+      ],
+      "fill": {
+        "grey": 0.2
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          0,
+          4.3
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          4.3
+        ]
+      ],
+      "closed": false,
+      "weight": "thick"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          0.95,
+          1.6
+        ],
+        [
+          0.95,
+          4.9
+        ],
+        [
+          1.8,
+          4.9
+        ],
+        [
+          1.8,
+          1.6
+        ]
+      ],
+      "closed": false,
+      "round": 0.42
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          3.2,
+          1.6
+        ],
+        [
+          3.2,
+          4.9
+        ],
+        [
+          4.05,
+          4.9
+        ],
+        [
+          4.05,
+          1.6
+        ]
+      ],
+      "closed": false,
+      "round": 0.42
+    },
+    {
+      "type": "rect",
+      "at": [
+        1.2,
+        -0.25
+      ],
+      "w": 0.35,
+      "h": 2.7,
+      "fill": {
+        "grey": 0.55
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        3.45,
+        -0.25
+      ],
+      "w": 0.35,
+      "h": 2.7,
+      "fill": {
+        "grey": 0.55
+      }
+    },
+    {
+      "type": "bubbles",
+      "at": [
+        1.24,
+        2.5
+      ],
+      "w": 0.3,
+      "h": 1.6,
+      "count": 5,
+      "r": 0.06,
+      "seed": 3
+    },
+    {
+      "type": "bubbles",
+      "at": [
+        3.49,
+        2.5
+      ],
+      "w": 0.3,
+      "h": 0.95,
+      "count": 6,
+      "r": 0.06,
+      "seed": 7
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          1.375,
+          -0.25
+        ],
+        [
+          1.375,
+          -1.2
+        ],
+        [
+          2.3,
+          -1.2
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          2.55,
+          -1.2
+        ],
+        [
+          3.625,
+          -1.2
+        ],
+        [
+          3.625,
+          -0.25
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "segment",
+      "from": [
+        2.3,
+        -1.6
+      ],
+      "to": [
+        2.3,
+        -0.8
+      ],
+      "weight": "normal"
+    },
+    {
+      "type": "segment",
+      "from": [
+        2.55,
+        -1.4
+      ],
+      "to": [
+        2.55,
+        -1.0
+      ],
+      "weight": "heavy"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.15,
+        -0.62
+      ],
+      "text": "+",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.72,
+        -0.78
+      ],
+      "text": "−",
+      "size": "large"
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.375,
+        4.6
+      ],
+      "text": "gas X",
+      "dir": "w",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.625,
+        4.3
+      ],
+      "text": "gas Y",
+      "dir": "e",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.2,
+        0.8
+      ],
+      "text": "anode",
+      "dir": "w",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.8,
+        0.8
+      ],
+      "text": "cathode",
+      "dir": "e",
+      "dist": 1.1
+    },
+    {
+      "type": "callout",
+      "target": [
+        4.6,
+        2.2
+      ],
+      "text": "dilute sodium\nchloride solution",
+      "dir": "e",
+      "dist": 0.8
+    }
+  ]
+}

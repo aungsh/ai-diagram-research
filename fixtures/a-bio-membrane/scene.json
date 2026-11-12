@@ -1,0 +1,1256 @@
+{
+  "unit": 56,
+  "font": "sans",
+  "caption": "Fig. 8.1",
+  "points": {},
+  "elements": [
+    {
+      "type": "segment",
+      "from": [
+        0.24,
+        2.44
+      ],
+      "to": [
+        0.22,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.36,
+        2.44
+      ],
+      "to": [
+        0.38,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        0.3,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.24,
+        0.16
+      ],
+      "to": [
+        0.22,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.36,
+        0.16
+      ],
+      "to": [
+        0.38,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        0.3,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.66,
+        2.44
+      ],
+      "to": [
+        0.64,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.78,
+        2.44
+      ],
+      "to": [
+        0.8,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        0.72,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.66,
+        0.16
+      ],
+      "to": [
+        0.64,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0.78,
+        0.16
+      ],
+      "to": [
+        0.8,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        0.72,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.08,
+        2.44
+      ],
+      "to": [
+        1.06,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.2,
+        2.44
+      ],
+      "to": [
+        1.22,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        1.14,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.08,
+        0.16
+      ],
+      "to": [
+        1.06,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.2,
+        0.16
+      ],
+      "to": [
+        1.22,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        1.14,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.5,
+        2.44
+      ],
+      "to": [
+        1.48,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.62,
+        2.44
+      ],
+      "to": [
+        1.64,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        1.56,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.5,
+        0.16
+      ],
+      "to": [
+        1.48,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.62,
+        0.16
+      ],
+      "to": [
+        1.64,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        1.56,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.18,
+        2.44
+      ],
+      "to": [
+        3.16,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.3,
+        2.44
+      ],
+      "to": [
+        3.32,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        3.24,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.18,
+        0.16
+      ],
+      "to": [
+        3.16,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.3,
+        0.16
+      ],
+      "to": [
+        3.32,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        3.24,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.6,
+        2.44
+      ],
+      "to": [
+        3.58,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.72,
+        2.44
+      ],
+      "to": [
+        3.74,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        3.66,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.6,
+        0.16
+      ],
+      "to": [
+        3.58,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        3.72,
+        0.16
+      ],
+      "to": [
+        3.74,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        3.66,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.02,
+        2.44
+      ],
+      "to": [
+        4.0,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.14,
+        2.44
+      ],
+      "to": [
+        4.16,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.08,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.02,
+        0.16
+      ],
+      "to": [
+        4.0,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.14,
+        0.16
+      ],
+      "to": [
+        4.16,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.08,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.44,
+        2.44
+      ],
+      "to": [
+        4.42,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.56,
+        2.44
+      ],
+      "to": [
+        4.58,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.5,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.44,
+        0.16
+      ],
+      "to": [
+        4.42,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.56,
+        0.16
+      ],
+      "to": [
+        4.58,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.5,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.86,
+        2.44
+      ],
+      "to": [
+        4.84,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.98,
+        2.44
+      ],
+      "to": [
+        5.0,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.92,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.86,
+        0.16
+      ],
+      "to": [
+        4.84,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        4.98,
+        0.16
+      ],
+      "to": [
+        5.0,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        4.92,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.54,
+        2.44
+      ],
+      "to": [
+        6.52,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.66,
+        2.44
+      ],
+      "to": [
+        6.68,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        6.6,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.54,
+        0.16
+      ],
+      "to": [
+        6.52,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.66,
+        0.16
+      ],
+      "to": [
+        6.68,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        6.6,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.96,
+        2.44
+      ],
+      "to": [
+        6.94,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.08,
+        2.44
+      ],
+      "to": [
+        7.1,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.02,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        6.96,
+        0.16
+      ],
+      "to": [
+        6.94,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.08,
+        0.16
+      ],
+      "to": [
+        7.1,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.02,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.38,
+        2.44
+      ],
+      "to": [
+        7.36,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.5,
+        2.44
+      ],
+      "to": [
+        7.52,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.44,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.38,
+        0.16
+      ],
+      "to": [
+        7.36,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.5,
+        0.16
+      ],
+      "to": [
+        7.52,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.44,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.8,
+        2.44
+      ],
+      "to": [
+        7.78,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.92,
+        2.44
+      ],
+      "to": [
+        7.94,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.86,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.8,
+        0.16
+      ],
+      "to": [
+        7.78,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        7.92,
+        0.16
+      ],
+      "to": [
+        7.94,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        7.86,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        8.22,
+        2.44
+      ],
+      "to": [
+        8.2,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        8.34,
+        2.44
+      ],
+      "to": [
+        8.36,
+        1.45
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        8.28,
+        2.6
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        8.22,
+        0.16
+      ],
+      "to": [
+        8.2,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        8.34,
+        0.16
+      ],
+      "to": [
+        8.36,
+        1.15
+      ],
+      "weight": "thin"
+    },
+    {
+      "type": "circle",
+      "center": [
+        8.28,
+        0.0
+      ],
+      "r": 0.17,
+      "fill": {
+        "grey": 0.35
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          2.0,
+          -0.3
+        ],
+        [
+          1.85,
+          1.3
+        ],
+        [
+          2.0,
+          2.9
+        ],
+        [
+          2.5,
+          3.25
+        ],
+        [
+          3.0,
+          2.9
+        ],
+        [
+          3.15,
+          1.3
+        ],
+        [
+          3.0,
+          -0.3
+        ],
+        [
+          2.5,
+          -0.55
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "grey": 0.5
+      }
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          5.1,
+          -0.3
+        ],
+        [
+          5.0,
+          1.3
+        ],
+        [
+          5.1,
+          2.9
+        ],
+        [
+          5.5,
+          3.15
+        ],
+        [
+          5.62,
+          1.3
+        ],
+        [
+          5.5,
+          -0.45
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "grey": 0.5
+      }
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          6.38,
+          -0.3
+        ],
+        [
+          6.5,
+          1.3
+        ],
+        [
+          6.38,
+          2.9
+        ],
+        [
+          5.98,
+          3.15
+        ],
+        [
+          5.86,
+          1.3
+        ],
+        [
+          5.98,
+          -0.45
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "grey": 0.5
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          2.5,
+          3.25
+        ],
+        [
+          2.4,
+          3.7
+        ],
+        [
+          2.65,
+          4.05
+        ],
+        [
+          2.45,
+          4.4
+        ],
+        [
+          2.75,
+          4.7
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "type": "circle",
+      "center": [
+        2.4,
+        3.7
+      ],
+      "r": 0.11,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "circle",
+      "center": [
+        2.65,
+        4.05
+      ],
+      "r": 0.11,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "circle",
+      "center": [
+        2.45,
+        4.4
+      ],
+      "r": 0.11,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "circle",
+      "center": [
+        2.75,
+        4.7
+      ],
+      "r": 0.11,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        7.2,
+        1.45
+      ],
+      "w": 0.14,
+      "h": 0.8,
+      "fill": {
+        "grey": 0.75
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.75,
+        4.7
+      ],
+      "text": "A",
+      "dir": "ne",
+      "dist": 0.7
+    },
+    {
+      "type": "callout",
+      "target": [
+        0.72,
+        2.75
+      ],
+      "text": "B",
+      "dir": "n",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        5.74,
+        3.1
+      ],
+      "text": "C",
+      "dir": "n",
+      "dist": 1.4
+    },
+    {
+      "type": "callout",
+      "target": [
+        7.34,
+        2.0
+      ],
+      "text": "D",
+      "dir": "e",
+      "dist": 1.3
+    },
+    {
+      "type": "callout",
+      "target": [
+        8.3,
+        0.8
+      ],
+      "text": "E",
+      "dir": "e",
+      "dist": 0.9
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 470" width="620" height="470" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" width="620" height="470" fill="#fff"/>
+<rect x="151.6" y="164.0" width="256.9" height="154.4" fill="#ccc"/>
+<rect x="200.4" y="101.6" width="42.1" height="65.0" fill="#ccc"/>
+<rect x="317.4" y="135.4" width="42.1" height="31.2" fill="#ccc"/>
+<path d="M150.0 96.4 L150.0 320.0 L410.0 320.0 L410.0 96.4" fill="none" stroke="#000" stroke-width="2.2"/>
+<path d="M199.4 236.8 L199.4 87.0 A22.1 22.1 0 0 1 243.6 87.0 L243.6 236.8" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M316.4 236.8 L316.4 87.0 A22.1 22.1 0 0 1 360.6 87.0 L360.6 236.8" fill="none" stroke="#000" stroke-width="1.4"/>
+<rect x="212.4" y="192.6" width="18.2" height="140.4" fill="#737373" stroke="#000" stroke-width="1.4"/>
+<rect x="329.4" y="192.6" width="18.2" height="140.4" fill="#737373" stroke="#000" stroke-width="1.4"/>
+<circle cx="217.6" cy="179.6" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="225.4" cy="164.0" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="219.2" cy="145.8" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="226.4" cy="127.6" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="220.7" cy="114.6" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="334.6" cy="182.2" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="342.4" cy="171.8" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="336.2" cy="161.4" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="343.4" cy="151.0" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="337.2" cy="142.2" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<circle cx="332.0" cy="169.2" r="3.1" fill="#fff" stroke="#000" stroke-width="1"/>
+<path d="M221.5 333.0 L221.5 382.4 L269.6 382.4" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M282.6 382.4 L338.5 382.4 L338.5 333.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M269.6 403.2 L269.6 361.6" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M282.6 392.8 L282.6 372.0" fill="none" stroke="#000" stroke-width="4.5"/>
+<text x="261.8" y="358.2" text-anchor="middle" font-size="18">+</text>
+<text x="291.4" y="366.6" text-anchor="middle" font-size="18">−</text>
+<g stroke="#000" stroke-width="0.9"><path d="M221.5 80.8 L170.8 80.8" fill="none" stroke="#000" /><path d="M338.5 96.4 L384.0 80.8" fill="none" stroke="#000" /><path d="M212.4 278.4 L129.2 278.4" fill="none" stroke="#000" /><path d="M347.6 278.4 L436.0 278.4" fill="none" stroke="#000" /><path d="M389.2 205.6 L436.0 205.6" fill="none" stroke="#000" /></g>
+<text x="168.2" y="85.8" text-anchor="end" font-size="16">gas X</text>
+<text x="386.6" y="83.2" text-anchor="start" font-size="16">gas Y</text>
+<text x="126.6" y="283.4" text-anchor="end" font-size="16">anode</text>
+<text x="438.6" y="283.4" text-anchor="start" font-size="16">cathode</text>
+<text x="438.6" y="200.2" text-anchor="start" font-size="16">dilute sodium</text>
+<text x="438.6" y="221.0" text-anchor="start" font-size="16">chloride solution</text>
+<text x="280.0" y="455" text-anchor="middle" font-weight="bold" font-size="15">Fig. 3.1</text></svg>

@@ -1,0 +1,70 @@
+{
+  "unit": 46,
+  "font": "serif",
+  "points": {
+    "R1": {
+      "graph": [
+        -1,
+        0
+      ],
+      "dot": true
+    },
+    "R2": {
+      "graph": [
+        3,
+        0
+      ],
+      "dot": true
+    },
+    "V": {
+      "graph": [
+        1,
+        -4
+      ],
+      "dot": true
+    },
+    "Lab": {
+      "graph": [
+        3.6,
+        3.0
+      ]
+    }
+  },
+  "elements": [
+    {
+      "type": "axes",
+      "x": {
+        "min": -2,
+        "max": 4,
+        "step": 1,
+        "label": "*x*",
+        "minor": 5
+      },
+      "y": {
+        "min": -4,
+        "max": 5,
+        "step": 1,
+        "label": "*y*",
+        "minor": 5
+      },
+      "grid": "minor",
+      "sy": 0.6
+    },
+    {
+      "type": "plot",
+      "fn": "x^2 - 2*x - 3",
+      "domain": [
+        -2,
+        4
+      ],
+      "weight": "thick"
+    },
+    {
+      "type": "callout",
+      "target": "Lab",
+      "text": "*y* = *x*^2 \u2212 2*x* \u2212 3",
+      "dir": "e",
+      "dist": 0.4
+    }
+  ]
+}

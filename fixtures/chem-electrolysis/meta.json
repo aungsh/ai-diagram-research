@@ -1,0 +1,26 @@
+{
+  "id": "chem-electrolysis",
+  "subject": "O Level Chemistry",
+  "topic": "Electrolysis",
+  "title": "Electrolysis of dilute sodium chloride",
+  "question": "Fig. 3.1 shows the apparatus used to electrolyse dilute sodium chloride solution using inert carbon electrodes. The gases produced are collected in the test tubes.\n(a) Name gas X and gas Y.\n(b) Write the ionic half-equation for the reaction at the cathode.\n(c) Explain why the volume of gas Y collected is about twice the volume of gas X.",
+  "notes": {
+    "scene": [
+      "The chemistry is reflected in the drawing. The anode connects to the positive side of the battery, and the cathode tube holds about twice as much gas.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "First try: the anode label overlapped the side of the beaker.",
+      "Second try: moved the label further out."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "Apparatus for electrolysis, side view.\nA beaker of dilute sodium chloride solution. Two carbon electrodes come up through the bottom of the beaker.\nEach electrode is covered by an upside down test tube filled with solution, collecting gas.\nThe electrodes are wired below the beaker to a battery. The left electrode connects to the positive terminal, so it is the anode. The right electrode connects to the negative terminal, so it is the cathode.\nThe right tube, over the cathode, has collected about twice as much gas as the left tube, so its liquid level is lower. Show small bubbles rising from both electrodes.\nLabel: gas X over the anode, gas Y over the cathode, anode, cathode, dilute sodium chloride solution. Mark the battery terminals + and −.\nCaption: Fig. 3.1."
+}

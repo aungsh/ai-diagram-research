@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" width="560" height="420" font-family="Helvetica, Arial, sans-serif" font-size="16">
+<rect width="560" height="420" fill="#fff"/>
+<defs><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#eee"/><circle cx="2" cy="2" r="1.1" fill="#000"/><circle cx="6" cy="6" r="1.1" fill="#000"/></pattern></defs>
+<path d="M75.0 220.0 L195.0 220.0 L195.0 240.0 L145.0 240.0 L95.0 365.0 L32.5 352.5 Z" fill="#fff" stroke="#000" stroke-width="2.2" stroke-linejoin="round"/>
+<rect x="40.0" y="70.0" width="397.5" height="150.0" fill="none" stroke="#000" stroke-width="2.2" rx="6"/>
+<rect x="57.5" y="85.0" width="347.5" height="120.0" fill="url(#dots)" stroke="#000" stroke-width="1.4"/>
+<rect x="57.5" y="172.5" width="160.0" height="32.5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="57.5" y="172.5" width="15.0" height="32.5" fill="#b3b3b3" stroke="#000" stroke-width="0.8"/>
+<path d="M72.5 189.0 L167.5 189.0" stroke="#000" stroke-width="2.2"/>
+<path d="M167.5 204.0 L167.5 173.5 M170.0 197.5 L220.0 252.5" stroke="#000" stroke-width="4.5"/>
+<rect x="405.0" y="124.0" width="22.5" height="7.0" fill="#fff" stroke="#000" stroke-width="0.8"/>
+<rect x="427.5" y="102.5" width="20.0" height="50.0" fill="#8c8c8c" stroke="#000" stroke-width="1.4"/>
+<rect x="256.0" y="107.0" width="68" height="26" fill="#fff"/><text x="290.0" y="126.0" text-anchor="middle" font-size="19">water</text>
+<g stroke="#000" stroke-width="0.9"><path d="M167.5 173.5 L145.0 50.0"/><path d="M220.0 252.5 L255.0 252.5"/><path d="M417.5 127.5 L400.0 245.0"/><path d="M447.5 105.0 L477.5 60.0"/></g>
+<text x="145.0" y="45.0" text-anchor="middle">piston</text>
+<text x="260.0" y="257.5" text-anchor="start">trigger</text>
+<text x="400.0" y="265.0" text-anchor="middle">nozzle</text>
+<text x="470.0" y="52.5" text-anchor="middle">stopper</text>
+<text x="240.0" y="406" text-anchor="middle" font-weight="bold" font-size="15">Fig. 5.1</text></svg>

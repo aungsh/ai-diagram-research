@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500" font-family="Helvetica, Arial, sans-serif" font-size="16">
+<rect width="600" height="500" fill="#fff"/>
+<g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+<path d="M110.0 420.0 L110.0 170.4 L128.2 123.6 L102.2 76.8 L120.4 24.8" stroke-width="2.6"/>
+<path d="M110.0 409.6 l-8 6M110.0 394.0 l-8 6M110.0 378.4 l-8 6M110.0 362.8 l-8 6M110.0 347.2 l-8 6M110.0 331.6 l-8 6M110.0 316.0 l-8 6M110.0 300.4 l-8 6M110.0 284.8 l-8 6M110.0 269.2 l-8 6M110.0 253.6 l-8 6M110.0 238.0 l-8 6M110.0 222.4 l-8 6M110.0 206.8 l-8 6M110.0 191.2 l-8 6M110.0 175.6 l-8 6" stroke-width="0.9"/>
+<path d="M229.6 24.8 L344.0 235.4" stroke-width="1.4"/>
+<path d="M344.0 235.4 L393.4 271.8" stroke="#555" stroke-width="5"/>
+<path d="M398.6 318.6 L149.0 284.8" stroke="#555" stroke-width="5"/>
+<path d="M149.0 284.8 L110.0 300.4" stroke-width="5"/>
+<path d="M370.0 342.0 L429.8 336.8 L429.8 271.8 L383.0 282.2 Z" fill="#8c8c8c" stroke-width="1.4"/>
+<circle cx="448.0" cy="256.2" r="20.8" fill="#ccc" stroke-width="1.4"/>
+<rect x="426.2" y="226.6" width="41.6" height="11.4" fill="#555" stroke-width="0.8"/>
+</g>
+<circle cx="396.0" cy="308.2" r="3" fill="#000"/>
+<g stroke="#000" stroke-width="0.9"><path d="M91.8 212.0 L63.2 212.0"/><path d="M269.6 98.6 L307.6 98.6"/><path d="M419.4 339.4 L448.0 373.2"/><path d="M396.0 308.2 L453.2 336.8"/></g>
+<text x="60.6" y="217.0" text-anchor="end">cliff</text>
+<text x="310.2" y="103.6" text-anchor="start">rope</text>
+<text x="442.8" y="393.8" text-anchor="start">rock climber</text>
+<text x="455.8" y="341.8" text-anchor="start">centre of gravity</text>
+<text x="300.0" y="488" text-anchor="middle" font-weight="bold" font-size="15">Fig. 2.1</text></svg>

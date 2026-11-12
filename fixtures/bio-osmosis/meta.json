@@ -1,0 +1,27 @@
+{
+  "id": "bio-osmosis",
+  "subject": "O Level Biology",
+  "topic": "Movement of substances",
+  "title": "Osmosis with Visking tubing",
+  "question": "Fig. 2.1 shows an experiment set up to investigate osmosis. A Visking tubing bag containing concentrated sucrose solution is attached to a capillary tube and placed in distilled water.\n(a) Explain why the liquid level in the capillary tube rises.\n(b) Predict and explain what would happen to the liquid level if the distilled water were replaced with a more concentrated sucrose solution.",
+  "notes": {
+    "scene": [
+      "The tubing bag is a smooth curve with a dotted fill, and the liquid in the tube uses the same fill so it reads as the same solution.",
+      "Seven labels were placed automatically without overlapping.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "The bag shape was drawn as eight curves tuned by eye.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "figure": "An osmosis experiment, side view.\nA beaker of distilled water. Hanging in it is a bag of Visking tubing filled with concentrated sucrose solution, shown with a dotted fill.\nThe neck of the bag is tied with thread around the bottom of a long, narrow capillary tube that rises well above the beaker.\nThe liquid in the capillary tube has risen. Show its level now, and a dashed mark lower down showing the liquid level at the start.\nLabel: capillary tube, liquid level after 30 min, liquid level at start, thread, Visking tubing, concentrated sucrose solution, distilled water.\nCaption: Fig. 2.1."
+}

@@ -1,0 +1,27 @@
+\begin{tikzpicture}[scale=0.85, font=\sffamily, line join=round]
+  % mercury in dish and tube
+  \fill[gray!45] (0.74,0.18) rectangle (3.26,0.62);
+  \draw (0.7,0.15) rectangle (3.3,0.7);
+  \fill[gray!45] (1.85,0.3) rectangle (2.15,6.92);
+  \draw (1.85,0.3) rectangle (2.15,8.7);
+  % bell jar (gap where the tube passes through the neck)
+  \draw[thick, rounded corners=1pt] (1.85,3.9)--(1.45,3.9)--(1.45,3.4)--(0,3.4)--(0,0)--(4,0)--(4,3.4)--(2.55,3.4)--(2.55,3.9)--(2.15,3.9);
+  % outlet B
+  \fill (4,1.0) rectangle (5.6,1.2);
+  \node[right] at (5.6,1.1) {B};
+  % 760 mm height
+  \draw[dashed] (-1.1,0.62)--(0.7,0.62);
+  \draw[dashed] (-1.1,6.92)--(1.85,6.92);
+  \draw[{Stealth}-{Stealth}] (-0.9,0.62)--(-0.9,6.92) node[midway, left] {760 mm};
+  % top: to vacuum pump
+  \draw (2,8.7)--(2,9.25)--(2.4,9.25);
+  \draw[thick, -{Stealth}] (2.4,9.25)--(4,9.25) node[right] {to vacuum pump};
+  \node[left] at (1.85,8.75) {A};
+  % labels
+  \draw (2.15,7.9)--(2.9,7.9) node[right, align=left] {glass tube\\100 cm long};
+  \draw (3.0,0.42)--(3.6,-0.3) node[below right] {mercury};
+  \fill (2,0.35) circle (2pt);
+  \draw (2,0.35)--(2.8,1.2) node[above right] {Y};
+  \draw (4,2.6)--(4.8,2.6) node[right] {bell jar};
+  \node[font=\sffamily\bfseries] at (2,-1.1) {Fig. 6.1};
+\end{tikzpicture}

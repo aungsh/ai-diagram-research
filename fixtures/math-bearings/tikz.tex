@@ -1,0 +1,28 @@
+\begin{tikzpicture}[scale=0.42, line cap=round, line join=round, semithick]
+  % Triangle BCD: angle DBC = 30, angle DCB = 85, CD = 9  =>  BD = 9 sin85 / sin30, BC = 9 sin65 / sin30
+  \pgfmathsetmacro{\BD}{9*sin(85)/sin(30)}
+  \pgfmathsetmacro{\BC}{9*sin(65)/sin(30)}
+  % Triangle ABD: AB = 14.5, AD = 6  =>  angle ABD by cosine rule
+  \pgfmathsetmacro{\ABD}{acos((14.5^2+\BD^2-6^2)/(2*14.5*\BD))}
+  \coordinate (B) at (0,0);
+  \coordinate (C) at (\BC,0);
+  \coordinate (D) at (30:\BD);
+  \coordinate (A) at (30+\ABD:14.5);
+  \coordinate (N) at ($(B)!1.28!(D)$);
+
+  \draw (B)--(C)--(D)--(A)--cycle;
+  \draw (B)--(D);
+  \draw[-{Stealth[length=3mm]}] (D)--(N) node[right] {$N$};
+
+  \pic[draw, angle radius=8mm, "$30^\circ$", angle eccentricity=1.6] {angle = C--B--D};
+  \pic[draw, angle radius=6mm, "$85^\circ$", angle eccentricity=1.7] {angle = D--C--B};
+
+  \path (A)--(B) node[midway, above left] {$14.5$ m};
+  \path (A)--(D) node[midway, above] {$6$ m};
+  \path (C)--(D) node[midway, right] {$9$ m};
+
+  \node[below left] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  \node[above=2pt] at (D) {$D$};
+  \node[above left] at (A) {$A$};
+\end{tikzpicture}

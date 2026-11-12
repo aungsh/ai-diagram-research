@@ -1,0 +1,27 @@
+{
+  "subject": "A Level Physics",
+  "topic": "Magnetic fields",
+  "title": "Electron in a magnetic field",
+  "question": "Fig. 3.1 shows the path of an electron that enters a region of uniform magnetic field directed into the page. The electron moves in a semicircle of radius r and leaves the field.\n(a) Explain why the path of the electron in the field is circular.\n(b) Show that r = mv / Be.\n(c) State and explain the effect on the path of doubling the speed v.",
+  "notes": {
+    "scene": [
+      "The electron curves downwards, which is the correct direction for a negative charge with the field into the page.",
+      "The crosses that would sit on the path are left out so the path stays clear.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "First try: a leftover line in the code drew an extra arrow from the centre.",
+      "Second try: removed the line."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "id": "a-phys-magnetic",
+  "figure": "A region of uniform magnetic field into the page, shown as a dashed rectangle filled with a regular grid of × marks.\nAn electron travelling at speed v moves to the right, along a straight line, into the field at the left edge.\nInside the field, it follows a semicircle that curves downwards, which is correct for a negative charge, and leaves the field moving to the left along a line below where it entered.\nThe centre of the semicircle is on the left edge of the field. Mark it with a dot and draw the radius r from it to the path.\nShow arrows on the straight parts of the path. No × mark should sit on the path.\nLabel: electron, speed v, and the radius r. Title above the field: uniform magnetic field into the page.\nCaption: Fig. 3.1."
+}

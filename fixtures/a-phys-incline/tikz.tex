@@ -1,0 +1,29 @@
+\begin{tikzpicture}[scale=0.95, font=\sffamily, line join=round]
+  \def\a{30}
+  \coordinate (A) at (0,0); \coordinate (B) at (6,0);
+  \coordinate (C) at (6,{6*tan(\a)});
+  % ground
+  \surface{(-0.6,0)}{(7.8,0)}{-1}
+  % incline
+  \draw[fill=gray!10] (A)--(B)--(C)--cycle;
+  % 4.0 kg block on the slope
+  \begin{scope}[shift={(\a:3)}, rotate=\a]
+    \draw[fill=gray!45] (0,0) rectangle (1.3,0.9);
+    \node[font=\sffamily\small] at (0.65,0.45) {4.0 kg};
+    \coordinate (att) at (1.3,0.45);
+  \end{scope}
+  % pulley on a bracket beyond the top of the slope
+  \coordinate (Q) at ($(C)+(\a:0.6)+(\a+90:0.15)$);
+  \draw[thick] (C)--(Q);
+  \draw[fill=white] (Q) circle (0.3);
+  \fill (Q) circle (0.05);
+  \draw (att)--($(Q)+(\a+90:0.3)$);
+  % hanging 3.0 kg mass
+  \draw ($(Q)+(0.3,0)$)--++(0,-2.0) coordinate (top);
+  \draw[fill=gray!45] ($(top)+(-0.5,0)$) rectangle ++(1.0,-0.7);
+  \node[font=\sffamily\small] at ($(top)+(0,-0.35)$) {3.0 kg};
+  \pic[draw, angle radius=10mm, "$30^\circ$", angle eccentricity=1.3] {angle=B--A--C};
+  \draw ($(Q)+(-0.1,0.3)$)--++(-0.3,0.7) node[above] {smooth pulley};
+  \draw (1.8,1.04)--(0.6,1.9) node[above left] {rough plane};
+  \node[font=\sffamily\bfseries] at (3.5,-0.9) {Fig. 1.1};
+\end{tikzpicture}

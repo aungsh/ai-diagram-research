@@ -1,0 +1,19 @@
+\begin{tikzpicture}[font=\sffamily, line cap=round,
+  midarrow/.style={decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=3mm]}}}, postaction={decorate}}]
+  \draw[dashed] (0,0) rectangle (6,5);
+  % field crosses, skipping those that sit on the path
+  \foreach \x in {0.5,1.5,...,5.5}
+    \foreach \y in {0.5,1.5,...,4.5} {
+      \pgfmathsetmacro{\d}{abs(sqrt(\x*\x+(\y-2.5)*(\y-2.5))-1.5)}
+      \ifdim \d pt>0.3pt \node at (\x,\y) {$\times$}; \fi
+    }
+  % electron enters, turns through a semicircle and leaves
+  \draw[very thick, midarrow] (-2.2,4)--(0,4);
+  \draw[very thick] (0,4) arc (90:-90:1.5);
+  \draw[very thick, midarrow] (0,1)--(-2.2,1);
+  \fill (0,2.5) circle (1.5pt);
+  \draw[-{Stealth}] (0,2.5)--++(35:1.5) node[midway, below right] {$r$};
+  \node[above] at (-1.3,4.1) {electron, speed $v$};
+  \node[above, font=\sffamily\small] at (3,5) {uniform magnetic field into the page};
+  \node[font=\sffamily\bfseries] at (2,-0.7) {Fig. 3.1};
+\end{tikzpicture}

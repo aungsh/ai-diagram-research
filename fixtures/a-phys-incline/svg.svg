@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 0 620 400" width="620" height="400" font-family="Helvetica, Arial, sans-serif">
+<rect x="-60" y="0" width="620" height="400" fill="#fff"/>
+<path d="M8.8 330.0 L445.6 330.0" stroke-width="2.6" fill="none" stroke="#000"/>
+<path d="M19.2 330.0 l-6 8M34.8 330.0 l-6 8M50.4 330.0 l-6 8M66.0 330.0 l-6 8M81.6 330.0 l-6 8M97.2 330.0 l-6 8M112.8 330.0 l-6 8M128.4 330.0 l-6 8M144.0 330.0 l-6 8M159.6 330.0 l-6 8M175.2 330.0 l-6 8M190.8 330.0 l-6 8M206.4 330.0 l-6 8M222.0 330.0 l-6 8M237.6 330.0 l-6 8M253.2 330.0 l-6 8M268.8 330.0 l-6 8M284.4 330.0 l-6 8M300.0 330.0 l-6 8M315.6 330.0 l-6 8M331.2 330.0 l-6 8M346.8 330.0 l-6 8M362.4 330.0 l-6 8M378.0 330.0 l-6 8M393.6 330.0 l-6 8M409.2 330.0 l-6 8M424.8 330.0 l-6 8M440.4 330.0 l-6 8" stroke="#000" stroke-width="0.9"/>
+<path d="M40.0 330.0 L352.0 330.0 L352.0 149.9 Z" fill="#ececec" stroke="#000" stroke-width="1.4"/>
+<path d="M175.1 252.0 L233.6 218.2 L210.2 177.7 L151.7 211.5 Z" fill="#b3b3b3" stroke="#000" stroke-width="1.4"/>
+<text x="192.7" y="218.8" text-anchor="middle" font-size="13" transform="rotate(-30 192.7 214.8)">4.0 kg</text>
+<path d="M352.0 149.9 L375.1 127.5" stroke-width="2.2" fill="none" stroke="#000"/>
+<circle cx="375.1" cy="127.5" r="15.6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="375.1" cy="127.5" r="2.6" fill="#000" stroke="#000" stroke-width="1.4"/>
+<path d="M221.9 197.9 L367.3 114.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M390.7 127.5 L390.7 231.2" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M364.7 231.2 L416.7 231.2 L416.7 267.6 L364.7 267.6 Z" fill="#b3b3b3" stroke="#000" stroke-width="1.4"/>
+<text x="390.7" y="254.4" text-anchor="middle" font-size="13" >3.0 kg</text>
+<path d="M92.0 330.0 A52 52 0 0 0 85.0 304.0" fill="none" stroke="#000" stroke-width="1"/>
+<text x="110.2" y="319.4" text-anchor="middle" font-size="14" >30°</text>
+<path d="M367.3 113.0 L351.7 78.1" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="351.7" y="72.7" text-anchor="middle" font-size="16" >smooth pulley</text>
+<path d="M133.6 275.9 L76.4 236.4" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="73.8" y="233.6" text-anchor="end" font-size="16" >rough plane</text>
+<text x="280.0" y="386" text-anchor="middle" font-weight="bold" font-size="15">Fig. 1.1</text>
+</svg>

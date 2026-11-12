@@ -1,0 +1,30 @@
+{
+  "id": "phys-climber",
+  "subject": "O Level Physics",
+  "topic": "Forces (scaled diagram)",
+  "title": "Rock climber on a cliff",
+  "question": "Fig. 2.1 shows a stationary rock climber at the side of a vertical cliff. The rock climber and her equipment weigh 620 N. She pulls on a rope that is fixed at the top of the cliff and presses her feet against the cliff exerting a force of 300 N. The frictional force acting between her feet and the cliff is 100 N. A tension T acts on the rock climber via the rope.\n(a) On Fig. 2.1, draw and label all the forces acting on the rock climber.\n(b) By means of a scaled diagram, determine the magnitude of the tension in the rope.",
+  "reference": "/reference/phys-climber.png",
+  "referenceNote": "The original figure from the physics paper.",
+  "notes": {
+    "scene": [
+      "The climber is built from simple shapes. A polygon for the body, a circle for the head and thick lines for the arm and leg.",
+      "The labels were placed automatically and avoid the rope, the body and the cliff.",
+      "The figure shows no force arrows because students draw those themselves. The renderer can draw force arrows for answer keys.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "The hatched cliff uses a helper we added, because the built in TikZ hatching does not work with this setup.",
+      "Correct on the first try."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "figure": "A rock climber hanging beside a vertical cliff, side view. The cliff is on the left, drawn as a vertical line with hatch marks on the rock side, becoming jagged near the top.\nA rope runs from the top of the cliff down to the climber's hands. The climber leans back away from the cliff with straight legs, feet pressed against the cliff face.\nMark the climber's centre of gravity with a dot.\nLabel: cliff, rope, rock climber, centre of gravity.\nDo not draw any force arrows, since students add them.\nCaption: Fig. 2.1."
+}

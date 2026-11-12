@@ -1,0 +1,25 @@
+{
+  "subject": "A Level Chemistry",
+  "topic": "Electrochemistry",
+  "title": "Zinc and copper cell",
+  "question": "Fig. 6.1 shows an electrochemical cell set up under standard conditions.\nZn²⁺ + 2e⁻ ⇌ Zn   E° = −0.76 V\nCu²⁺ + 2e⁻ ⇌ Cu   E° = +0.34 V\n(a) Calculate the standard cell potential.\n(b) State the direction of electron flow in the external circuit.\n(c) State the purpose of the salt bridge.",
+  "notes": {
+    "scene": [
+      "The salt bridge is a thick line with rounded corners dipping into both solutions.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "id": "a-chem-cell",
+  "figure": "An electrochemical cell, side view.\nLeft beaker: a zinc electrode in 1.0 mol dm⁻³ ZnSO₄(aq). Right beaker: a copper electrode in 1.0 mol dm⁻³ CuSO₄(aq).\nA salt bridge, an upside down U shaped tube, dips into both solutions.\nWires from the tops of the two electrodes join through a voltmeter, a circle with V, placed above the middle.\nLabel: zinc, copper, salt bridge, and the two solutions with their concentrations.\nCaption: Fig. 6.1."
+}

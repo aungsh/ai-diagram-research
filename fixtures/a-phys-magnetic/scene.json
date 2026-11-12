@@ -1,0 +1,359 @@
+{
+  "unit": 56,
+  "font": "sans",
+  "caption": "Fig. 3.1",
+  "points": {
+    "O": {
+      "at": [
+        0,
+        2.5
+      ],
+      "dot": true
+    }
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "at": [
+        0,
+        0
+      ],
+      "w": 6,
+      "h": 5,
+      "style": "dashed",
+      "weight": "thin"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.5,
+        2.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        0.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        1.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        1.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        1.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        1.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.5,
+        2.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        2.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        3.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        3.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        3.5,
+        2.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        3.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        3.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        4.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        4.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        4.5,
+        2.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        4.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        4.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.5,
+        0.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.5,
+        1.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.5,
+        2.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.5,
+        3.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "text",
+      "at": [
+        5.5,
+        4.5
+      ],
+      "text": "×",
+      "size": "large"
+    },
+    {
+      "type": "segment",
+      "from": [
+        -2.2,
+        4
+      ],
+      "to": [
+        0,
+        4
+      ],
+      "arrow": "mid",
+      "weight": "thick"
+    },
+    {
+      "type": "arc",
+      "center": [
+        0,
+        2.5
+      ],
+      "r": 1.5,
+      "from": 90,
+      "to": -90,
+      "weight": "thick"
+    },
+    {
+      "type": "segment",
+      "from": [
+        0,
+        1
+      ],
+      "to": [
+        -2.2,
+        1
+      ],
+      "arrow": "mid",
+      "weight": "thick"
+    },
+    {
+      "type": "arrow",
+      "from": [
+        0,
+        2.5
+      ],
+      "to": [
+        1.229,
+        3.36
+      ],
+      "kind": "pointer",
+      "label": "*r*",
+      "labelAt": "mid"
+    },
+    {
+      "type": "callout",
+      "target": [
+        -1.4,
+        4
+      ],
+      "text": "electron, speed *v*",
+      "dir": "n",
+      "dist": 0.6
+    },
+    {
+      "type": "text",
+      "at": [
+        3,
+        5.35
+      ],
+      "text": "uniform magnetic field into the page",
+      "anchor": "n",
+      "size": "small"
+    }
+  ]
+}

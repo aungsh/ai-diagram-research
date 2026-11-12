@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" width="420" height="540" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="420" height="540" fill="#fff"/>
+<path d="M60.0 18.0 L60.0 450.0 L394.8 450.0" stroke-width="1.6" fill="none" stroke="#000"/>
+<text x="33.0" y="234.0" text-anchor="middle" font-size="15" transform="rotate(-90 33.0 234.0)">energy</text>
+<text x="227.4" y="482.0" text-anchor="middle" font-size="15" >progress of reaction</text>
+<path d="M76.2 288.0 L135.6 288.0" stroke-width="2.2" fill="none" stroke="#000"/>
+<path d="M135.6 288.0 C184.2 288.0 189.6 72.0 222.0 72.0 C254.4 72.0 265.2 385.2 308.4 385.2 L373.2 385.2" fill="none" stroke="#000" stroke-width="2.2"/>
+<path d="M135.6 288.0 C184.2 288.0 195.0 180.0 222.0 180.0 C249.0 180.0 265.2 385.2 308.4 385.2" fill="none" stroke="#000" stroke-width="2.2" stroke-dasharray="8 5"/>
+<path d="M135.6 288.0 L362.4 288.0" stroke-width="0.8" stroke-dasharray="2 3" fill="none" stroke="#000"/>
+<path d="M162.6 72.0 L222.0 72.0" stroke-width="0.8" stroke-dasharray="2 3" fill="none" stroke="#000"/>
+<path d="M168.0 279.9 L168.0 80.1" stroke-width="1" fill="none" stroke="#000"/>
+<path d="M168.0 72.0 L171.5 81.0 L164.5 81.0 Z" fill="#000"/>
+<path d="M168.0 288.0 L164.5 279.0 L171.5 279.0 Z" fill="#000"/>
+<text x="154.5" y="185.0" text-anchor="end" font-size="16" ><tspan font-style="italic">E</tspan><tspan font-size="11" dy="4">a</tspan></text>
+<path d="M346.2 288.0 L346.2 377.1" stroke-width="1" fill="none" stroke="#000"/>
+<path d="M346.2 385.2 L342.7 376.2 L349.7 376.2 Z" fill="#000"/>
+<text x="354.3" y="341.6" text-anchor="start" font-size="16" >Δ<tspan font-style="italic">H</tspan></text>
+<text x="105.9" y="274.1" text-anchor="middle" font-size="13" >reactants</text>
+<text x="340.8" y="411.8" text-anchor="middle" font-size="13" >products</text>
+<path d="M251.7 115.2 L292.2 93.6" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="294.9" y="98.6" text-anchor="start" font-size="14" >without catalyst</text>
+<path d="M246.3 217.8 L292.2 201.6" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="294.9" y="206.6" text-anchor="start" font-size="14" >with catalyst</text>
+<text x="227.4" y="526" text-anchor="middle" font-weight="bold" font-size="15">Fig. 4.1</text>
+</svg>

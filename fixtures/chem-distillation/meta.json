@@ -1,0 +1,28 @@
+{
+  "id": "chem-distillation",
+  "subject": "O Level Chemistry",
+  "topic": "Separation techniques",
+  "title": "Distilling sea water",
+  "question": "Fig. 4.1 shows the apparatus used to obtain pure water from sea water.\n(a) Name the apparatus labelled X.\n(b) State the purpose of the thermometer and explain why its bulb is placed level with the side arm.\n(c) Explain why the cooling water enters X at the lower end.",
+  "notes": {
+    "scene": [
+      "The details examiners look for are right. The thermometer bulb is level with the side arm, and water enters the condenser at the bottom.",
+      "The condenser parts are positioned along one line, so they stay attached if the angle changes.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "First try: the conical flask was missing its left side. It compiled without any error, so the mistake only showed up when we looked at the picture.",
+      "Second try: redrew the flask as one line.",
+      "This is why a visual check is needed and not just a compile check."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "Simple distillation, side view.\nA round bottomed flask, partly filled with sea water, sits on a tripod and gauze over a Bunsen burner flame.\nA thermometer goes through a stopper in the neck of the flask. Its bulb is level with the side arm.\nThe side arm leads down to the right into a Liebig condenser, which is labelled X. Cooling water enters at the lower end, labelled water in, and leaves at the upper end, labelled water out.\nThe condenser outlet drips into a conical flask holding pure water.\nLabel: thermometer, X, water in, water out, sea water, pure water, heat.\nCaption: Fig. 4.1."
+}

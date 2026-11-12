@@ -1,0 +1,16 @@
+{
+  "unit": 46,
+  "font": "sans",
+  "caption": "Fig. 1.1",
+  "points": {
+    "X": { "graph": [1, 10], "label": "X", "labelDir": "n" },
+    "Y": { "graph": [1.2, -6], "label": "Y", "labelDir": "s" },
+    "Z": { "graph": [1.8, 0], "label": "Z", "labelDir": "n" }
+  },
+  "elements": [
+    { "type": "axes", "x": { "min": 0, "max": 2.8, "step": 0.5, "label": "time / s", "minor": 5 }, "y": { "min": -7, "max": 11, "step": 5, "label": "velocity / m/s", "minor": 5 }, "grid": "minor", "sx": 3.6, "sy": 0.3 },
+    { "type": "polyline", "points": [[0, 0], [1, 10]], "weight": "thick" },
+    { "type": "polyline", "points": [[1, 10], [1.2, -6]], "weight": "thick", "style": "dashed" },
+    { "type": "polyline", "points": [[1.2, -6], [1.8, 0]], "weight": "thick" }
+  ]
+}

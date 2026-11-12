@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="680" height="400" fill="#fff"/>
+<defs><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#eee"/><circle cx="2" cy="2" r="1.1" fill="#000"/><circle cx="6" cy="6" r="1.1" fill="#000"/></pattern></defs>
+<path d="M151.6 328.4 L283.6 328.4 L283.6 215.6 L151.6 215.6 Z" fill="#d9d9d9" stroke="none" stroke-width="1.4"/>
+<path d="M380.4 328.4 L512.4 328.4 L512.4 215.6 L380.4 215.6 Z" fill="url(#dots)" stroke="none" stroke-width="1.4"/>
+<path d="M150.0 174.0 L150.0 330.0 L285.2 330.0 L285.2 174.0" stroke-width="2.2" fill="none" stroke="#000"/>
+<path d="M378.8 174.0 L378.8 330.0 L514.0 330.0 L514.0 174.0" stroke-width="2.2" fill="none" stroke="#000"/>
+<path d="M189.0 298.8 L204.6 298.8 L204.6 132.4 L189.0 132.4 Z" fill="#737373" stroke="#000" stroke-width="1.4"/>
+<path d="M459.4 298.8 L475.0 298.8 L475.0 132.4 L459.4 132.4 Z" fill="#b3b3b3" stroke="#000" stroke-width="1.4"/>
+<path d="M248.8 278.0 L248.8 163.6 A20.8 20.8 0 0 1 269.6 142.8 L394.4 142.8 A20.8 20.8 0 0 1 415.2 163.6 L415.2 278.0" fill="none" stroke="#8c8c8c" stroke-width="5"/>
+<path d="M196.8 132.4 L196.8 59.6 L313.8 59.6" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M350.2 59.6 L467.2 59.6 L467.2 132.4" fill="none" stroke="#000" stroke-width="1.4"/>
+<circle cx="332.0" cy="59.6" r="18.2" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="332.0" y="65.6" text-anchor="middle" font-size="16" >V</text>
+<path d="M189.0 184.4 L155.2 153.2" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="152.6" y="150.4" text-anchor="end" font-size="16" >zinc</text>
+<path d="M475.0 184.4 L511.4 153.2" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="514.0" y="150.4" text-anchor="start" font-size="16" >copper</text>
+<path d="M332.0 142.8 L332.0 179.2" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="332.0" y="199.8" text-anchor="middle" font-size="16" >salt bridge</text>
+<path d="M176.0 278.0 L129.2 278.0" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="126.6" y="270.0" text-anchor="end" font-size="14" >1.0 mol dm<tspan font-size="11" dy="-6">−3</tspan></text>
+<text x="126.6" y="293.4" text-anchor="end" font-size="14" >ZnSO<tspan font-size="11" dy="4">4</tspan><tspan dy="-4">(aq)</tspan></text>
+<path d="M493.2 278.0 L534.8 278.0" stroke-width="0.9" fill="none" stroke="#000"/>
+<text x="537.4" y="270.0" text-anchor="start" font-size="14" >1.0 mol dm<tspan font-size="11" dy="-6">−3</tspan></text>
+<text x="537.4" y="293.4" text-anchor="start" font-size="14" >CuSO<tspan font-size="11" dy="4">4</tspan><tspan dy="-4">(aq)</tspan></text>
+<text x="332.0" y="386" text-anchor="middle" font-weight="bold" font-size="15">Fig. 6.1</text>
+</svg>

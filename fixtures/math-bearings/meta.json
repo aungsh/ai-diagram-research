@@ -1,0 +1,31 @@
+{
+  "id": "math-bearings",
+  "subject": "O Level E-Math",
+  "topic": "Trigonometry & Bearings",
+  "title": "Bearings on level ground",
+  "question": "The diagram shows the points A, B, C and D on the level ground where D is due north of B. CD = 9 m, AB = 14.5 m, AD = 6 m, ∠DBC = 30° and ∠DCB = 85°.\n(a) Calculate the length of BD.\n(b) Calculate the bearing of A from D.\n(c) CT is a vertical pole of height 12 m standing at C. X is a point along BD such that the angle of elevation of T from X is the greatest. Find the angle of elevation of T from X.",
+  "reference": "/reference/math-bearings.png",
+  "referenceNote": "The original figure from the exam paper.",
+  "notes": {
+    "scene": [
+      "Claude had to solve the triangles first to find BD and the angle at B before anything could be placed.",
+      "The renderer cannot solve triangles on its own yet, so this maths is still on the model.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "The triangle maths is done inside TikZ, so the lengths are exact.",
+      "First try: the label D sat on top of line AD.",
+      "Second try: moved the label above the point."
+    ],
+    "svg": [
+      "All positions and both angle arcs were calculated by hand.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 2,
+    "svg": 1
+  },
+  "figure": "Four points on level ground: B at the bottom left, C at the bottom right, D above and to the left of C, and A further up and to the left.\nDraw the quadrilateral A to B to C to D to A, and the diagonal BD.\nD is due north of B, so draw a north arrow continuing the line from B through D past D, labelled N.\nLabel the sides AB = 14.5 m, AD = 6 m and CD = 9 m.\nMark ∠DBC = 30° at B and ∠DCB = 85° at C.\nDo not show the length of BD or any bearing, since students calculate them."
+}

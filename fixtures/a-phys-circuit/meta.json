@@ -1,0 +1,28 @@
+{
+  "subject": "A Level Physics",
+  "topic": "D.C. circuits",
+  "title": "Potential divider with a thermistor",
+  "question": "Fig. 2.1 shows a battery of e.m.f. 12 V and negligible internal resistance connected to a fixed resistor R of resistance 2.0 kΩ and a thermistor T. A voltmeter of very high resistance is connected across R.\n(a) At 20 °C the resistance of T is 4.0 kΩ. Calculate the reading on the voltmeter.\n(b) The temperature of T increases. State and explain how the reading on the voltmeter changes.",
+  "notes": {
+    "scene": [
+      "The renderer has no circuit symbols, so Claude built them from rectangles, lines and circles.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "TikZ has a package made for circuits called circuitikz.",
+      "First try: it failed because the code did not load the package. Loading it then ran the TeX engine out of memory next to the graph package, which we fixed on our side by loading the graph package only when needed.",
+      "Second try: it compiled, but with American symbols, a zigzag resistor and a voltmeter with an arrow through it.",
+      "Third try: switched to the European style used in Singapore papers."
+    ],
+    "svg": [
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 3,
+    "svg": 1
+  },
+  "id": "a-phys-circuit",
+  "figure": "A circuit diagram with standard symbols in the IEC style used in Singapore: rectangles for resistors.\nA single loop with a 12 V cell on the left side, a fixed resistor R on the top side, and a thermistor T on the right side.\nA voltmeter, a circle with V, is connected in parallel across R, above it, with junction dots where its leads join the loop.\nLabel: 12 V, R, T.\nCaption: Fig. 2.1."
+}

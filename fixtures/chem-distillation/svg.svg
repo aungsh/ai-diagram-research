@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" font-family="Helvetica, Arial, sans-serif">
+<rect x="0" width="640" height="420" fill="#fff"/>
+<path d="M103.0 250.0 A48.0 48.0 0 0 0 197.0 250.0 Z" fill="#d1d1d1"/>
+<path d="M139.0 120.0 L139.0 191.2 A50 50 0 1 0 161.0 191.2 L161.0 138.8 M161.0 131.2 L161.0 120.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<rect x="135.0" y="102.5" width="30.0" height="17.5" fill="#808080" stroke="#000" stroke-width="1.4"/>
+<rect x="147.0" y="40.0" width="6.0" height="100.0" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="150.0" cy="140.0" r="5" fill="#666" stroke="#000" stroke-width="1.2"/>
+<path d="M162.3 131.8 L403.7 228.3" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M159.7 138.2 L401.1 234.8" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M227.3 144.3 L357.3 196.3 L345.4 226.0 L215.4 174.0 L227.3 144.3" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M329.1 219.5 L329.1 247.0" fill="none" stroke="#000" stroke-width="2.2"/>
+<path d="M329.1 282.0 L329.1 257.0" fill="none" stroke="#000" stroke-width="1.6"/><path d="M329.1 247.0 L333.6 258.0 L324.6 258.0 Z" fill="#000"/>
+<path d="M243.5 150.8 L243.5 100.8" fill="none" stroke="#000" stroke-width="2.2"/><path d="M243.5 90.8 L248.0 101.8 L239.0 101.8 Z" fill="#000"/>
+<path d="M357.5 328.0 L452.5 328.0 L441.0 300.0 L369.0 300.0 Z" fill="#d1d1d1"/>
+<path d="M417.5 220.0 L417.5 250.0 L455.0 330.0 L355.0 330.0 L392.5 250.0 L392.5 220.0" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M90.0 291.0 L210.0 291.0" fill="none" stroke="#000" stroke-width="2.2"/>
+<path d="M100.0 291.0 L87.5 387.5" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M200.0 291.0 L212.5 387.5" fill="none" stroke="#000" stroke-width="1.4"/>
+<rect x="141.0" y="337.5" width="18.0" height="42.5" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<rect x="122.5" y="380.0" width="55.0" height="7.5" fill="#666" stroke="#000" stroke-width="1.2"/>
+<path d="M141.5 337.0 C142.5 320.0 150.0 310.0 150.0 302.5 C150.0 310.0 157.5 320.0 158.5 337.0 Z" fill="#e0e0e0" stroke="#000" stroke-width="1.2"/>
+<g stroke="#000" stroke-width="0.9"><path d="M153.0 60.0 L110.0 30.0" fill="none" stroke="#000" /><path d="M292.3 170.3 L307.3 125.3" fill="none" stroke="#000" /><path d="M127.5 270.0 L85.0 270.0" fill="none" stroke="#000" /><path d="M405.0 315.0 L470.0 315.0" fill="none" stroke="#000" /><path d="M144.0 322.5 L85.0 322.5" fill="none" stroke="#000" /></g>
+<text x="107.5" y="32.5" text-anchor="end" font-size="16">thermometer</text>
+<text x="307.3" y="117.8" text-anchor="middle" font-size="16">X</text>
+<text x="329.1" y="304.5" text-anchor="middle" font-size="16">water in</text>
+<text x="243.5" y="83.3" text-anchor="middle" font-size="16">water out</text>
+<text x="82.5" y="275.0" text-anchor="end" font-size="16">sea water</text>
+<text x="472.5" y="320.0" text-anchor="start" font-size="16">pure water</text>
+<text x="82.5" y="327.5" text-anchor="end" font-size="16">heat</text>
+<text x="320" y="405" text-anchor="middle" font-weight="bold" font-size="15">Fig. 4.1</text></svg>

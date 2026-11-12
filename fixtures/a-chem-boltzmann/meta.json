@@ -1,0 +1,26 @@
+{
+  "subject": "A Level Chemistry",
+  "topic": "Reaction kinetics",
+  "title": "Boltzmann distribution at two temperatures",
+  "question": "Fig. 5.1 shows the Boltzmann distribution of molecular energies for a sample of gas at two temperatures, T₁ and T₂.\n(a) State which temperature is higher. Explain your answer.\n(b) Use Fig. 5.1 to explain why the rate of reaction increases with temperature.",
+  "notes": {
+    "scene": [
+      "Both curves are calculated from the formula, so the hotter curve is lower, wider and further to the right, as it should be.",
+      "Correct on the first try."
+    ],
+    "tikz": [
+      "Correct on the first try."
+    ],
+    "svg": [
+      "Each curve is 201 points worked out by hand.",
+      "Correct on the first try."
+    ]
+  },
+  "tries": {
+    "scene": 1,
+    "tikz": 1,
+    "svg": 1
+  },
+  "id": "a-chem-boltzmann",
+  "figure": "A Boltzmann distribution graph. The horizontal axis is labelled kinetic energy and the vertical axis number of molecules, with no numbers.\nTwo curves start at the origin.\nT₁ is a solid curve with a tall, narrow peak.\nT₂ is a dashed curve for the higher temperature. It has a lower peak, further to the right, and a longer tail above T₁ at high energies.\nA vertical dashed line at the activation energy, labelled Ea, well to the right of both peaks.\nLabel the curves T₁ and T₂.\nCaption: Fig. 5.1."
+}

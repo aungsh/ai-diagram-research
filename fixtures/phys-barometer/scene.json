@@ -1,0 +1,277 @@
+{
+  "unit": 40,
+  "font": "sans",
+  "caption": "Fig. 6.1",
+  "points": {
+    "A": {
+      "at": [
+        2.0,
+        8.7
+      ],
+      "label": "A",
+      "labelDir": "auto"
+    },
+    "Y": {
+      "at": [
+        2.0,
+        0.35
+      ],
+      "dot": true
+    },
+    "Bend": {
+      "at": [
+        5.6,
+        1.1
+      ],
+      "label": "B",
+      "labelDir": "e"
+    },
+    "dishTop": {
+      "at": [
+        -0.9,
+        0.62
+      ]
+    },
+    "colTop": {
+      "at": [
+        -0.9,
+        6.92
+      ]
+    }
+  },
+  "elements": [
+    {
+      "type": "liquid",
+      "points": [
+        [
+          0.74,
+          0.18
+        ],
+        [
+          3.26,
+          0.18
+        ],
+        [
+          3.26,
+          0.62
+        ],
+        [
+          0.74,
+          0.62
+        ]
+      ],
+      "fill": {
+        "grey": 0.4
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        0.7,
+        0.15
+      ],
+      "w": 2.6,
+      "h": 0.55,
+      "weight": "normal"
+    },
+    {
+      "type": "liquid",
+      "points": [
+        [
+          1.85,
+          0.3
+        ],
+        [
+          2.15,
+          0.3
+        ],
+        [
+          2.15,
+          6.92
+        ],
+        [
+          1.85,
+          6.92
+        ]
+      ],
+      "fill": {
+        "grey": 0.4
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        1.85,
+        0.3
+      ],
+      "w": 0.3,
+      "h": 8.4,
+      "weight": "normal"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          1.85,
+          3.9
+        ],
+        [
+          1.45,
+          3.9
+        ],
+        [
+          1.45,
+          3.4
+        ],
+        [
+          0,
+          3.4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          3.4
+        ],
+        [
+          2.55,
+          3.4
+        ],
+        [
+          2.55,
+          3.9
+        ],
+        [
+          2.15,
+          3.9
+        ]
+      ],
+      "weight": "thick",
+      "round": 0.08,
+      "closed": false
+    },
+    {
+      "type": "rect",
+      "at": [
+        4.0,
+        1.0
+      ],
+      "w": 1.6,
+      "h": 0.2,
+      "fill": {
+        "grey": 1
+      },
+      "weight": "thin"
+    },
+    {
+      "type": "segment",
+      "from": [
+        -1.1,
+        0.62
+      ],
+      "to": [
+        0.7,
+        0.62
+      ],
+      "style": "dashed"
+    },
+    {
+      "type": "segment",
+      "from": [
+        -1.1,
+        6.92
+      ],
+      "to": [
+        1.85,
+        6.92
+      ],
+      "style": "dashed"
+    },
+    {
+      "type": "arrow",
+      "from": "dishTop",
+      "to": "colTop",
+      "kind": "dimension",
+      "label": "760 mm"
+    },
+    {
+      "type": "arrow",
+      "from": [
+        2.4,
+        9.25
+      ],
+      "to": [
+        4.0,
+        9.25
+      ],
+      "kind": "flow",
+      "label": "to vacuum pump",
+      "labelAt": "tip"
+    },
+    {
+      "type": "segment",
+      "from": [
+        2.0,
+        8.7
+      ],
+      "to": [
+        2.0,
+        9.25
+      ]
+    },
+    {
+      "type": "segment",
+      "from": [
+        2.0,
+        9.25
+      ],
+      "to": [
+        2.4,
+        9.25
+      ]
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.15,
+        7.9
+      ],
+      "text": "glass tube\n100 cm long",
+      "dir": "e",
+      "dist": 1.1
+    },
+    {
+      "type": "callout",
+      "target": [
+        3.0,
+        0.42
+      ],
+      "text": "mercury",
+      "dir": "se",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": "Y",
+      "text": "Y",
+      "dir": "e",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        4.0,
+        2.6
+      ],
+      "text": "bell jar",
+      "dir": "e",
+      "dist": 0.8
+    }
+  ]
+}

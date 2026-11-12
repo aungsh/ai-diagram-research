@@ -1,0 +1,186 @@
+{
+  "unit": 52,
+  "font": "sans",
+  "caption": "Fig. 1.1",
+  "points": {
+    "A": {
+      "at": [
+        0,
+        0
+      ]
+    },
+    "B": {
+      "at": [
+        6,
+        0
+      ]
+    },
+    "C": {
+      "at": [
+        6,
+        3.464
+      ]
+    },
+    "Q": {
+      "at": [
+        6.445,
+        3.894
+      ]
+    },
+    "att": {
+      "at": [
+        3.499,
+        2.54
+      ]
+    },
+    "T1": {
+      "at": [
+        6.295,
+        4.154
+      ]
+    },
+    "drop": {
+      "at": [
+        6.745,
+        3.894
+      ]
+    },
+    "massTop": {
+      "at": [
+        6.745,
+        1.9
+      ]
+    }
+  },
+  "elements": [
+    {
+      "type": "surface",
+      "from": [
+        -0.6,
+        0
+      ],
+      "to": [
+        7.8,
+        0
+      ],
+      "side": "right"
+    },
+    {
+      "type": "polygon",
+      "points": [
+        "A",
+        "B",
+        "C"
+      ],
+      "fill": {
+        "grey": 0.08
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        2.598,
+        1.5
+      ],
+      "w": 1.3,
+      "h": 0.9,
+      "rotate": 30,
+      "fill": {
+        "grey": 0.3
+      }
+    },
+    {
+      "type": "text",
+      "at": [
+        2.936,
+        2.215
+      ],
+      "text": "4.0 kg",
+      "rotate": 30,
+      "size": "small",
+      "halo": true
+    },
+    {
+      "type": "segment",
+      "from": "C",
+      "to": "Q",
+      "weight": "thick"
+    },
+    {
+      "type": "circle",
+      "center": "Q",
+      "r": 0.3,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "circle",
+      "center": "Q",
+      "r": 0.05,
+      "fill": {
+        "grey": 1
+      }
+    },
+    {
+      "type": "segment",
+      "from": "att",
+      "to": "T1"
+    },
+    {
+      "type": "segment",
+      "from": "drop",
+      "to": "massTop"
+    },
+    {
+      "type": "rect",
+      "at": [
+        6.395,
+        1.2
+      ],
+      "w": 0.7,
+      "h": 0.7,
+      "fill": {
+        "grey": 0.3
+      }
+    },
+    {
+      "type": "text",
+      "at": [
+        6.745,
+        1.55
+      ],
+      "text": "3.0 kg",
+      "size": "small",
+      "halo": true
+    },
+    {
+      "type": "angle",
+      "at": "A",
+      "a": "B",
+      "b": "C",
+      "label": "30°",
+      "r": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        6.245,
+        4.114
+      ],
+      "text": "smooth pulley",
+      "dir": "n",
+      "dist": 0.9
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.8,
+        1.04
+      ],
+      "text": "rough plane",
+      "dir": "nw",
+      "dist": 1.0
+    }
+  ]
+}

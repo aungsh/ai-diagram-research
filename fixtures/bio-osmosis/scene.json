@@ -1,0 +1,234 @@
+{
+  "unit": 50,
+  "font": "sans",
+  "caption": "Fig. 2.1",
+  "points": {},
+  "elements": [
+    {
+      "type": "liquid",
+      "points": [
+        [
+          0.03,
+          0.03
+        ],
+        [
+          3.97,
+          0.03
+        ],
+        [
+          3.97,
+          3.4
+        ],
+        [
+          0.03,
+          3.4
+        ]
+      ],
+      "fill": {
+        "grey": 0.1
+      }
+    },
+    {
+      "type": "polygon",
+      "points": [
+        [
+          0,
+          4.4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          4.4
+        ]
+      ],
+      "closed": false,
+      "weight": "thick"
+    },
+    {
+      "type": "curve",
+      "points": [
+        [
+          1.45,
+          3.2
+        ],
+        [
+          1.3,
+          2.2
+        ],
+        [
+          1.35,
+          1.1
+        ],
+        [
+          1.7,
+          0.55
+        ],
+        [
+          2.3,
+          0.55
+        ],
+        [
+          2.65,
+          1.1
+        ],
+        [
+          2.7,
+          2.2
+        ],
+        [
+          2.55,
+          3.2
+        ],
+        [
+          2.15,
+          3.45
+        ],
+        [
+          1.85,
+          3.45
+        ]
+      ],
+      "closed": true,
+      "fill": {
+        "pattern": "dots"
+      }
+    },
+    {
+      "type": "rect",
+      "at": [
+        1.9,
+        3.2
+      ],
+      "w": 0.2,
+      "h": 4.6,
+      "fill": {
+        "grey": 0
+      }
+    },
+    {
+      "type": "liquid",
+      "points": [
+        [
+          1.92,
+          3.2
+        ],
+        [
+          2.08,
+          3.2
+        ],
+        [
+          2.08,
+          6.2
+        ],
+        [
+          1.92,
+          6.2
+        ]
+      ],
+      "fill": {
+        "pattern": "dots"
+      }
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.75,
+        3.35
+      ],
+      "to": [
+        2.25,
+        3.35
+      ],
+      "weight": "heavy"
+    },
+    {
+      "type": "segment",
+      "from": [
+        1.55,
+        4.3
+      ],
+      "to": [
+        2.45,
+        4.3
+      ],
+      "style": "dashed"
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.1,
+        7.2
+      ],
+      "text": "capillary tube",
+      "dir": "e",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.08,
+        6.2
+      ],
+      "text": "liquid level after 30 min",
+      "dir": "e",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.45,
+        4.3
+      ],
+      "text": "liquid level at start",
+      "dir": "e",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.75,
+        3.35
+      ],
+      "text": "thread",
+      "dir": "w",
+      "dist": 1.2
+    },
+    {
+      "type": "callout",
+      "target": [
+        2.69,
+        1.8
+      ],
+      "text": "Visking tubing",
+      "dir": "e",
+      "dist": 1.0
+    },
+    {
+      "type": "callout",
+      "target": [
+        1.6,
+        1.4
+      ],
+      "text": "concentrated\nsucrose solution",
+      "dir": "w",
+      "dist": 1.6
+    },
+    {
+      "type": "callout",
+      "target": [
+        0.7,
+        0.5
+      ],
+      "text": "distilled water",
+      "dir": "sw",
+      "dist": 1.0
+    }
+  ]
+}
