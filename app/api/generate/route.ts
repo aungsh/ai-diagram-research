@@ -10,6 +10,9 @@ import { runAttempts } from "@/lib/pipeline/run";
  * Streams one JSON object per line: {type:"attempt"}, {type:"done"} or {type:"error"}.
  * The key is used for this request only. It is never logged or stored.
  */
+// Up to three tries, each with a drawing request and a picture check, can take a few minutes.
+export const maxDuration = 300;
+
 export async function POST(request: Request) {
   let body: { modelId?: string; apiKey?: string; method?: string; questionId?: string; question?: string; figure?: string };
   try {

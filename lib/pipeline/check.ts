@@ -10,7 +10,7 @@ import { renderSource } from "../outputs";
  * with warnings, or part of it falls outside the image.
  */
 
-const fontDir = path.join(process.cwd(), "public", "tikz-fonts", "bakoma", "ttf");
+const fontDir = path.join(/*turbopackIgnore: true*/ process.cwd(), "public", "tikz-fonts", "bakoma", "ttf");
 let fontFiles: string[] | null = null;
 
 export function svgToPng(svg: string, width = 900): Buffer {

@@ -33,12 +33,12 @@ export const SUBJECTS = [
 ] as const;
 const FILE: Record<Approach, string> = { scene: "scene.json", tikz: "tikz.tex", svg: "svg.svg" };
 
-const ROOT = path.join(process.cwd(), "fixtures");
+const ROOT = path.join(/*turbopackIgnore: true*/ process.cwd(), "fixtures");
 
 export function listPresets(): Meta[] {
   const metas = readdirSync(ROOT)
-    .filter((d) => existsSync(path.join(ROOT, d, "meta.json")))
-    .map((d) => JSON.parse(readFileSync(path.join(ROOT, d, "meta.json"), "utf8")) as Meta);
+    .filter((d) => existsSync(path.join(/*turbopackIgnore: true*/ ROOT, d, "meta.json")))
+    .map((d) => JSON.parse(readFileSync(path.join(/*turbopackIgnore: true*/ ROOT, d, "meta.json"), "utf8")) as Meta);
   return metas.sort((a, b) => SUBJECTS.indexOf(a.subject) - SUBJECTS.indexOf(b.subject) || a.id.localeCompare(b.id));
 }
 
@@ -48,7 +48,7 @@ export function loadPreset(id: string): Preset | null {
   if (!meta) return null;
   const sources: Preset["sources"] = {};
   for (const a of APPROACHES) {
-    const f = path.join(ROOT, id, FILE[a]);
+    const f = path.join(/*turbopackIgnore: true*/ ROOT, id, FILE[a]);
     if (existsSync(f)) sources[a] = readFileSync(f, "utf8");
   }
   return { meta, sources };
