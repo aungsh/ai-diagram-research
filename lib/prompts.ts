@@ -48,7 +48,7 @@ Elements (each has "type"):
   curve: points, closed, fill, tension, monotone (true for graph shapes whose x always increases; never overshoots)
   angle: at, a, b, label, r, right (right angle mark), reflex, double. Draws the smaller angle between rays at to a and at to b.
   tangent: center, at, before, after   tangent line to a circle at a point on it
-  axes: x {min, max, step, label, minor, numbers}, y {...}, grid "none" | "major" | "minor", mode "cross" | "box", sx, sy (scale graph units to page units)
+  axes: x {min, max, step, label, minor, numbers}, y {...}, grid "none" | "major" | "minor", mode "cross" | "box", zeroLine (box mode only: solid line at y = 0), sx, sy (scale graph units to page units)
   plot: fn (for example "x^2 - 2*x - 3"), domain [a, b]   uses the axes scaling
   polyline: points [[x, y], ...] in graph units
   arrow: from, to, kind ("force" | "pointer" | "dimension" | "flow"), label, labelAt ("tip" | "tail" | "mid")

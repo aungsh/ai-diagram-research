@@ -122,6 +122,8 @@ type LabelReq = {
   /** Penalty added per candidate index (prefers earlier candidates). */
   orderCost?: number;
   leaderFrom?: V; // callout: draw a leader from target to box
+  /** Pick the best spot but do not warn if none is clear. Used for axis numbers where a curve crosses the axis. */
+  quiet?: boolean;
   /** The point the label belongs to. Lines that start at this point are not counted as collisions near it. */
   anchor?: V;
   italic?: boolean;
@@ -492,7 +494,7 @@ class Renderer {
       const bx = this.boxes.filter((o) => boxOverlap(inf, o) / (best.w * best.h) > 0.05).map((o) => [o.x, o.y, o.w, o.h].map(Math.round));
       console.error("LABEL", r.text, "box", [best.x, best.y, best.w, best.h].map(Math.round), "anchor", r.anchor?.map(Math.round), "segs", JSON.stringify(segs), "boxes", JSON.stringify(bx));
     }
-    if (bestHits > 0) {
+    if (bestHits > 0 && !r.quiet) {
       this.collisions++;
       this.warnings.push(`label "${r.text.replace(/\*/g, "")}" (${r.owner}) could not avoid overlapping other content`);
     }
@@ -740,7 +742,7 @@ class Renderer {
         break;
       }
       case "axes": {
-        this.drawAxes(e);
+        this.drawAxes(e, labels);
         break;
       }
       case "plot": {
@@ -930,7 +932,7 @@ class Renderer {
     }
   }
 
-  drawAxes(e: Extract<ElementT, { type: "axes" }>) {
+  drawAxes(e: Extract<ElementT, { type: "axes" }>, labels: { pri: number; req: () => LabelReq | null }[]) {
     const { x, y, sx, sy } = e;
     const X = (v: number) => v * sx * this.U;
     const Y = (v: number) => -v * sy * this.U;
@@ -964,7 +966,7 @@ class Renderer {
     const ay = e.mode === "box" ? x0 : X(Math.min(Math.max(0, x.min), x.max));
     if (e.mode === "box") {
       g.push(`<path d="M${f(x0)} ${f(y1)}V${f(y0)}H${f(x1)}" stroke-width="1.3"/>`);
-      if (y.min < 0 && y.max > 0) g.push(`<path d="M${f(x0)} ${f(Y(0))}H${f(x1)}" stroke-width="1.1"/>`);
+      if (e.zeroLine && y.min < 0 && y.max > 0) g.push(`<path d="M${f(x0)} ${f(Y(0))}H${f(x1)}" stroke-width="1.1"/>`);
     } else {
       g.push(`<path d="M${f(x0)} ${f(ax)}H${f(x1 + 10)}" stroke-width="1.3"/>`);
       g.push(this.arrowHead([x1 + 16, ax], [1, 0], 9, 3.5));
@@ -986,44 +988,64 @@ class Renderer {
       this.growBox(b);
       this.top.push(textSvg(text, cx, cy, size, fam, this.font, { halo: true }));
     };
+    // On axes that cross the plot, numbers and titles can meet the curve, so they go through the label placer,
+    // which tries the other side of the axis when the first choice is blocked. Boxed axes keep them outside the plot.
+    const cross = e.mode === "cross";
+    const numberReq = (text: string, first: Box, second: Box): void => {
+      labels.push({ pri: 0, req: () => ({ text, size, candidates: [first, second], orderCost: 0.8, halo: true, quiet: true, owner: `axis number ${text}` }) });
+    };
     if (x.numbers)
       for (const v of ticksOf(x.min, x.max, x.step)) {
-        if (Math.abs(v) < 1e-9 && e.mode === "cross") continue;
+        if (Math.abs(v) < 1e-9 && cross) continue;
         this.body.push(`<path d="M${f(X(v))} ${f(ax)}v4" stroke-width="1"/>`);
-        put(fmt(v), X(v), ax + 13);
+        const t = fmt(v);
+        if (!cross) put(t, X(v), ax + 13);
+        else {
+          const { w, h } = measure(t, size, this.font);
+          numberReq(t, { x: X(v) - w / 2, y: ax + 6, w, h }, { x: X(v) - w / 2, y: ax - 6 - h, w, h });
+        }
       }
     if (y.numbers)
       for (const v of ticksOf(y.min, y.max, y.step)) {
-        if (Math.abs(v) < 1e-9 && e.mode === "cross") continue;
+        if (Math.abs(v) < 1e-9 && cross) continue;
         this.body.push(`<path d="M${f(ay)} ${f(Y(v))}h-4" stroke-width="1"/>`);
         const t = fmt(v);
-        const { w } = measure(t, size, this.font);
-        put(t, ay - 8 - w / 2, Y(v));
+        const { w, h } = measure(t, size, this.font);
+        if (!cross) put(t, ay - 8 - w / 2, Y(v));
+        else numberReq(t, { x: ay - 8 - w, y: Y(v) - h / 2, w, h }, { x: ay + 6, y: Y(v) - h / 2, w, h });
       }
-    if (e.mode === "cross" && e.originLabel && x.min <= 0 && y.min <= 0) put("0", ay - 9, ax + 12);
+    if (cross && e.originLabel && x.min <= 0 && y.min <= 0) put("0", ay - 9, ax + 12);
     if (x.label) {
-      const { w, h } = measure(x.label, SIZE.normal, this.font);
-      const b =
-        e.mode === "cross"
-          ? { x: x1 + 14 - w, y: ax - 12 - h, w, h }
-          : { x: (x0 + x1) / 2 - w / 2, y: y0 + 24, w, h };
-      this.boxes.push(b);
-      this.growBox(b);
-      this.top.push(textSvg(x.label, b.x + w / 2, b.y + h / 2, SIZE.normal, this.family, this.font));
-    }
-    if (y.label) {
-      const { w, h } = measure(y.label, SIZE.normal, this.font);
-      if (e.mode === "cross") {
-        const b = { x: ay + 10, y: y1 - 18 - h / 2, w, h };
+      const text = x.label;
+      const { w, h } = measure(text, SIZE.normal, this.font);
+      if (!cross) {
+        const b = { x: (x0 + x1) / 2 - w / 2, y: y0 + 24, w, h };
         this.boxes.push(b);
         this.growBox(b);
-        this.top.push(textSvg(y.label, b.x + w / 2, b.y + h / 2, SIZE.normal, this.family, this.font));
+        this.top.push(textSvg(text, b.x + w / 2, b.y + h / 2, SIZE.normal, this.family, this.font));
+      } else {
+        const above = { x: x1 + 14 - w, y: ax - 12 - h, w, h };
+        const below = { x: x1 + 14 - w, y: ax + 24, w, h };
+        const beyond = { x: x1 + 22, y: ax - h / 2, w, h };
+        // Prefer a spot outside the grid: below the axis when nothing is plotted below it.
+        const order = y.min >= 0 ? [below, beyond, above] : [above, beyond, below];
+        labels.push({ pri: 0.5, req: () => ({ text, size: SIZE.normal, candidates: order, orderCost: 1, owner: "x axis title" }) });
+      }
+    }
+    if (y.label) {
+      const text = y.label;
+      const { w, h } = measure(text, SIZE.normal, this.font);
+      if (cross) {
+        const right = { x: ay + 10, y: y1 - 18 - h / 2, w, h };
+        const left = { x: ay - 10 - w, y: y1 - 18 - h / 2, w, h };
+        const order = x.min >= 0 ? [left, right] : [right, left];
+        labels.push({ pri: 0.5, req: () => ({ text, size: SIZE.normal, candidates: order, orderCost: 1, owner: "y axis title" }) });
       } else {
         const cx = x0 - 46,
           cy = (y0 + y1) / 2;
         this.grow([cx - h / 2, cy - w / 2]);
         this.grow([cx + h / 2, cy + w / 2]);
-        this.top.push(textSvg(y.label, cx, cy, SIZE.normal, this.family, this.font, { rotate: 90 }));
+        this.top.push(textSvg(text, cx, cy, SIZE.normal, this.family, this.font, { rotate: 90 }));
       }
     }
   }

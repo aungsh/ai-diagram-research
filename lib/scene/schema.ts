@@ -185,6 +185,8 @@ export const Element = z.discriminatedUnion("type", [
     sx: z.number().default(1),
     sy: z.number().default(1),
     originLabel: z.boolean().default(true),
+    /** Boxed axes only: draw a solid line at y = 0, for example for a wave. */
+    zeroLine: z.boolean().default(false),
   }),
   /** y = f(x), evaluated with mathjs (safe). Coordinates are scaled by the axes sx/sy if `axes` given. */
   z.object({
