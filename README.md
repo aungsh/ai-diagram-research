@@ -31,6 +31,18 @@ npx tsx scripts/render.ts /tmp/diagram-out            # all presets
 npx tsx scripts/render.ts /tmp/diagram-out phys-wave  # one preset
 ```
 
+## Model test
+
+Every model draws every question with every method through one loop (`lib/pipeline/run.ts`): up to three tries, each checked by our code (`lib/pipeline/check.ts`) and by the model looking at its own picture with a fixed checklist (`lib/prompts.ts`). Results are stored per model in `results/<model>/<question>-<method>.json`, with every attempt.
+
+- Gemini: `npx tsx scripts/run-model.ts gemini-3.5-flash-lite [questionId ...]` (needs `GEMINI_API_KEY` in `.env.local`). Finished runs are skipped, so it can be restarted.
+- Claude without an API key: Claude Code helper agents play the model using `scripts/agent-task.ts` (prompt, check, verdict, finish), with the same prompts and checks.
+- Live, with your own key: the Try a model page (`/try`, route `app/api/generate`).
+
+Rounds: `results/` holds the current round, where each model gets the question plus a figure description (`figure` in `meta.json`). `results-archive/question-only/` holds the first round, with the question only.
+
+Free tier note: Gemini 3.5 Flash allows 20 requests a day, and each try uses two.
+
 ## Cost and time estimates
 
 `npx tsx scripts/stats.ts` measures every fixture and writes `lib/stats.json`. The How it works page turns that into cost and time per diagram using the assumptions in `lib/estimates.ts`. Rerun it after changing fixtures.
