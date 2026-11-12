@@ -1,4 +1,8 @@
-import DOMPurify from "isomorphic-dompurify";
+import createDOMPurify from "dompurify";
+import { JSDOM } from "jsdom";
+
+// jsdom 23 is used on purpose. Newer jsdom needs ESM-only packages that fail to load on some Node versions (ERR_REQUIRE_ESM).
+const DOMPurify = createDOMPurify(new JSDOM("").window as unknown as Parameters<typeof createDOMPurify>[0]);
 
 /**
  * Model-written SVG is untrusted: strip scripts, event handlers, foreignObject and external refs.
