@@ -1,0 +1,44 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "scene",
+ "questionId": "phys-climber",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T04:59:21.072Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"caption\": \"Fig. 2.1\",\n  \"points\": {\n    \"CliffTop\": {\"at\": [1, 7]},\n    \"CliffBase\": {\"at\": [1, 0]},\n    \"WallTop\": {\"at\": [2, 7]},\n    \"WallBase\": {\"at\": [2, 0]},\n    \"ClimberCenter\": {\"at\": [4.5, 3.5]},\n    \"ClimberHead\": {\"at\": [4.5, 4.8]},\n    \"ClimberFeet\": {\"at\": [2.2, 1.5]},\n    \"RopeAnchor\": {\"at\": [1, 6.5]},\n    \"RopeHand\": {\"at\": [4.2, 3.8]}\n  },\n  \"elements\": [\n    {\n      \"type\": \"segment\",\n      \"from\": \"CliffTop\",\n      \"to\": \"CliffBase\",\n      \"style\": \"solid\",\n      \"weight\": \"thick\"\n    },\n    {\n      \"type\": \"surface\",\n      \"from\": \"CliffBase\",\n      \"to\": \"CliffTop\",\n      \"side\": \"left\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"RopeAnchor\",\n      \"to\": \"RopeHand\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"circle\",\n      \"center\": \"ClimberHead\",\n      \"r\": 0.4,\n      \"fill\": \"none\"\n    },\n    {\n      \"type\": \"polygon\",\n      \"points\": [[4, 1.5], [5, 1.5], [4.8, 4.4], [4.2, 4.4]],\n      \"closed\": true,\n      \"fill\": {\"grey\": 0.85}\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"ClimberFeet\",\n      \"to\": [2, 1.5],\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    }\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"26 -350 228 394\" width=\"228\" height=\"394\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"26\" y=\"-350\" width=\"228\" height=\"394\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M48 -336L48 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M48 0L48 -336\" stroke-width=\"2.6\"/><path d=\"M48 -4L41 1M48 -12L41 -7M48 -20L41 -15M48 -28L41 -23M48 -36L41 -31M48 -44L41 -39M48 -52L41 -47M48 -60L41 -55M48 -68L41 -63M48 -76L41 -71M48 -84L41 -79M48 -92L41 -87M48 -100L41 -95M48 -108L41 -103M48 -116L41 -111M48 -124L41 -119M48 -132L41 -127M48 -140L41 -135M48 -148L41 -143M48 -156L41 -151M48 -164L41 -159M48 -172L41 -167M48 -180L41 -175M48 -188L41 -183M48 -196L41 -191M48 -204L41 -199M48 -212L41 -207M48 -220L41 -215M48 -228L41 -223M48 -236L41 -231M48 -244L41 -239M48 -252L41 -247M48 -260L41 -255M48 -268L41 -263M48 -276L41 -271M48 -284L41 -279M48 -292L41 -287M48 -300L41 -295M48 -308L41 -303M48 -316L41 -311M48 -324L41 -319M48 -332L41 -327\" stroke-width=\"0.9\"/><path d=\"M48 -312L201.6 -182.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"216\" cy=\"-230.4\" rx=\"19.2\" ry=\"19.2\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -72L240 -72L230.4 -211.2L201.6 -211.2Z\" fill=\"rgb(38,38,38)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M105.6 -72L96 -72\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/></g><text x=\"140\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The question asks the student to draw and label all the forces acting on the rock climber in part (a), but the forces are not drawn on the diagram, which is correct for part (a). However, the tension T is mentioned in the prompt text yet the diagram does not show any label for tension T or the forces, except for the rope line. Wait, the problem states 'A tension T acts on the rock climber via the rope' but the diagram lacks any labels, which is standard for student completion. However, looking closely at Fig. 2.1, there is a stray horizontal line segment near the bottom left (below the rope attachment point, near the wall), which appears to be a stray mark or broken line piece."
+    ]
+   },
+   "accepted": false,
+   "ms": 6213,
+   "inputTokens": 3059,
+   "outputTokens": 689
+  },
+  {
+   "n": 2,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"caption\": \"Fig. 2.1\",\n  \"points\": {\n    \"CliffTop\": {\"at\": [1, 7]},\n    \"CliffBase\": {\"at\": [1, 0]},\n    \"ClimberHead\": {\"at\": [4.5, 4.8]},\n    \"RopeAnchor\": {\"at\": [1, 6.5]},\n    \"RopeHand\": {\"at\": [4.2, 3.8]}\n  },\n  \"elements\": [\n    {\n      \"type\": \"segment\",\n      \"from\": \"CliffTop\",\n      \"to\": \"CliffBase\",\n      \"style\": \"solid\",\n      \"weight\": \"thick\"\n    },\n    {\n      \"type\": \"surface\",\n      \"from\": \"CliffBase\",\n      \"to\": \"CliffTop\",\n      \"side\": \"left\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"RopeAnchor\",\n      \"to\": \"RopeHand\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"circle\",\n      \"center\": \"ClimberHead\",\n      \"r\": 0.4,\n      \"fill\": \"none\"\n    },\n    {\n      \"type\": \"polygon\",\n      \"points\": [[4, 1.5], [5, 1.5], [4.8, 4.4], [4.2, 4.4]],\n      \"closed\": true,\n      \"fill\": {\"grey\": 0.15}\n    }\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"26 -350 228 394\" width=\"228\" height=\"394\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"26\" y=\"-350\" width=\"228\" height=\"394\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M48 -336L48 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M48 0L48 -336\" stroke-width=\"2.6\"/><path d=\"M48 -4L41 1M48 -12L41 -7M48 -20L41 -15M48 -28L41 -23M48 -36L41 -31M48 -44L41 -39M48 -52L41 -47M48 -60L41 -55M48 -68L41 -63M48 -76L41 -71M48 -84L41 -79M48 -92L41 -87M48 -100L41 -95M48 -108L41 -103M48 -116L41 -111M48 -124L41 -119M48 -132L41 -127M48 -140L41 -135M48 -148L41 -143M48 -156L41 -151M48 -164L41 -159M48 -172L41 -167M48 -180L41 -175M48 -188L41 -183M48 -196L41 -191M48 -204L41 -199M48 -212L41 -207M48 -220L41 -215M48 -228L41 -223M48 -236L41 -231M48 -244L41 -239M48 -252L41 -247M48 -260L41 -255M48 -268L41 -263M48 -276L41 -271M48 -284L41 -279M48 -292L41 -287M48 -300L41 -295M48 -308L41 -303M48 -316L41 -311M48 -324L41 -319M48 -332L41 -327\" stroke-width=\"0.9\"/><path d=\"M48 -312L201.6 -182.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"216\" cy=\"-230.4\" rx=\"19.2\" ry=\"19.2\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -72L240 -72L230.4 -211.2L201.6 -211.2Z\" fill=\"rgb(217,217,217)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/></g><text x=\"140\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 5693,
+   "inputTokens": 4845,
+   "outputTokens": 418
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

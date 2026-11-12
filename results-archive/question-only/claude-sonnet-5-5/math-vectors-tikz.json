@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "math-vectors",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:38:55.278Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[scale=1.1, >=Stealth]\n\\coordinate (B) at (0,0);\n\\coordinate (C) at (4,0);\n\\coordinate (A) at (-1,2);\n\\coordinate (D) at (3,2);\n\\coordinate (E) at (2,4);\n\\coordinate (M) at (1,2);\n\\coordinate (N) at (1,0);\n\\draw (A) -- (B) -- (C) -- (D) -- (A);\n\\draw (D) -- (E);\n\\draw (B) -- (E);\n\\draw[->, thick] (B) -- (N) node[midway, below] {$\\mathbf{a}$};\n\\draw[->, thick] (C) -- (D) node[midway, right] {$\\mathbf{b}$};\n\\fill (M) circle (1.5pt);\n\\fill (N) circle (1.5pt);\n\\node[below left] at (B) {$B$};\n\\node[below right] at (C) {$C$};\n\\node[above left] at (A) {$A$};\n\\node[below left] at (D) {$D$};\n\\node[above] at (E) {$E$};\n\\node[above left] at (M) {$M$};\n\\node[below] at (N) {$N$};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"247.476\" height=\"203.478\" viewBox=\"-72 -72 185.607 152.608\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"m-57.904 4.034 31.302 62.605h125.21L67.306 4.034h-125.21M67.306 4.034 36.003-58.57M-26.602 66.64 36.003-58.57\"></path><g stroke-width=\".8\"><path fill=\"none\" d=\"M-26.602 66.64H.575\"></path><path d=\"m3.562 66.64-4.17-1.577 1.383 1.576-1.382 1.577Z\"></path><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmbx10\" font-size=\"10\" transform=\"translate(12.856 8.177)\">a</text></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M98.608 66.64 69.151 7.723\"></path><path stroke-width=\".7999360000000001\" d=\"m67.815 5.053.455 4.434.791-1.942 2.028.532Z\"></path><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmbx10\" font-size=\"10\" transform=\"translate(113.292 -27.83)\">b</text></g><path stroke=\"none\" d=\"M6.35 4.034a1.65 1.65 0 1 0-3.3 0 1.65 1.65 0 0 0 3.3 0M6.35 66.64a1.65 1.65 0 1 0-3.3 0 1.65 1.65 0 0 0 3.3 0m-1.65 0\"></path><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(-11.62 10.366)\">B</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(128.743 10.366)\">C</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(-42.335 -66.138)\">A</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(81.817 -52.239)\">D</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(58.626 -128.743)\">E</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(16.978 -66.138)\">M</text><text x=\"-26.602\" y=\"66.639\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(26.74 10.366)\">N</text></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 565,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

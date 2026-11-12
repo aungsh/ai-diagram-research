@@ -1,0 +1,16 @@
+{
+ "n": 1,
+ "reply": "```latex\n\\usepackage{circuitikz}\n\\begin{tikzpicture}[font=\\sffamily, circuit ee IEC, line cap=round]\n  % battery of e.m.f. 12 V on the left side\n  \\draw (0,0) to[battery1, l=12\\,V] (0,4);\n  % top branch: fixed resistor R, with voltmeter in parallel across it\n  \\draw (0,4) -- (2,4) to[R, l=$R$] (5,4) -- (8,4);\n  % right side: thermistor T\n  \\draw (8,4) to[thermistor, l=$T$] (8,0);\n  % bottom wire\n  \\draw (8,0) -- (0,0);\n  % voltmeter connected across R\n  \\draw (2,4) -- (2,5.5) to[voltmeter, l=V] (5,5.5) -- (5,4);\n  % caption\n  \\node[below] at (4,-0.8) {\\textbf{Fig. 2.1}};\n\\end{tikzpicture}\n```\n",
+ "source": "\\usepackage{circuitikz}\n\\begin{tikzpicture}[font=\\sffamily, circuit ee IEC, line cap=round]\n  % battery of e.m.f. 12 V on the left side\n  \\draw (0,0) to[battery1, l=12\\,V] (0,4);\n  % top branch: fixed resistor R, with voltmeter in parallel across it\n  \\draw (0,4) -- (2,4) to[R, l=$R$] (5,4) -- (8,4);\n  % right side: thermistor T\n  \\draw (8,4) to[thermistor, l=$T$] (8,0);\n  % bottom wire\n  \\draw (8,0) -- (0,0);\n  % voltmeter connected across R\n  \\draw (2,4) -- (2,5.5) to[voltmeter, l=V] (5,5.5) -- (5,4);\n  % caption\n  \\node[below] at (4,-0.8) {\\textbf{Fig. 2.1}};\n\\end{tikzpicture}",
+ "svg": "",
+ "drew": false,
+ "autoIssues": [
+  "It did not draw. TeX error: ! Package pgfkeys Error: I do not know the key '/tikz/circuit ee IEC' and I am \ngoing to ignore it. Perhaps you misspelled it.\nSee the pgfkeys package documentation for explanation.\n! Emergency stop.\n ...                                      "
+ ],
+ "ms": 869,
+ "visual": {
+  "pass": false,
+  "issues": []
+ },
+ "accepted": false
+}

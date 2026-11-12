@@ -1,0 +1,16 @@
+{
+ "n": 2,
+ "reply": "```latex\n\\begin{tikzpicture}[font=\\sffamily, line width=0.7pt]\n\\draw[line width=1.2pt] (0,0) -- (6,0) -- (6,3.464) -- cycle;\n\\draw (0.9,0) arc (0:30:0.9);\n\\node at (1.25,0.22) {30$^\\circ$};\n\\begin{scope}[shift={(2.4,1.386)}, rotate=30]\n  \\draw (0,0) rectangle (1.6,0.6);\n  \\node[rotate=0] at (0.8,0.3) {\\footnotesize 4.0 kg};\n  \\draw (1.6,0.3) -- (4.3,0.3);\n\\end{scope}\n\\draw (6.15,3.65) circle (0.2);\n\\draw (6.35,3.65) -- (6.35,2.3);\n\\draw (6.05,3.823) -- (6.15,3.85);\n\\draw (6.05,1.7) rectangle (6.65,2.3);\n\\node[right] at (6.75,2.0) {\\small 3.0 kg};\n\\node at (3,-0.7) {\\textbf{Fig. 1.1}};\n\\end{tikzpicture}\n```\n",
+ "source": "\\begin{tikzpicture}[font=\\sffamily, line width=0.7pt]\n\\draw[line width=1.2pt] (0,0) -- (6,0) -- (6,3.464) -- cycle;\n\\draw (0.9,0) arc (0:30:0.9);\n\\node at (1.25,0.22) {30$^\\circ$};\n\\begin{scope}[shift={(2.4,1.386)}, rotate=30]\n  \\draw (0,0) rectangle (1.6,0.6);\n  \\node[rotate=0] at (0.8,0.3) {\\footnotesize 4.0 kg};\n  \\draw (1.6,0.3) -- (4.3,0.3);\n\\end{scope}\n\\draw (6.15,3.65) circle (0.2);\n\\draw (6.35,3.65) -- (6.35,2.3);\n\\draw (6.05,3.823) -- (6.15,3.85);\n\\draw (6.05,1.7) rectangle (6.65,2.3);\n\\node[right] at (6.75,2.0) {\\small 3.0 kg};\n\\node at (3,-0.7) {\\textbf{Fig. 1.1}};\n\\end{tikzpicture}",
+ "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"298.294\" height=\"183.45\" viewBox=\"-72 -72 223.72 137.587\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".7\"><path fill=\"none\" stroke-width=\"1.2\" d=\"M-71.67 37.623H99.046v-98.56Z\"></path><path fill=\"none\" d=\"M-46.063 37.623c0-4.494-1.184-8.912-3.43-12.803\"></path><g stroke=\"none\"><text x=\"-71.67\" y=\"37.623\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(28.267 -2.817)\">30</text><text x=\"-61.67\" y=\"33.994\" font-family=\"cmsy7\" font-size=\"7\" transform=\"translate(28.267 -2.817)\">±</text></g><path fill=\"none\" d=\"m-3.384-1.812-8.536-14.785 39.426-22.762 8.536 14.784Zm30.89-37.547\"></path><g stroke=\"none\" font-family=\"cmss8\" font-size=\"8\"><text x=\"-71.67\" y=\"37.623\" transform=\"translate(72.682 -56.209)\">4.0</text><text x=\"-57.975\" y=\"37.623\" transform=\"translate(72.682 -56.209)\">kg</text></g><path fill=\"none\" d=\"m31.774-31.967 66.53-38.411M109.00399999999999-66.23a5.69 5.69 0 1 0-11.38 0 5.69 5.69 0 0 0 11.38 0ZM109.005-66.23v38.412M100.47-71.152l2.844-.768M100.47-10.746v-17.072h17.07v17.072Zm17.07-17.072\"></path><g stroke=\"none\" font-family=\"cmss9\" font-size=\"9\"><text x=\"-71.67\" y=\"37.623\" transform=\"translate(195.739 -54.655)\">3.0</text><text x=\"-56.767\" y=\"37.623\" transform=\"translate(195.739 -54.655)\">kg</text></g><g stroke=\"none\" font-family=\"cmssbx10\" font-size=\"10\"><text x=\"-71.67\" y=\"37.623\" transform=\"translate(67.275 22.417)\">Fig.</text><text x=\"-49.559\" y=\"37.623\" transform=\"translate(67.275 22.417)\">1.1</text></g></g></svg>",
+ "drew": true,
+ "autoIssues": [],
+ "ms": 504,
+ "visual": {
+  "pass": false,
+  "issues": [
+   "4.0 kg text is unrotated and its last letters touch the block edge"
+  ]
+ },
+ "accepted": false
+}

@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "svg",
+ "questionId": "bio-osmosis",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:46:28.540Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 620\" width=\"640\" height=\"620\">\n  <rect x=\"0\" y=\"0\" width=\"640\" height=\"620\" fill=\"#ffffff\"/>\n  <!-- distilled water in the beaker (surface at y = 340) -->\n  <rect x=\"120\" y=\"340\" width=\"340\" height=\"180\" fill=\"#e8e8e8\"/>\n  <polyline points=\"120,250 120,520 460,520 460,250\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"/>\n  <line x1=\"120\" y1=\"340\" x2=\"460\" y2=\"340\" stroke=\"#000\" stroke-width=\"2\"/>\n  <!-- capillary tube with liquid column risen to y = 190 -->\n  <rect x=\"288\" y=\"110\" width=\"8\" height=\"242\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"/>\n  <rect x=\"290\" y=\"190\" width=\"4\" height=\"162\" fill=\"#bbbbbb\"/>\n  <!-- Visking tubing bag with concentrated sucrose solution -->\n  <ellipse cx=\"292\" cy=\"410\" rx=\"50\" ry=\"58\" fill=\"#bdbdbd\" stroke=\"#000\" stroke-width=\"2\"/>\n  <!-- leaders -->\n  <line x1=\"336\" y1=\"114\" x2=\"298\" y2=\"116\" stroke=\"#000\" stroke-width=\"1\"/>\n  <line x1=\"254\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#000\" stroke-width=\"1\"/>\n  <line x1=\"330\" y1=\"304\" x2=\"335\" y2=\"380\" stroke=\"#000\" stroke-width=\"1\"/>\n  <line x1=\"292\" y1=\"468\" x2=\"292\" y2=\"488\" stroke=\"#000\" stroke-width=\"1\"/>\n  <!-- labels -->\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"16\" fill=\"#000\">\n    <text x=\"340\" y=\"118\" text-anchor=\"start\">capillary tube</text>\n    <text x=\"250\" y=\"195\" text-anchor=\"end\">liquid level</text>\n    <text x=\"330\" y=\"300\" text-anchor=\"start\">Visking tubing</text>\n    <text x=\"140\" y=\"450\" text-anchor=\"start\">distilled water</text>\n    <text x=\"292\" y=\"506\" text-anchor=\"middle\">concentrated sucrose solution</text>\n    <text x=\"292\" y=\"600\" text-anchor=\"middle\" font-weight=\"bold\" font-size=\"18\">Fig. 2.1</text>\n  </g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 620\" width=\"640\" height=\"620\">\n  <rect x=\"0\" y=\"0\" width=\"640\" height=\"620\" fill=\"#ffffff\"></rect>\n  \n  <rect x=\"120\" y=\"340\" width=\"340\" height=\"180\" fill=\"#e8e8e8\"></rect>\n  <polyline points=\"120,250 120,520 460,520 460,250\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"></polyline>\n  <line x1=\"120\" y1=\"340\" x2=\"460\" y2=\"340\" stroke=\"#000\" stroke-width=\"2\"></line>\n  \n  <rect x=\"288\" y=\"110\" width=\"8\" height=\"242\" fill=\"none\" stroke=\"#000\" stroke-width=\"2\"></rect>\n  <rect x=\"290\" y=\"190\" width=\"4\" height=\"162\" fill=\"#bbbbbb\"></rect>\n  \n  <ellipse cx=\"292\" cy=\"410\" rx=\"50\" ry=\"58\" fill=\"#bdbdbd\" stroke=\"#000\" stroke-width=\"2\"></ellipse>\n  \n  <line x1=\"336\" y1=\"114\" x2=\"298\" y2=\"116\" stroke=\"#000\" stroke-width=\"1\"></line>\n  <line x1=\"254\" y1=\"190\" x2=\"290\" y2=\"190\" stroke=\"#000\" stroke-width=\"1\"></line>\n  <line x1=\"330\" y1=\"304\" x2=\"335\" y2=\"380\" stroke=\"#000\" stroke-width=\"1\"></line>\n  <line x1=\"292\" y1=\"468\" x2=\"292\" y2=\"488\" stroke=\"#000\" stroke-width=\"1\"></line>\n  \n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"16\" fill=\"#000\">\n    <text x=\"340\" y=\"118\" text-anchor=\"start\">capillary tube</text>\n    <text x=\"250\" y=\"195\" text-anchor=\"end\">liquid level</text>\n    <text x=\"330\" y=\"300\" text-anchor=\"start\">Visking tubing</text>\n    <text x=\"140\" y=\"450\" text-anchor=\"start\">distilled water</text>\n    <text x=\"292\" y=\"506\" text-anchor=\"middle\">concentrated sucrose solution</text>\n    <text x=\"292\" y=\"600\" text-anchor=\"middle\" font-weight=\"bold\" font-size=\"18\">Fig. 2.1</text>\n  </g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 6,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

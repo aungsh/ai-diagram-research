@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "phys-vt-graph",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:37:16.899Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 300\" width=\"460\" height=\"300\">\n<rect width=\"460\" height=\"300\" fill=\"#fff\"/>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#000\" stroke=\"none\">\n<text x=\"40\" y=\"22\">v / m s</text><text x=\"88\" y=\"17\" font-size=\"9\">-1</text>\n<text x=\"425\" y=\"125\">t / s</text>\n<text x=\"53\" y=\"54\" text-anchor=\"end\">10</text>\n<text x=\"53\" y=\"97\" text-anchor=\"end\">5</text>\n<text x=\"53\" y=\"153\" text-anchor=\"end\">0</text>\n<text x=\"53\" y=\"182\" text-anchor=\"end\">-5</text>\n<text x=\"53\" y=\"224\" text-anchor=\"end\">-10</text>\n<text x=\"140\" y=\"154\" text-anchor=\"middle\">1</text>\n<text x=\"220\" y=\"154\" text-anchor=\"middle\">2</text>\n<text x=\"300\" y=\"154\" text-anchor=\"middle\">3</text>\n<text x=\"118\" y=\"236\">X</text>\n<text x=\"226\" y=\"62\">Y</text>\n<text x=\"286\" y=\"125\">Z</text>\n<text x=\"230\" y=\"276\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 1.1</text>\n</g>\n<g stroke=\"#000\" stroke-width=\"1.5\" fill=\"none\">\n<line x1=\"60\" y1=\"135\" x2=\"415\" y2=\"135\"/><polygon points=\"420,135 411,131 411,139\" fill=\"#000\"/>\n<line x1=\"60\" y1=\"235\" x2=\"60\" y2=\"35\"/><polygon points=\"60,30 56,39 64,39\" fill=\"#000\"/>\n<line x1=\"56\" y1=\"50\" x2=\"64\" y2=\"50\"/><line x1=\"56\" y1=\"92\" x2=\"64\" y2=\"92\"/>\n<line x1=\"56\" y1=\"178\" x2=\"64\" y2=\"178\"/><line x1=\"56\" y1=\"220\" x2=\"64\" y2=\"220\"/>\n<line x1=\"140\" y1=\"131\" x2=\"140\" y2=\"139\"/><line x1=\"220\" y1=\"131\" x2=\"220\" y2=\"139\"/><line x1=\"300\" y1=\"131\" x2=\"300\" y2=\"139\"/>\n<polyline points=\"60,135 140,220\" stroke-width=\"2\"/>\n<path d=\"M140 220 C 170 220 190 67 220 67\" stroke-width=\"2\"/>\n<line x1=\"220\" y1=\"67\" x2=\"284\" y2=\"135\" stroke-width=\"2\"/>\n</g>\n<circle cx=\"140\" cy=\"220\" r=\"3\"/><circle cx=\"220\" cy=\"67\" r=\"3\"/><circle cx=\"284\" cy=\"135\" r=\"3\"/>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 460 300\" width=\"460\" height=\"300\">\n<rect width=\"460\" height=\"300\" fill=\"#fff\"></rect>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"13\" fill=\"#000\" stroke=\"none\">\n<text x=\"40\" y=\"22\">v / m s</text><text x=\"88\" y=\"17\" font-size=\"9\">-1</text>\n<text x=\"425\" y=\"125\">t / s</text>\n<text x=\"53\" y=\"54\" text-anchor=\"end\">10</text>\n<text x=\"53\" y=\"97\" text-anchor=\"end\">5</text>\n<text x=\"53\" y=\"153\" text-anchor=\"end\">0</text>\n<text x=\"53\" y=\"182\" text-anchor=\"end\">-5</text>\n<text x=\"53\" y=\"224\" text-anchor=\"end\">-10</text>\n<text x=\"140\" y=\"154\" text-anchor=\"middle\">1</text>\n<text x=\"220\" y=\"154\" text-anchor=\"middle\">2</text>\n<text x=\"300\" y=\"154\" text-anchor=\"middle\">3</text>\n<text x=\"118\" y=\"236\">X</text>\n<text x=\"226\" y=\"62\">Y</text>\n<text x=\"286\" y=\"125\">Z</text>\n<text x=\"230\" y=\"276\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 1.1</text>\n</g>\n<g stroke=\"#000\" stroke-width=\"1.5\" fill=\"none\">\n<line x1=\"60\" y1=\"135\" x2=\"415\" y2=\"135\"></line><polygon points=\"420,135 411,131 411,139\" fill=\"#000\"></polygon>\n<line x1=\"60\" y1=\"235\" x2=\"60\" y2=\"35\"></line><polygon points=\"60,30 56,39 64,39\" fill=\"#000\"></polygon>\n<line x1=\"56\" y1=\"50\" x2=\"64\" y2=\"50\"></line><line x1=\"56\" y1=\"92\" x2=\"64\" y2=\"92\"></line>\n<line x1=\"56\" y1=\"178\" x2=\"64\" y2=\"178\"></line><line x1=\"56\" y1=\"220\" x2=\"64\" y2=\"220\"></line>\n<line x1=\"140\" y1=\"131\" x2=\"140\" y2=\"139\"></line><line x1=\"220\" y1=\"131\" x2=\"220\" y2=\"139\"></line><line x1=\"300\" y1=\"131\" x2=\"300\" y2=\"139\"></line>\n<polyline points=\"60,135 140,220\" stroke-width=\"2\"></polyline>\n<path d=\"M140 220 C 170 220 190 67 220 67\" stroke-width=\"2\"></path>\n<line x1=\"220\" y1=\"67\" x2=\"284\" y2=\"135\" stroke-width=\"2\"></line>\n</g>\n<circle cx=\"140\" cy=\"220\" r=\"3\"></circle><circle cx=\"220\" cy=\"67\" r=\"3\"></circle><circle cx=\"284\" cy=\"135\" r=\"3\"></circle>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

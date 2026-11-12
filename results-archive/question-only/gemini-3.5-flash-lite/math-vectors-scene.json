@@ -1,0 +1,69 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "scene",
+ "questionId": "math-vectors",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T04:57:12.629Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"points\": {\n    \"A\": {\"at\": [1, 0], \"label\": \"A\", \"labelDir\": \"sw\", \"dot\": true},\n    \"B\": {\"at\": [5, 0], \"label\": \"B\", \"labelDir\": \"se\", \"dot\": true},\n    \"C\": {\"at\": [7, 3], \"label\": \"C\", \"labelDir\": \"ne\", \"dot\": true},\n    \"D\": {\"at\": [3, 3], \"label\": \"D\", \"labelDir\": \"nw\", \"dot\": true},\n    \"E\": {\"along\": {\"from\": \"D\", \"to\": \"C\", \"t\": -2}, \"label\": \"E\", \"labelDir\": \"ne\", \"dot\": true},\n    \"M\": {\"mid\": [\"A\", \"D\"], \"label\": \"M\", \"labelDir\": \"w\", \"dot\": true},\n    \"N\": {\"along\": {\"from\": \"B\", \"to\": \"C\", \"t\": 0.25}, \"label\": \"N\", \"labelDir\": \"e\", \"dot\": true}\n  },\n  \"elements\": [\n    {\n      \"type\": \"polygon\",\n      \"points\": [\"A\", \"B\", \"C\", \"D\"],\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"D\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"A\",\n      \"to\": \"M\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"M\",\n      \"to\": \"B\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"B\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    }\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-254 -175.55 615.53 207.1\" width=\"615.53\" height=\"207.1\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-254\" y=\"-175.55\" width=\"615.53\" height=\"207.1\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M48 0L240 0L336 -144L144 -144Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M144 -144L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 0L96 -72\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M96 -72L240 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M240 0L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><circle cx=\"48\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"240\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"336\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"144\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"-240\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"96\" cy=\"-72\" r=\"2.6\" fill=\"#000\"/><circle cx=\"264\" cy=\"-36\" r=\"2.6\" fill=\"#000\"/></g><text x=\"41.57\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">A</text><text x=\"246.43\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"342.43\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">C</text><text x=\"137.57\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">D</text><text x=\"-233.57\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text><text x=\"85.55\" y=\"-72\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">M</text><text x=\"273.1\" y=\"-36\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">N</text></svg>",
+   "drew": true,
+   "autoIssues": [
+    "Label \"M\" (point M) could not avoid overlapping other content.",
+    "Label \"N\" (point N) could not avoid overlapping other content."
+   ],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": false,
+   "ms": 5607,
+   "inputTokens": 2969,
+   "outputTokens": 541
+  },
+  {
+   "n": 2,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"points\": {\n    \"A\": {\"at\": [1, 0], \"label\": \"A\", \"labelDir\": \"sw\", \"dot\": true},\n    \"B\": {\"at\": [5, 0], \"label\": \"B\", \"labelDir\": \"se\", \"dot\": true},\n    \"C\": {\"at\": [7, 3], \"label\": \"C\", \"labelDir\": \"ne\", \"dot\": true},\n    \"D\": {\"at\": [3, 3], \"label\": \"D\", \"labelDir\": \"nw\", \"dot\": true},\n    \"E\": {\"along\": {\"from\": \"D\", \"to\": \"C\", \"t\": -2}, \"label\": \"E\", \"labelDir\": \"nw\", \"dot\": true},\n    \"M\": {\"mid\": [\"A\", \"D\"], \"label\": \"M\", \"labelDir\": \"nw\", \"dot\": true},\n    \"N\": {\"along\": {\"from\": \"B\", \"to\": \"C\", \"t\": 0.25}, \"label\": \"N\", \"labelDir\": \"ne\", \"dot\": true}\n  },\n  \"elements\": [\n    {\n      \"type\": \"polygon\",\n      \"points\": [\"A\", \"B\", \"C\", \"D\"],\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"D\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"A\",\n      \"to\": \"M\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"M\",\n      \"to\": \"B\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"B\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    }\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-265.53 -175.55 627.07 207.1\" width=\"627.07\" height=\"207.1\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-265.53\" y=\"-175.55\" width=\"627.07\" height=\"207.1\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M48 0L240 0L336 -144L144 -144Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M144 -144L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 0L96 -72\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M96 -72L240 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M240 0L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><circle cx=\"48\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"240\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"336\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"144\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"-240\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"96\" cy=\"-72\" r=\"2.6\" fill=\"#000\"/><circle cx=\"264\" cy=\"-36\" r=\"2.6\" fill=\"#000\"/></g><text x=\"41.57\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">A</text><text x=\"246.43\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"342.43\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">C</text><text x=\"137.57\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">D</text><text x=\"-246.43\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text><text x=\"88.61\" y=\"-80.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">M</text><text x=\"270.43\" y=\"-44.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">N</text></svg>",
+   "drew": true,
+   "autoIssues": [
+    "Label \"N\" (point N) could not avoid overlapping other content."
+   ],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "Point N is on BC, but the label N is slightly offset from the line and the ratio BN:BC is not visually supported correctly, though acceptable.",
+     "The question mentions vectors (a and b), but the diagram does not show any vector arrows or bolding for vectors a and b."
+    ]
+   },
+   "accepted": false,
+   "ms": 14139,
+   "inputTokens": 4661,
+   "outputTokens": 608
+  },
+  {
+   "n": 3,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"points\": {\n    \"A\": {\"at\": [1, 0], \"label\": \"A\", \"labelDir\": \"sw\", \"dot\": true},\n    \"B\": {\"at\": [5, 0], \"label\": \"B\", \"labelDir\": \"se\", \"dot\": true},\n    \"C\": {\"at\": [7, 3], \"label\": \"C\", \"labelDir\": \"ne\", \"dot\": true},\n    \"D\": {\"at\": [3, 3], \"label\": \"D\", \"labelDir\": \"nw\", \"dot\": true},\n    \"E\": {\"along\": {\"from\": \"D\", \"to\": \"C\", \"t\": -2}, \"label\": \"E\", \"labelDir\": \"nw\", \"dot\": true},\n    \"M\": {\"mid\": [\"A\", \"D\"], \"label\": \"M\", \"labelDir\": \"w\", \"dot\": true},\n    \"N\": {\"along\": {\"from\": \"B\", \"to\": \"C\", \"t\": 0.25}, \"label\": \"N\", \"labelDir\": \"nw\", \"dot\": true}\n  },\n  \"elements\": [\n    {\n      \"type\": \"polygon\",\n      \"points\": [\"A\", \"B\", \"C\", \"D\"],\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"D\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"A\",\n      \"to\": \"M\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"M\",\n      \"to\": \"B\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    },\n    {\n      \"type\": \"segment\",\n      \"from\": \"B\",\n      \"to\": \"E\",\n      \"style\": \"solid\",\n      \"weight\": \"normal\"\n    }\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-265.53 -175.55 627.07 207.1\" width=\"627.07\" height=\"207.1\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-265.53\" y=\"-175.55\" width=\"627.07\" height=\"207.1\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M48 0L240 0L336 -144L144 -144Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M144 -144L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 0L96 -72\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M96 -72L240 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M240 0L-240 -144\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><circle cx=\"48\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"240\" cy=\"0\" r=\"2.6\" fill=\"#000\"/><circle cx=\"336\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"144\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"-240\" cy=\"-144\" r=\"2.6\" fill=\"#000\"/><circle cx=\"96\" cy=\"-72\" r=\"2.6\" fill=\"#000\"/><circle cx=\"264\" cy=\"-36\" r=\"2.6\" fill=\"#000\"/></g><text x=\"41.57\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">A</text><text x=\"246.43\" y=\"8.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"342.43\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">C</text><text x=\"137.57\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">D</text><text x=\"-246.43\" y=\"-152.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text><text x=\"85.55\" y=\"-72\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">M</text><text x=\"257.57\" y=\"-44.93\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">N</text></svg>",
+   "drew": true,
+   "autoIssues": [
+    "Label \"M\" (point M) could not avoid overlapping other content."
+   ],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The point N is marked on BC, but the question states BN : BC = 1 : 4 while the visual placement of N appears arbitrary and not clearly corresponding to the ratio in the text."
+    ]
+   },
+   "accepted": false,
+   "ms": 11011,
+   "inputTokens": 6398,
+   "outputTokens": 587
+  }
+ ],
+ "chosen": 3,
+ "accepted": false
+}

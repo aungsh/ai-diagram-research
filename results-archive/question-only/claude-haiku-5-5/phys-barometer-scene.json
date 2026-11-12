@@ -1,0 +1,44 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "scene",
+ "questionId": "phys-barometer",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:40:55.826Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"caption\": \"Fig. 6.1\",\n  \"points\": {\n    \"TL\": {\"at\": [3.7, 6.5]},\n    \"TR\": {\"at\": [4.3, 6.5]},\n    \"M\": {\"at\": [4.0, 2.5], \"dot\": true},\n    \"D\": {\"at\": [4.0, 1.0]},\n    \"B\": {\"at\": [8.6, 6.5], \"label\": \"B\", \"labelDir\": \"n\"}\n  },\n  \"elements\": [\n    {\"type\": \"segment\", \"from\": [0, 0], \"to\": [8, 0], \"weight\": \"thick\"},\n    {\"type\": \"rect\", \"at\": [2, 0], \"w\": 4, \"h\": 1, \"fill\": {\"grey\": 0.3}},\n    {\"type\": \"polyline\", \"points\": [[1, 0], [1, 7.2], [7, 7.2], [7, 0]], \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": \"TL\", \"to\": \"TR\", \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": [3.7, 1.0], \"to\": \"TL\", \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": [4.3, 1.0], \"to\": \"TR\", \"weight\": \"normal\"},\n    {\"type\": \"rect\", \"at\": [3.7, 1.0], \"w\": 0.6, \"h\": 1.5, \"fill\": {\"grey\": 0.3}},\n    {\"type\": \"segment\", \"from\": \"M\", \"to\": \"D\", \"arrow\": \"both\", \"label\": {\"text\": \"h\", \"side\": \"right\"}},\n    {\"type\": \"segment\", \"from\": [7, 6.5], \"to\": \"B\", \"weight\": \"thick\"}\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-14 -359.6 445.9 403.6\" width=\"445.9\" height=\"403.6\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-14\" y=\"-359.6\" width=\"445.9\" height=\"403.6\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0 0L384 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M96 0L288 0L288 -48L96 -48Z\" fill=\"rgb(179,179,179)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 0L48 -345.6L336 -345.6L336 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M177.6 -312L206.4 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M177.6 -48L177.6 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M206.4 -48L206.4 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M177.6 -48L206.4 -48L206.4 -120L177.6 -120Z\" fill=\"rgb(179,179,179)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -113L192 -55\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -48L187.56 -59.4L192 -56.89L196.44 -59.4Z\" fill=\"#000\" stroke=\"none\"/><path d=\"M192 -120L196.44 -108.6L192 -111.11L187.56 -108.6Z\" fill=\"#000\" stroke=\"none\"/><path d=\"M336 -312L412.8 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><circle cx=\"192\" cy=\"-120\" r=\"2.6\" fill=\"#000\"/></g><text x=\"412.8\" y=\"-324.62\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"182.8\" y=\"-84\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">h</text><text x=\"208.95\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 6.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The label h sits right against the tube wall and is hard to read"
+    ]
+   },
+   "accepted": false,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "{\n  \"unit\": 48,\n  \"font\": \"sans\",\n  \"caption\": \"Fig. 6.1\",\n  \"points\": {\n    \"TL\": {\"at\": [3.5, 6.5]},\n    \"TR\": {\"at\": [4.5, 6.5]},\n    \"M\": {\"at\": [4.0, 2.5], \"dot\": true},\n    \"D\": {\"at\": [4.0, 1.0]},\n    \"B\": {\"at\": [8.6, 6.5], \"label\": \"B\", \"labelDir\": \"n\"}\n  },\n  \"elements\": [\n    {\"type\": \"segment\", \"from\": [0, 0], \"to\": [8, 0], \"weight\": \"thick\"},\n    {\"type\": \"rect\", \"at\": [2, 0], \"w\": 4, \"h\": 1, \"fill\": {\"grey\": 0.3}},\n    {\"type\": \"polyline\", \"points\": [[1, 0], [1, 7.2], [7, 7.2], [7, 0]], \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": \"TL\", \"to\": \"TR\", \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": [3.5, 1.0], \"to\": \"TL\", \"weight\": \"normal\"},\n    {\"type\": \"segment\", \"from\": [4.5, 1.0], \"to\": \"TR\", \"weight\": \"normal\"},\n    {\"type\": \"rect\", \"at\": [3.5, 1.0], \"w\": 1.0, \"h\": 1.5, \"fill\": {\"grey\": 0.3}},\n    {\"type\": \"segment\", \"from\": \"M\", \"to\": \"D\", \"arrow\": \"both\", \"label\": {\"text\": \"h\", \"side\": \"right\"}},\n    {\"type\": \"segment\", \"from\": [7, 6.5], \"to\": \"B\", \"weight\": \"thick\"}\n  ]\n}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-14 -359.6 445.9 403.6\" width=\"445.9\" height=\"403.6\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-14\" y=\"-359.6\" width=\"445.9\" height=\"403.6\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0 0L384 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M96 0L288 0L288 -48L96 -48Z\" fill=\"rgb(179,179,179)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 0L48 -345.6L336 -345.6L336 0\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M168 -312L216 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M168 -48L168 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M216 -48L216 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M168 -48L216 -48L216 -120L168 -120Z\" fill=\"rgb(179,179,179)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -113L192 -55\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M192 -48L187.56 -59.4L192 -56.89L196.44 -59.4Z\" fill=\"#000\" stroke=\"none\"/><path d=\"M192 -120L196.44 -108.6L192 -111.11L187.56 -108.6Z\" fill=\"#000\" stroke=\"none\"/><path d=\"M336 -312L412.8 -312\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><circle cx=\"192\" cy=\"-120\" r=\"2.6\" fill=\"#000\"/></g><text x=\"412.8\" y=\"-324.62\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"182.8\" y=\"-84\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">h</text><text x=\"208.95\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 6.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

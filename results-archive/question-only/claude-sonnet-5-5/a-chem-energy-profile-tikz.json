@@ -1,0 +1,44 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "a-chem-energy-profile",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:36:52.088Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth]\n\\draw[->] (0,0) -- (8,0) node[below left] {progress of reaction};\n\\draw[->] (0,0) -- (0,6) node[above] {energy};\n\\draw[thick] (0.2,3) -- (1.5,3) .. controls (2.5,3) and (2.8,5.5) .. (3.8,5.5) .. controls (4.8,5.5) and (5,1.5) .. (6.2,1.5) -- (7.6,1.5);\n\\draw[thick, dashed] (1.5,3) .. controls (2.3,3) and (2.8,4) .. (3.8,4) .. controls (4.8,4) and (5,1.5) .. (6.2,1.5);\n\\node[above] at (0.9,3) {reactants};\n\\node[above] at (6.9,1.5) {products};\n\\node[above] at (3.8,5.5) {without catalyst};\n\\node at (3.8,3.5) {with catalyst};\n\\node at (4,-0.9) {Fig. 4.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"326.262\" height=\"289.808\" viewBox=\"-72 -72 244.697 217.356\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"M-55.395 111.701H169.15\"></path><path d=\"m171.657 111.701-3.585-1.35 1.18 1.35-1.18 1.351Z\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(142.256 10.477)\">p</text><text x=\"-50.506\" y=\"111.701\" transform=\"translate(142.256 10.477)\">rogress</text><text x=\"-18.229\" y=\"111.701\" transform=\"translate(142.256 10.477)\">of</text><text x=\"-6.84\" y=\"111.701\" transform=\"translate(142.256 10.477)\">reaction</text></g><path fill=\"none\" d=\"M-55.395 111.701v-167.64\"></path><path d=\"m-55.395-58.446-1.351 3.585 1.35-1.179 1.351 1.179Z\"></path><text x=\"-55.395\" y=\"111.701\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-13.542 -176.194)\">energy</text><path fill=\"none\" stroke-width=\".8\" d=\"M-49.705 26.343h36.989c28.453 0 36.988-71.132 65.441-71.132S86.868 69.022 121.012 69.022h39.834\"></path><path fill=\"none\" stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\" d=\"M-12.716 26.343c22.762 0 36.988-28.453 65.441-28.453s34.143 71.132 68.287 71.132\"></path><text x=\"-55.395\" y=\"111.701\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(6.538 -88.891)\">reactants</text><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">p</text><text x=\"-50.506\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">ro</text><text x=\"-41.812\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">ducts</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(74.51 -161.968)\">without</text><text x=\"-20.284\" y=\"111.701\" transform=\"translate(74.51 -161.968)\">catalyst</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(81.398 -97.085)\">with</text><text x=\"-34.062\" y=\"111.701\" transform=\"translate(81.398 -97.085)\">catalyst</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(97.27 28.107)\">Fig.</text><text x=\"-35.09\" y=\"111.701\" transform=\"translate(97.27 28.107)\">4.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The with catalyst label overlaps the dashed curve"
+    ]
+   },
+   "accepted": false,
+   "ms": 508,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth]\n\\draw[->] (0,0) -- (8,0) node[below left] {progress of reaction};\n\\draw[->] (0,0) -- (0,6) node[above] {energy};\n\\draw[thick] (0.2,3) -- (1.5,3) .. controls (2.5,3) and (2.8,5.5) .. (3.8,5.5) .. controls (4.8,5.5) and (5,1.5) .. (6.2,1.5) -- (7.6,1.5);\n\\draw[thick, dashed] (1.5,3) .. controls (2.3,3) and (2.8,4) .. (3.8,4) .. controls (4.8,4) and (5,1.5) .. (6.2,1.5);\n\\node[above] at (0.9,3) {reactants};\n\\node[above] at (6.9,1.5) {products};\n\\node[above] at (3.8,5.5) {without catalyst};\n\\node at (3.3,2.6) {with catalyst};\n\\node at (4,-0.9) {Fig. 4.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"326.262\" height=\"289.808\" viewBox=\"-72 -72 244.697 217.356\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"M-55.395 111.701H169.15\"></path><path d=\"m171.657 111.701-3.585-1.35 1.18 1.35-1.18 1.351Z\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(142.256 10.477)\">p</text><text x=\"-50.506\" y=\"111.701\" transform=\"translate(142.256 10.477)\">rogress</text><text x=\"-18.229\" y=\"111.701\" transform=\"translate(142.256 10.477)\">of</text><text x=\"-6.84\" y=\"111.701\" transform=\"translate(142.256 10.477)\">reaction</text></g><path fill=\"none\" d=\"M-55.395 111.701v-167.64\"></path><path d=\"m-55.395-58.446-1.351 3.585 1.35-1.179 1.351 1.179Z\"></path><text x=\"-55.395\" y=\"111.701\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-13.542 -176.194)\">energy</text><path fill=\"none\" stroke-width=\".8\" d=\"M-49.705 26.343h36.989c28.453 0 36.988-71.132 65.441-71.132S86.868 69.022 121.012 69.022h39.834\"></path><path fill=\"none\" stroke-dasharray=\"3.0,3.0\" stroke-width=\".8\" d=\"M-12.716 26.343c22.762 0 36.988-28.453 65.441-28.453s34.143 71.132 68.287 71.132\"></path><text x=\"-55.395\" y=\"111.701\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(6.538 -88.891)\">reactants</text><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">p</text><text x=\"-50.506\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">ro</text><text x=\"-41.812\" y=\"111.701\" transform=\"translate(178.42 -48.157)\">ducts</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(74.51 -161.968)\">without</text><text x=\"-20.284\" y=\"111.701\" transform=\"translate(74.51 -161.968)\">catalyst</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(67.172 -71.477)\">with</text><text x=\"-34.062\" y=\"111.701\" transform=\"translate(67.172 -71.477)\">catalyst</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-55.395\" y=\"111.701\" transform=\"translate(97.27 28.107)\">Fig.</text><text x=\"-35.09\" y=\"111.701\" transform=\"translate(97.27 28.107)\">4.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 711,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

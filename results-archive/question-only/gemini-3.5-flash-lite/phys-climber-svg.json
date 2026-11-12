@@ -1,0 +1,27 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "svg",
+ "questionId": "phys-climber",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T05:00:05.639Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 550\" width=\"500\" height=\"550\">\n  <!-- Background -->\n  <rect width=\"100%\" height=\"100%\" fill=\"#ffffff\" />\n\n  <!-- Cliff (vertical line on the left with hatching) -->\n  <line x1=\"120\" y1=\"50\" x2=\"120\" y2=\"480\" stroke=\"#000000\" stroke-width=\"2\" />\n  <!-- Cliff hatching -->\n  <line x1=\"120\" y1=\"70\" x2=\"100\" y2=\"90\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"120\" x2=\"100\" y2=\"140\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"170\" x2=\"100\" y2=\"190\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"220\" x2=\"100\" y2=\"240\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"270\" x2=\"100\" y2=\"290\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"320\" x2=\"100\" y2=\"340\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"370\" x2=\"100\" y2=\"390\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"420\" x2=\"100\" y2=\"440\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <line x1=\"120\" y1=\"470\" x2=\"100\" y2=\"490\" stroke=\"#000000\" stroke-width=\"1.5\" />\n\n  <!-- Rope going up to top right -->\n  <line x1=\"260\" y1=\"170\" x2=\"400\" y2=\"50\" stroke=\"#000000\" stroke-width=\"1.5\" />\n  <text x=\"340\" y=\"100\" font-family=\"Helvetica, Arial, sans-serif\" font-style=\"italic\" font-size=\"14\">rope</text>\n\n  <!-- Rock Climber Stick Figure / Simplified Body -->\n  <!-- Center of mass / torso -->\n  <circle cx=\"250\" cy=\"240\" r=\"16\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\" /> <!-- Head -->\n  <line x1=\"250\" y1=\"256\" x2=\"250\" y2=\"340\" stroke=\"#000000\" stroke-width=\"2\" /> <!-- Torso -->\n  <!-- Arms (reaching up-right to rope) -->\n  <line x1=\"250\" y1=\"280\" x2=\"260\" y2=\"170\" stroke=\"#000000\" stroke-width=\"2\" />\n  <!-- Legs (pressing against cliff at x=120, y=380) -->\n  <line x1=\"250\" y1=\"340\" x2=\"120\" y2=\"380\" stroke=\"#000000\" stroke-width=\"2\" />\n  <!-- Feet in contact with cliff -->\n  <circle cx=\"120\" cy=\"380\" r=\"4\" fill=\"#000000\" />\n\n  <!-- Caption -->\n  <text x=\"200\" y=\"520\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">Fig. 2.1</text>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 500 550\" width=\"500\" height=\"550\">\n  \n  <rect width=\"100%\" height=\"100%\" fill=\"#ffffff\"></rect>\n\n  \n  <line x1=\"120\" y1=\"50\" x2=\"120\" y2=\"480\" stroke=\"#000000\" stroke-width=\"2\"></line>\n  \n  <line x1=\"120\" y1=\"70\" x2=\"100\" y2=\"90\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"120\" x2=\"100\" y2=\"140\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"170\" x2=\"100\" y2=\"190\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"220\" x2=\"100\" y2=\"240\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"270\" x2=\"100\" y2=\"290\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"320\" x2=\"100\" y2=\"340\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"370\" x2=\"100\" y2=\"390\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"420\" x2=\"100\" y2=\"440\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"120\" y1=\"470\" x2=\"100\" y2=\"490\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n\n  \n  <line x1=\"260\" y1=\"170\" x2=\"400\" y2=\"50\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <text x=\"340\" y=\"100\" font-family=\"Helvetica, Arial, sans-serif\" font-style=\"italic\" font-size=\"14\">rope</text>\n\n  \n  \n  <circle cx=\"250\" cy=\"240\" r=\"16\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"></circle> \n  <line x1=\"250\" y1=\"256\" x2=\"250\" y2=\"340\" stroke=\"#000000\" stroke-width=\"2\"></line> \n  \n  <line x1=\"250\" y1=\"280\" x2=\"260\" y2=\"170\" stroke=\"#000000\" stroke-width=\"2\"></line>\n  \n  <line x1=\"250\" y1=\"340\" x2=\"120\" y2=\"380\" stroke=\"#000000\" stroke-width=\"2\"></line>\n  \n  <circle cx=\"120\" cy=\"380\" r=\"4\" fill=\"#000000\"></circle>\n\n  \n  <text x=\"200\" y=\"520\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">Fig. 2.1</text>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 13054,
+   "inputTokens": 1854,
+   "outputTokens": 1058
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

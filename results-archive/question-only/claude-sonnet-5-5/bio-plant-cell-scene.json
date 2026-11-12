@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "scene",
+ "questionId": "bio-plant-cell",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:36:02.080Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\"unit\": 56, \"font\": \"sans\", \"caption\": \"Fig. 1.1\",\n \"points\": {\"W\": {\"at\": [0, 2]}, \"M\": {\"at\": [0.2, 1.2]}, \"CH\": {\"at\": [1.0, 3.0]}, \"N\": {\"at\": [4.9, 2.9]}, \"V\": {\"at\": [2.8, 1.5]}},\n \"elements\": [\n  {\"type\": \"rect\", \"at\": [0, 0], \"w\": 6, \"h\": 4, \"round\": 0.3, \"weight\": \"thick\"},\n  {\"type\": \"rect\", \"at\": [0.25, 0.25], \"w\": 5.5, \"h\": 3.5, \"round\": 0.25},\n  {\"type\": \"ellipse\", \"center\": [2.8, 1.8], \"rx\": 1.6, \"ry\": 1.1},\n  {\"type\": \"circle\", \"center\": [4.9, 2.9], \"r\": 0.45, \"fill\": {\"grey\": 0.3}},\n  {\"type\": \"ellipse\", \"center\": [1.0, 3.0], \"rx\": 0.45, \"ry\": 0.25, \"fill\": {\"pattern\": \"dots\"}},\n  {\"type\": \"ellipse\", \"center\": [1.0, 1.0], \"rx\": 0.45, \"ry\": 0.25, \"fill\": {\"pattern\": \"dots\"}},\n  {\"type\": \"ellipse\", \"center\": [4.9, 0.9], \"rx\": 0.45, \"ry\": 0.25, \"fill\": {\"pattern\": \"dots\"}},\n  {\"type\": \"ellipse\", \"center\": [2.8, 3.35], \"rx\": 0.45, \"ry\": 0.25, \"fill\": {\"pattern\": \"dots\"}},\n  {\"type\": \"callout\", \"target\": [0, 2], \"text\": \"A\", \"dir\": \"w\", \"dist\": 0.8},\n  {\"type\": \"callout\", \"target\": [0.25, 1.3], \"text\": \"B\", \"dir\": \"sw\", \"dist\": 0.8},\n  {\"type\": \"callout\", \"target\": [1.0, 3.0], \"text\": \"C\", \"dir\": \"nw\", \"dist\": 0.8},\n  {\"type\": \"callout\", \"target\": [4.9, 2.9], \"text\": \"D\", \"dir\": \"ne\", \"dist\": 0.8},\n  {\"type\": \"callout\", \"target\": [2.8, 1.8], \"text\": \"E\", \"dir\": \"se\", \"dist\": 1.5}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-69 -260.68 429.3 336.88\" width=\"429.3\" height=\"336.88\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><defs><pattern id=\"bio-plant-cell-scene-1-dots-0\" width=\"8\" height=\"8\" patternUnits=\"userSpaceOnUse\"><rect width=\"8\" height=\"8\" fill=\"#ececec\"/><circle cx=\"2\" cy=\"2\" r=\"1.1\" fill=\"#000\"/><circle cx=\"6\" cy=\"6\" r=\"1.1\" fill=\"#000\"/></pattern></defs><rect x=\"-69\" y=\"-260.68\" width=\"429.3\" height=\"336.88\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0 -16.8Q0 0 16.8 0L319.2 0Q336 0 336 -16.8L336 -207.2Q336 -224 319.2 -224L16.8 -224Q0 -224 0 -207.2Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M14 -28Q14 -14 28 -14L308 -14Q322 -14 322 -28L322 -196Q322 -210 308 -210L28 -210Q14 -210 14 -196Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"156.8\" cy=\"-100.8\" rx=\"89.6\" ry=\"61.6\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"274.4\" cy=\"-162.4\" rx=\"25.2\" ry=\"25.2\" fill=\"rgb(179,179,179)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"56\" cy=\"-168\" rx=\"25.2\" ry=\"14\" fill=\"url(#bio-plant-cell-scene-1-dots-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"56\" cy=\"-56\" rx=\"25.2\" ry=\"14\" fill=\"url(#bio-plant-cell-scene-1-dots-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"274.4\" cy=\"-50.4\" rx=\"25.2\" ry=\"14\" fill=\"url(#bio-plant-cell-scene-1-dots-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><ellipse cx=\"156.8\" cy=\"-187.6\" rx=\"25.2\" ry=\"14\" fill=\"url(#bio-plant-cell-scene-1-dots-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 -112L-42.8 -112\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M14 -72.8L-14.18 -42.62\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M56 -168L32.53 -227.43\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M274.4 -162.4L334.1 -188.33\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M156.8 -100.8L202.68 12.95\" stroke=\"#000\" stroke-width=\"0.9\"/></g><text x=\"-49.9\" y=\"-112\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">A</text><text x=\"-21.28\" y=\"-35.02\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text><text x=\"28.33\" y=\"-238.05\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">C</text><text x=\"341.2\" y=\"-191.42\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">D</text><text x=\"206.97\" y=\"23.58\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text><text x=\"145.65\" y=\"58.2\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 1.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 41,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

@@ -1,0 +1,54 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "math-circles",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T04:54:30.984Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1.2]\n    % Define center O at origin\n    \\coordinate (O) at (0,0);\n    \n    % Radius\n    \\def\\R{3}\n    \n    % Angles for points on the circle\n    % Let C be at -30 deg, B be at -110 deg to make a nice geometry for tangents and angles\n    % Let's calculate precise positions to match the given angles approximately or standard layout.\n    % Given: angle OAB = 62, angle ABC = 76, angle DAE = 70.\n    % Let's place points visually clear for an O-Level geometry problem.\n    \n    \\coordinate (C) at (-30:\\R);\n    \\coordinate (B) at (-100:\\R);\n    \\coordinate (A) at (-160:\\R);\n    \\coordinate (E) at (100:\\R);\n    \\coordinate (D) at (40:\\R);\n\n    % Draw circle\n    \\draw (O) circle (\\R);\n\n    % Draw polygon / chords\n    \\draw (A) -- (B) -- (C);\n    \\draw (A) -- (E);\n    \\draw (D) -- (A);\n    \\draw (D) -- (E);\n    % BC intersects AE at G\n    \\coordinate (G) at (intersection of A--E and B--C);\n\n    % Tangents at C and B\n    % Tangent at C is perpendicular to OC\n    % Tangent at B is perpendicular to OB\n    % They intersect at I\n    \\pgfmathset5angle{atan2(y(C),x(C))}\n    % Let's compute tangent line using slope perpendicular to radius\n    % Radius OC is at angle -30. Tangent is at angle -30 + 90 = 60 and -30 - 90 = -120.\n    % Radius OB is at angle -100. Tangent is at angle -100 + 90 = -10.\n    % Let's find intersection I of tangents at B and C:\n    % OC vector: (\\R*cos(-30), \\R*sin(-30))\n    % OB vector: (\\R*cos(-100), \\R*sin(-100))\n    % Tangent at C: line through C perpendicular to OC\n    % Tangent at B: line through B perpendicular to OB\n    \n    % Let's use polar/geometric approximations that look correct or calculate exact intersection I:\n    % Using tikz intersection:\n    \\coordinate (T1) at ($(C) + ({-\\R*sin(-30)},{\\R*cos(-30)})ോ); % direction vector\n    \\coordinate (T2) at ($(B) + ({-\\R*sin(-100)},{\\R*cos(-100)})ോ);\n    \n    % Actually, simpler to define tangents by angle from center O:\n    % Tangents from external point I to circle with centre O at C and B.\n    % Since OC = OB = R, IC = IB, triangle OBI congruent to OCI, OI bisects angle BIC and angle COB.\n    % Let's just find I by extending perpendiculars:\n    \\path[name path=tanC] (C) -- ++({-sin(-30)}, {cos(-30)});\n    \\path[name path=tanB] (B) -- ++({-sin(-100)}, {cos(-100)});\n    \\coordinate (I) at (intersection of C--{$(C)+({-sin(-30)}, {cos(-30)})$}%\n                     and B--{$(B)+({-sin(-100)}, {cos(-100)})$});\n\n    % Draw tangents HI and BI (H is on the tangent line from C, wait: \"The lines HI and BI are tangents to the circle at C and B respectively\")\n    % So H is a point on the tangent at C. Let's place H along the tangent line beyond C.\n    \\coordinate (H) at ($(C)!1.4!(I)$); % H is further along, or I is between H and C? \n    % \"lines HI and BI\" implies I is the intersection, H is on the tangent at C.\n    \\coordinate (H) at ($(C)!1.5!(I)$); % let's check order: H-C-I or H-I-C? Usually tangent from H touching at C means H-C-I or similar. Let's draw H--I--B where tangent touches at C and B.\n    % If tangents are HI and BI, they meet at I, so the tangent lines are HI (touching at C) and BI (touching at B). This means C lies on segment HI!\n    \n    \\draw (H) -- (I) -- (B);\n    \\draw (C) -- (O);\n    \\draw (B) -- (O);\n    \\draw (A) -- (O);\n    \\draw (C) -- (I); % just to be sure\n    \n    % Draw lines for chords\n    \\draw (C) -- (D); % for angle DCB\n    \\draw (D) -- (B);\n\n    % Label points\n    \\node[above left] at (O) {$O$};\n    \\node[above] at (A) {$A$};\n    \\node[below left] at (B) {$B$};\n    \\node[right] at (C) {$C$};\n    \\node[above right] at (D) {$D$};\n    \\node[above] at (E) {$E$};\n    \\node[above right] at (I) {$I$};\n    \\node[above left] at (H) {$H$};\n    \\node[above] at (G) {$G$};\n\n    % Draw dots at vertices\n    foreach \\p in {O,A,B,C,D,E,I,H,G} {\n        \\fill (\\p) circle (1.5pt);\n    }\n\n    % Additional required connections to make the figure complete as per description\n    \\draw (D) -- (B);\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Undefined control sequence.\nl.44     \\pgfmathset\n                    5angle{atan2(y(C),x(C))}\n! Emergency stop.\nl.44     \\pgfmathset\n                    5angle{atan2(y(C),x(C))}"
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 7673,
+   "inputTokens": 508,
+   "outputTokens": 1420
+  },
+  {
+   "n": 2,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1.1]\n    % Define center O at origin\n    \\coordinate (O) at (0,0);\n    \n    % Radius\n    \\def\\R{3}\n    \n    % Coordinates of points on the circle\n    \\coordinate (C) at (-35:\\R);\n    \\coordinate (B) at (-105:\\R);\n    \\coordinate (A) at (-155:\\R);\n    \\coordinate (E) at (110:\\R);\n    \\coordinate (D) at (35:\\R);\n\n    % Draw circle\n    \\draw (O) circle (\\R);\n\n    % Draw polygon / chords\n    \\draw (A) -- (B) -- (C);\n    \\draw (A) -- (E);\n    \\draw (D) -- (A);\n    \\draw (D) -- (E);\n    \\draw (D) -- (C);\n    \\draw (D) -- (B);\n\n    % Intersection G of BC and AE\n    \\coordinate (G) at (intersection of A--E and B--C);\n\n    % Tangents at C and B meeting at I\n    % Radius OC is at angle -35. Tangent line at C is perpendicular to OC.\n    % Radius OB is at angle -105. Tangent line at B is perpendicular to OB.\n    % We can find the intersection I of the two tangents geometrically using calc:\n    % Tangent direction at C is rotated +90 from OC, so angle is -35+90 = 55.\n    % Tangent direction at B is rotated +90 from OB, so angle is -105+90 = -15.\n    \\coordinate (I) at (intersection of C--++(55:4) and B--++(-15:4));\n    \n    % H is on the tangent line HI such that C lies between H and I (or similar, given \"lines HI and BI\")\n    \\coordinate (H) at ($(C)!2.2!(I)$);\n\n    % Draw tangents\n    \\draw (H) -- (I);\n    \\draw (B) -- (I);\n\n    % Radii to points of contact\n    \\draw (C) -- (O);\n    \\draw (B) -- (O);\n    \\draw (A) -- (O);\n\n    % Label points\n    \\node[above left] at (O) {$O$};\n    \\node[left] at (A) {$A$};\n    \\node[below left] at (B) {$B$};\n    \\node[right] at (C) {$C$};\n    \\node[above right] at (D) {$D$};\n    \\node[above left] at (E) {$E$};\n    \\node[above right] at (I) {$I$};\n    \\node[above right] at (H) {$H$};\n    \\node[above right] at (G) {$G$};\n\n    % Draw dots at vertices\n    \\foreach \\p in {O,A,B,C,D,E,I,H,G} {\n        \\fill (\\p) circle (1.5pt);\n    }\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.\nSee the tikz package documentation for explanation.\nType  H <return>  for immediate help.\n! Emergency stop.\n ...                                      "
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 2507,
+   "inputTokens": 2035,
+   "outputTokens": 741
+  },
+  {
+   "n": 3,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=1.1]\n    % Define center O at origin\n    \\coordinate (O) at (0,0);\n    \n    % Radius\n    \\def\\R{3}\n    \n    % Coordinates of points on the circle\n    \\coordinate (C) at (-35:\\R);\n    \\coordinate (B) at (-105:\\R);\n    \\coordinate (A) at (-155:\\R);\n    \\coordinate (E) at (110:\\R);\n    \\coordinate (D) at (35:\\R);\n\n    % Draw circle\n    \\draw (O) circle (\\R);\n\n    % Draw polygon / chords\n    \\draw (A) -- (B) -- (C);\n    \\draw (A) -- (E);\n    \\draw (D) -- (A);\n    \\draw (D) -- (E);\n    \\draw (D) -- (C);\n    \\draw (D) -- (B);\n\n    % Intersection G of BC and AE\n    \\coordinate (G) at (intersection of A--E and B--C);\n\n    % Tangents at C and B meeting at I\n    % Tangent at C has direction angle -35 + 90 = 55.\n    % Tangent at B has direction angle -105 + 90 = -15.\n    \\coordinate (I) at (intersection of C--++(55:5) and B--++(-15:5));\n    \n    % H is on the tangent line HI \n    \\coordinate (H) at ($(C)!2.2!(I)$);\n\n    % Draw tangents\n    \\draw (H) -- (I);\n    \\draw (B) -- (I);\n\n    % Radii to points of contact\n    \\draw (C) -- (O);\n    \\draw (B) -- (O);\n    \\draw (A) -- (O);\n\n    % Label points\n    \\node[above left] at (O) {$O$};\n    \\node[left] at (A) {$A$};\n    \\node[below left] at (B) {$B$};\n    \\node[right] at (C) {$C$};\n    \\node[above right] at (D) {$D$};\n    \\node[above left] at (E) {$E$};\n    \\node[above right] at (I) {$I$};\n    \\node[above right] at (H) {$H$};\n    \\node[above right] at (G) {$G$};\n\n    % Draw dots at vertices\n    \\foreach \\p in {O,A,B,C,D,E,I,H,G} {\n        \\fill (\\p) circle (1.5pt);\n    }\n\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.\nSee the tikz package documentation for explanation.\nType  H <return>  for immediate help.\n! Emergency stop.\n ...                                      "
+   ],
+   "visual": null,
+   "accepted": false,
+   "ms": 7150,
+   "inputTokens": 2867,
+   "outputTokens": 645
+  }
+ ],
+ "chosen": 3,
+ "accepted": false
+}

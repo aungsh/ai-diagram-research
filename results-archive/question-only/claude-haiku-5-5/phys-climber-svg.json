@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "svg",
+ "questionId": "phys-climber",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:40:12.585Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 400\" width=\"420\" height=\"400\">\n  <rect x=\"0\" y=\"0\" width=\"420\" height=\"400\" fill=\"#ffffff\"/>\n  <g stroke=\"#000000\" stroke-width=\"3\" fill=\"none\">\n    <line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"340\"/>\n  </g>\n  <path d=\"M60 72 L48 60 M60 84 L48 72 M60 96 L48 84 M60 108 L48 96 M60 120 L48 108 M60 132 L48 120 M60 144 L48 132 M60 156 L48 144 M60 168 L48 156 M60 180 L48 168 M60 192 L48 180 M60 204 L48 192 M60 216 L48 204 M60 228 L48 216 M60 240 L48 228 M60 252 L48 240 M60 264 L48 252 M60 276 L48 264 M60 288 L48 276 M60 300 L48 288 M60 312 L48 300 M60 324 L48 312 M60 336 L48 324\" stroke=\"#000000\" stroke-width=\"1.5\" fill=\"none\"/>\n  <line x1=\"60\" y1=\"60\" x2=\"230\" y2=\"150\" stroke=\"#000000\" stroke-width=\"1.5\"/>\n  <line x1=\"230\" y1=\"150\" x2=\"62\" y2=\"260\" stroke=\"#000000\" stroke-width=\"4\"/>\n  <line x1=\"230\" y1=\"153\" x2=\"230\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1.5\"/>\n  <g fill=\"#000000\">\n    <circle cx=\"230\" cy=\"150\" r=\"4\"/>\n    <circle cx=\"62\" cy=\"260\" r=\"4\"/>\n  </g>\n  <g font-family=\"Times New Roman, serif\" font-size=\"16\" font-style=\"italic\" fill=\"#000000\">\n    <text x=\"238\" y=\"146\">H</text>\n    <text x=\"70\" y=\"280\">F</text>\n  </g>\n  <text x=\"230\" y=\"246\" text-anchor=\"middle\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000000\">rock climber</text>\n  <text x=\"210\" y=\"385\" text-anchor=\"middle\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\">Fig. 2.1</text>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 420 400\" width=\"420\" height=\"400\">\n  <rect x=\"0\" y=\"0\" width=\"420\" height=\"400\" fill=\"#ffffff\"></rect>\n  <g stroke=\"#000000\" stroke-width=\"3\" fill=\"none\">\n    <line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"340\"></line>\n  </g>\n  <path d=\"M60 72 L48 60 M60 84 L48 72 M60 96 L48 84 M60 108 L48 96 M60 120 L48 108 M60 132 L48 120 M60 144 L48 132 M60 156 L48 144 M60 168 L48 156 M60 180 L48 168 M60 192 L48 180 M60 204 L48 192 M60 216 L48 204 M60 228 L48 216 M60 240 L48 228 M60 252 L48 240 M60 264 L48 252 M60 276 L48 264 M60 288 L48 276 M60 300 L48 288 M60 312 L48 300 M60 324 L48 312 M60 336 L48 324\" stroke=\"#000000\" stroke-width=\"1.5\" fill=\"none\"></path>\n  <line x1=\"60\" y1=\"60\" x2=\"230\" y2=\"150\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <line x1=\"230\" y1=\"150\" x2=\"62\" y2=\"260\" stroke=\"#000000\" stroke-width=\"4\"></line>\n  <line x1=\"230\" y1=\"153\" x2=\"230\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1.5\"></line>\n  <g fill=\"#000000\">\n    <circle cx=\"230\" cy=\"150\" r=\"4\"></circle>\n    <circle cx=\"62\" cy=\"260\" r=\"4\"></circle>\n  </g>\n  <g font-family=\"Times New Roman, serif\" font-size=\"16\" font-style=\"italic\" fill=\"#000000\">\n    <text x=\"238\" y=\"146\">H</text>\n    <text x=\"70\" y=\"280\">F</text>\n  </g>\n  <text x=\"230\" y=\"246\" text-anchor=\"middle\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000000\">rock climber</text>\n  <text x=\"210\" y=\"385\" text-anchor=\"middle\" font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#000000\">Fig. 2.1</text>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

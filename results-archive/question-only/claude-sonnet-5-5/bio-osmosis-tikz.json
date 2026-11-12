@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "bio-osmosis",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:42:19.727Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth, x=1cm, y=1cm]\n  \\fill[black!8] (0,0) rectangle (6,3.2);\n  \\draw[thick] (0,4) -- (0,0) -- (6,0) -- (6,4);\n  \\draw (0,3.2) -- (6,3.2);\n  % bag\n  \\draw[thick, fill=black!25] (3,1.4) ellipse (1.3 and 1.0);\n  % capillary tube\n  \\draw[fill=white] (2.9,2.3) rectangle (3.1,5.1);\n  \\fill[black!25] (2.9,2.3) rectangle (3.1,3.8);\n  \\draw (2.9,2.3) rectangle (3.1,5.1);\n  \\draw (2.88,3.8) -- (3.12,3.8);\n  % labels\n  \\draw (3.1,4.7) -- (4.2,4.7) node[right] {capillary tube};\n  \\draw (0.2,2.6) -- (-0.8,2.6) node[left] {distilled water};\n  \\draw (2.2,0.9) -- (1.5,0.9) -- (1.0,-0.6) node[below] {concentrated sucrose solution};\n  \\draw (4.25,1.7) -- (6.8,1.7) node[right] {Visking tubing bag};\n  \\node at (3,-1.8) {Fig. 2.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"488.52\" height=\"272.402\" viewBox=\"-72 -72 366.39 204.302\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"#ebebeb\" stroke=\"none\" d=\"M15.303 73.04v-91.05h170.716v91.05Zm170.716-91.05\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M15.303-40.772V73.04h170.716V-40.77\"></path><path fill=\"none\" d=\"M15.303-18.01h170.716\"></path><path fill=\"silver\" stroke-width=\".8\" d=\"M137.65 33.205c0-15.714-16.56-28.452-36.99-28.452-20.428 0-36.988 12.738-36.988 28.452s16.56 28.453 36.989 28.453S137.65 48.92 137.65 33.205Zm-36.99 0\"></path><path fill=\"#fff\" d=\"M97.815 7.598V-72.07h5.691V7.598Zm5.691-79.668\"></path><path fill=\"silver\" stroke=\"none\" d=\"M97.815 7.598v-42.68h5.691v42.68Zm5.691-42.68\"></path><path fill=\"none\" d=\"M97.815 7.598V-72.07h5.691V7.598ZM97.247-35.081h6.828M103.506-60.689h31.298\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"15.303\" y=\"73.039\" transform=\"translate(123.034 -131.228)\">capilla</text><text x=\"41.414\" y=\"73.039\" transform=\"translate(123.034 -131.228)\">ry</text><text x=\"52.775\" y=\"73.039\" transform=\"translate(123.034 -131.228)\">tub</text><text x=\"66.997\" y=\"73.039\" transform=\"translate(123.034 -131.228)\">e</text></g><path fill=\"none\" d=\"M20.993-.938H-7.46\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"15.303\" y=\"73.039\" transform=\"translate(-84.24 -70.505)\">distilled</text><text x=\"50.414\" y=\"73.039\" transform=\"translate(-84.24 -70.505)\">w</text><text x=\"56.969\" y=\"73.039\" transform=\"translate(-84.24 -70.505)\">ater</text></g><path fill=\"none\" d=\"M77.899 47.432H57.982L43.755 90.11\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"15.303\" y=\"73.039\" transform=\"translate(-33.089 27.55)\">concentrated</text><text x=\"72.358\" y=\"73.039\" transform=\"translate(-33.089 27.55)\">sucrose</text><text x=\"105.831\" y=\"73.039\" transform=\"translate(-33.089 27.55)\">solution</text></g><path fill=\"none\" d=\"M136.227 24.67h72.554\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"15.303\" y=\"73.039\" transform=\"translate(197.012 -45.87)\">Visking</text><text x=\"48.969\" y=\"73.039\" transform=\"translate(197.012 -45.87)\">tubing</text><text x=\"78.803\" y=\"73.039\" transform=\"translate(197.012 -45.87)\">bag</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"15.303\" y=\"73.039\" transform=\"translate(68.817 53.715)\">Fig.</text><text x=\"35.608\" y=\"73.039\" transform=\"translate(68.817 53.715)\">2.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 528,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

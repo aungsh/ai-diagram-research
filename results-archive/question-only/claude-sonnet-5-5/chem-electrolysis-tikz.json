@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "chem-electrolysis",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:38:39.854Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth, x=1cm, y=1cm]\n  % liquid in beaker\n  \\fill[black!10] (0,0) rectangle (7,3);\n  % gas regions inside tubes (white)\n  \\fill[white] (1.2,3.0) rectangle (2.8,4.2);\n  \\fill[white] (4.2,1.8) rectangle (5.8,4.2);\n  % beaker\n  \\draw[thick] (0,4.6) -- (0,0) -- (7,0) -- (7,4.6);\n  \\draw (0,3) -- (1.2,3) (2.8,3) -- (4.2,3) (5.8,3) -- (7,3);\n  % tubes\n  \\draw[thick] (1.2,1) -- (1.2,4.0) arc (180:0:0.8) -- (2.8,1);\n  \\draw[thick] (4.2,1) -- (4.2,4.0) arc (180:0:0.8) -- (5.8,1);\n  \\draw (1.2,3) -- (2.8,3);\n  \\draw (4.2,1.8) -- (5.8,1.8);\n  % electrodes\n  \\draw[fill=black!60] (1.85,-0.1) rectangle (2.15,1.6);\n  \\draw[fill=black!60] (4.85,-0.1) rectangle (5.15,1.6);\n  % wires and cell\n  \\draw[thick] (2,-0.1) -- (2,-1.2) -- (3.2,-1.2);\n  \\draw[thick] (5,-0.1) -- (5,-1.2) -- (3.8,-1.2);\n  \\draw[very thick] (3.2,-0.8) -- (3.2,-1.6);\n  \\draw[very thick] (3.8,-1.0) -- (3.8,-1.4);\n  \\node at (2.9,-0.9) {$+$};\n  \\node at (4.1,-0.9) {$-$};\n  % labels\n  \\node at (2,3.7) {gas X};\n  \\node at (5,3.0) {gas Y};\n  \\draw (2,1.4) -- (-1.2,1.4) node[left] {carbon electrode};\n  \\draw (6.5,2.0) -- (8.0,2.0) node[right] {dilute sodium chloride solution};\n  \\node at (3.5,-2.3) {Fig. 3.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"629.478\" height=\"280.256\" viewBox=\"-72 -72 472.108 210.192\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"#e6e6e6\" stroke=\"none\" d=\"M37.711 64.703v-85.358h199.17v85.358Zm199.17-85.358\"></path><path fill=\"#fff\" stroke=\"none\" d=\"M71.855-20.655v-34.143h45.524v34.143ZM157.213 13.488v-68.286h45.524v68.286Zm45.524-68.286\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M37.711-66.18V64.703h199.17V-66.18\"></path><path fill=\"none\" d=\"M37.711-20.655h34.144m45.524 0h39.834m45.524 0h34.144\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M71.855 36.25v-85.358c0-12.571 10.19-22.762 22.762-22.762 12.571 0 22.762 10.19 22.762 22.762V36.25M157.213 36.25v-85.358c0-12.571 10.19-22.762 22.762-22.762s22.762 10.19 22.762 22.762V36.25\"></path><path fill=\"none\" d=\"M71.855-20.655h45.524M157.213 13.488h45.524\"></path><path fill=\"#666\" d=\"M90.35 67.549v-48.37h8.535v48.37ZM175.707 67.549v-48.37h8.536v48.37Zm8.536-48.37\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M94.617 67.549v31.297h34.143M179.975 67.549v31.297h-34.143\"></path><path fill=\"none\" stroke-width=\"1.2\" d=\"M128.76 87.466v22.762M145.832 93.156v11.38\"></path><text x=\"37.711\" y=\"64.703\" stroke=\"none\" font-family=\"cmr10\" font-size=\"10\" transform=\"translate(78.624 28.107)\">+</text><text x=\"37.711\" y=\"64.703\" stroke=\"none\" font-family=\"cmsy10\" font-size=\"10\" transform=\"translate(112.768 28.107)\">¡</text><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"37.711\" y=\"64.703\" transform=\"translate(45.086 -102.775)\">gas</text><text x=\"54.684\" y=\"64.703\" transform=\"translate(45.086 -102.775)\">X</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"37.711\" y=\"64.703\" transform=\"translate(130.444 -82.858)\">gas</text><text x=\"54.684\" y=\"64.703\" transform=\"translate(130.444 -82.858)\">Y</text></g><path fill=\"none\" d=\"M94.617 24.87H3.568\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"37.711\" y=\"64.703\" transform=\"translate(-106.649 -36.361)\">ca</text><text x=\"46.684\" y=\"64.703\" transform=\"translate(-106.649 -36.361)\">rb</text><text x=\"55.545\" y=\"64.703\" transform=\"translate(-106.649 -36.361)\">on</text><text x=\"69.045\" y=\"64.703\" transform=\"translate(-106.649 -36.361)\">electro</text><text x=\"97.073\" y=\"64.703\" transform=\"translate(-106.649 -36.361)\">de</text></g><path fill=\"none\" d=\"M222.654 7.798h42.68\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"37.711\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">dilute</text><text x=\"64.212\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">so</text><text x=\"73.323\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">dium</text><text x=\"97.323\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">chlo</text><text x=\"114.045\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">ride</text><text x=\"132.795\" y=\"64.703\" transform=\"translate(231.155 -53.433)\">solution</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"37.711\" y=\"64.703\" transform=\"translate(83.043 67.941)\">Fig.</text><text x=\"58.017\" y=\"64.703\" transform=\"translate(83.043 67.941)\">3.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 588,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

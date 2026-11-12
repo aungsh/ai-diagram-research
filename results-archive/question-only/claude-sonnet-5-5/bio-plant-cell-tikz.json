@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "bio-plant-cell",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:36:22.170Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, line width=0.6pt]\n\\draw[line width=1.4pt, rounded corners=8pt] (0,0) rectangle (6,4);\n\\draw[rounded corners=6pt] (0.2,0.2) rectangle (5.8,3.8);\n\\draw (2.8,1.8) ellipse (1.6 and 1.1);\n\\draw[fill=gray!60] (4.9,2.9) circle (0.4);\n\\foreach \\p in {(1,3),(1,1),(4.9,0.9),(2.8,3.3)}{\\draw[fill=gray!20] \\p ellipse (0.45 and 0.25);}\n\\draw (0,2) -- (-0.8,2) node[left]{A};\n\\draw (0.2,1.2) -- (-0.8,0.5) node[left]{B};\n\\draw (1,3) -- (0.4,4.7) node[above]{C};\n\\draw (4.9,2.9) -- (6.8,4.6) node[above]{D};\n\\draw (2.8,1.8) -- (3.8,-0.8) node[below]{E};\n\\node at (3,-1.8) {\\textbf{Fig. 1.1}};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"315.757\" height=\"275.507\" viewBox=\"-72 -72 236.818 206.631\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".6\"><path fill=\"none\" stroke-width=\"1.4\" d=\"M-35.875 67.368v-97.81a8 8 0 0 1 8-8H126.84a8 8 0 0 1 8 8v97.81a8 8 0 0 1-8 8H-27.875a8 8 0 0 1-8-8ZM134.84-38.442\"></path><path fill=\"none\" d=\"M-30.185 63.678v-90.43a6 6 0 0 1 6-6h147.336a6 6 0 0 1 6 6v90.43a6 6 0 0 1-6 6H-24.185a6 6 0 0 1-6-6Zm159.336-96.43\"></path><path fill=\"none\" d=\"M89.317 24.153c0-17.286-20.381-31.298-45.524-31.298S-1.732 6.867-1.732 24.153 18.65 55.451 43.793 55.451 89.317 41.44 89.317 24.153Zm-45.524 0\"></path><path fill=\"#b3b3b3\" d=\"M114.924-7.145c0-6.285-5.095-11.38-11.38-11.38S92.161-13.43 92.161-7.146s5.096 11.381 11.381 11.381 11.381-5.095 11.381-11.38Zm-11.38 0\"></path><path fill=\"#e6e6e6\" d=\"M5.381000000000001-9.99c0-3.929-5.732-7.113-12.803-7.113S-20.226-13.92-20.226-9.99c0 3.928 5.732 7.113 12.804 7.113C-.351-2.877 5.38-6.062 5.38-9.99ZM5.381000000000001 46.915c0-3.928-5.732-7.113-12.803-7.113s-12.804 3.185-12.804 7.113 5.732 7.114 12.804 7.114c7.071 0 12.803-3.185 12.803-7.114ZM116.34700000000001 49.76c0-3.928-5.732-7.112-12.804-7.112-7.071 0-12.803 3.184-12.803 7.113 0 3.928 5.732 7.113 12.803 7.113s12.804-3.185 12.804-7.113ZM56.596000000000004-18.526c0-3.929-5.732-7.113-12.803-7.113s-12.804 3.184-12.804 7.113 5.732 7.113 12.804 7.113c7.071 0 12.803-3.184 12.803-7.113Zm-12.803 0\"></path><path fill=\"none\" d=\"M-35.875 18.463h-22.762\"></path><text x=\"-35.875\" y=\"75.368\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-33.062 -53.433)\">A</text><path fill=\"none\" d=\"m-30.185 41.225-28.452 19.917\"></path><text x=\"-35.875\" y=\"75.368\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-33.062 -10.754)\">B</text><path fill=\"none\" d=\"m-7.422-9.99-17.072-48.37\"></path><text x=\"-35.875\" y=\"75.368\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(8.186 -137.36)\">C</text><path fill=\"none\" d=\"m103.543-7.145 54.06-48.37\"></path><text x=\"-35.875\" y=\"75.368\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(189.868 -134.516)\">D</text><path fill=\"none\" d=\"M43.793 24.153 72.245 98.13\"></path><text x=\"-35.875\" y=\"75.368\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(105.134 33.34)\">E</text><g stroke=\"none\" font-family=\"cmssbx10\" font-size=\"10\"><text x=\"-35.875\" y=\"75.368\" transform=\"translate(67.275 53.715)\">Fig.</text><text x=\"-13.764\" y=\"75.368\" transform=\"translate(67.275 53.715)\">1.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 704,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

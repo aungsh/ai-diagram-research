@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "math-bearings",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:40:39.984Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=0.75, >=Stealth]\n\\coordinate (B) at (0,0);\n\\coordinate (D) at (0,7.2);\n\\coordinate (A) at (-1.73,5.53);\n\\coordinate (C) at (3.25,5.63);\n\\coordinate (T) at (3.25,10.4);\n\\draw (A) -- (B) -- (C) -- (D) -- (A);\n\\draw (B) -- (D);\n\\draw (C) -- (T);\n\\draw[->] (D) -- (0,9.2) node[above] {N};\n\\node[below] at (B) {B};\n\\node[left] at (A) {A};\n\\node[above left] at (D) {D};\n\\node[right] at (C) {C};\n\\node[above] at (T) {T};\n\\node[left, font=\\small] at (-1.0,2.6) {14.5 m};\n\\node[above left, font=\\small] at (-0.85,6.4) {6 m};\n\\node[above right, font=\\small] at (1.6,6.5) {9 m};\n\\node[right, font=\\small] at (3.25,8.0) {12 m};\n\\draw (0,1.0) arc[start angle=90, end angle=60, radius=1.0];\n\\node[font=\\small] at (75:2.0) {30$^\\circ$};\n\\draw ($(C)+(154.2:0.8)$) arc[start angle=154.2, end angle=240, radius=0.8];\n\\node[font=\\small] at ($(C)+(197:1.4)$) {85$^\\circ$};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"202.27\" height=\"332.745\" viewBox=\"-72 -72 151.702 249.559\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"m-53.747 45.467 36.918 118.011L52.527 43.333-16.829 9.829l-36.918 35.638M-16.829 163.478V9.83M52.527 43.333V-58.46M-16.829 9.829v-39.6\"></path><path d=\"m-16.829-32.276-1.35 3.585 1.35-1.18 1.351 1.18Z\"></path><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-3.542 -199.857)\">N</text><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-3.333 10.477)\">B</text><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-47.118 -114.54)\">A</text><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-10.755 -157.182)\">D</text><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(72.889 -116.673)\">C</text><text x=\"-16.829\" y=\"163.478\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(65.953 -225.471)\">T</text><g stroke=\"none\" font-family=\"cmr9\" font-size=\"9\"><text x=\"-16.829\" y=\"163.478\" transform=\"translate(-52.108 -52.583)\">14.5</text><text x=\"2.699\" y=\"163.478\" transform=\"translate(-52.108 -52.583)\">m</text></g><g stroke=\"none\" font-family=\"cmr9\" font-size=\"9\"><text x=\"-16.829\" y=\"163.478\" transform=\"translate(-37.088 -140.106)\">6</text><text x=\"-9.12\" y=\"163.478\" transform=\"translate(-37.088 -140.106)\">m</text></g><g stroke=\"none\" font-family=\"cmr9\" font-size=\"9\"><text x=\"-16.829\" y=\"163.478\" transform=\"translate(37.676 -142.24)\">9</text><text x=\"-9.12\" y=\"163.478\" transform=\"translate(37.676 -142.24)\">m</text></g><g stroke=\"none\" font-family=\"cmr9\" font-size=\"9\"><text x=\"-16.829\" y=\"163.478\" transform=\"translate(72.887 -167.816)\">12</text><text x=\"-4.495\" y=\"163.478\" transform=\"translate(72.887 -167.816)\">m</text></g><path fill=\"none\" d=\"M-16.829 142.139c3.745 0 7.427.986 10.67 2.859\"></path><g stroke=\"none\"><text x=\"-16.829\" y=\"163.478\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(4.255 -37.883)\">30</text><text x=\"-7.579\" y=\"159.655\" font-family=\"cmsy6\" font-size=\"6\" transform=\"translate(4.255 -37.883)\">±</text></g><path fill=\"none\" d=\"M37.158 35.903c-3.891 8.05-.91 17.744 6.834 22.215\"></path><g stroke=\"none\"><text x=\"-16.829\" y=\"163.478\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(33.995 -108.069)\">85</text><text x=\"-7.579\" y=\"159.655\" font-family=\"cmsy6\" font-size=\"6\" transform=\"translate(33.995 -108.069)\">±</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 547,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

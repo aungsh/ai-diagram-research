@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "svg",
+ "questionId": "phys-water-gun",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:43:33.751Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 290\" width=\"520\" height=\"290\">\n  <defs>\n    <pattern id=\"dots\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\">\n      <circle cx=\"2\" cy=\"2\" r=\"0.9\" fill=\"#000000\"/>\n    </pattern>\n  </defs>\n  <rect x=\"0\" y=\"0\" width=\"520\" height=\"290\" fill=\"#ffffff\"/>\n  <rect x=\"160\" y=\"130\" width=\"240\" height=\"50\" fill=\"#ffffff\" stroke=\"#000000\" stroke-width=\"1.5\"/>\n  <rect x=\"172\" y=\"132\" width=\"226\" height=\"46\" fill=\"url(#dots)\"/>\n  <rect x=\"166\" y=\"130\" width=\"6\" height=\"50\" fill=\"#666666\" stroke=\"#000000\" stroke-width=\"0.8\"/>\n  <rect x=\"400\" y=\"145\" width=\"32\" height=\"20\" fill=\"#ffffff\" stroke=\"#000000\" stroke-width=\"1.5\"/>\n  <rect x=\"432\" y=\"138\" width=\"8\" height=\"34\" fill=\"#808080\" stroke=\"#000000\" stroke-width=\"1\"/>\n  <line x1=\"166\" y1=\"155\" x2=\"96\" y2=\"155\" stroke=\"#000000\" stroke-width=\"2.5\"/>\n  <line x1=\"30\" y1=\"155\" x2=\"92\" y2=\"155\" stroke=\"#000000\" stroke-width=\"2\"/>\n  <polygon points=\"100,155 91,151 91,159\" fill=\"#000000\"/>\n  <line x1=\"30\" y1=\"160\" x2=\"30\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1\"/>\n  <line x1=\"166\" y1=\"130\" x2=\"166\" y2=\"62\" stroke=\"#000000\" stroke-width=\"1\"/>\n  <line x1=\"416\" y1=\"165\" x2=\"416\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1\"/>\n  <line x1=\"436\" y1=\"138\" x2=\"436\" y2=\"104\" stroke=\"#000000\" stroke-width=\"1\"/>\n  <circle cx=\"166\" cy=\"155\" r=\"3\" fill=\"#000000\"/>\n  <circle cx=\"436\" cy=\"155\" r=\"3\" fill=\"#000000\"/>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000000\">\n    <text x=\"50\" y=\"146\" text-anchor=\"start\">5.0 N</text>\n    <text x=\"30\" y=\"250\" text-anchor=\"start\">trigger</text>\n    <text x=\"166\" y=\"54\" text-anchor=\"start\">piston, area 2.0 cm<tspan baseline-shift=\"super\" font-size=\"10\">2</tspan></text>\n    <text x=\"440\" y=\"252\" text-anchor=\"end\">nozzle, area 0.080 cm<tspan baseline-shift=\"super\" font-size=\"10\">2</tspan></text>\n    <text x=\"436\" y=\"94\" text-anchor=\"middle\">stopper</text>\n    <text x=\"260\" y=\"285\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 5.1</text>\n  </g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 290\" width=\"520\" height=\"290\">\n  <defs>\n    <pattern id=\"dots\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\">\n      <circle cx=\"2\" cy=\"2\" r=\"0.9\" fill=\"#000000\"></circle>\n    </pattern>\n  </defs>\n  <rect x=\"0\" y=\"0\" width=\"520\" height=\"290\" fill=\"#ffffff\"></rect>\n  <rect x=\"160\" y=\"130\" width=\"240\" height=\"50\" fill=\"#ffffff\" stroke=\"#000000\" stroke-width=\"1.5\"></rect>\n  <rect x=\"172\" y=\"132\" width=\"226\" height=\"46\" fill=\"url(#dots)\"></rect>\n  <rect x=\"166\" y=\"130\" width=\"6\" height=\"50\" fill=\"#666666\" stroke=\"#000000\" stroke-width=\"0.8\"></rect>\n  <rect x=\"400\" y=\"145\" width=\"32\" height=\"20\" fill=\"#ffffff\" stroke=\"#000000\" stroke-width=\"1.5\"></rect>\n  <rect x=\"432\" y=\"138\" width=\"8\" height=\"34\" fill=\"#808080\" stroke=\"#000000\" stroke-width=\"1\"></rect>\n  <line x1=\"166\" y1=\"155\" x2=\"96\" y2=\"155\" stroke=\"#000000\" stroke-width=\"2.5\"></line>\n  <line x1=\"30\" y1=\"155\" x2=\"92\" y2=\"155\" stroke=\"#000000\" stroke-width=\"2\"></line>\n  <polygon points=\"100,155 91,151 91,159\" fill=\"#000000\"></polygon>\n  <line x1=\"30\" y1=\"160\" x2=\"30\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1\"></line>\n  <line x1=\"166\" y1=\"130\" x2=\"166\" y2=\"62\" stroke=\"#000000\" stroke-width=\"1\"></line>\n  <line x1=\"416\" y1=\"165\" x2=\"416\" y2=\"230\" stroke=\"#000000\" stroke-width=\"1\"></line>\n  <line x1=\"436\" y1=\"138\" x2=\"436\" y2=\"104\" stroke=\"#000000\" stroke-width=\"1\"></line>\n  <circle cx=\"166\" cy=\"155\" r=\"3\" fill=\"#000000\"></circle>\n  <circle cx=\"436\" cy=\"155\" r=\"3\" fill=\"#000000\"></circle>\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000000\">\n    <text x=\"50\" y=\"146\" text-anchor=\"start\">5.0 N</text>\n    <text x=\"30\" y=\"250\" text-anchor=\"start\">trigger</text>\n    <text x=\"166\" y=\"54\" text-anchor=\"start\">piston, area 2.0 cm<tspan baseline-shift=\"super\" font-size=\"10\">2</tspan></text>\n    <text x=\"440\" y=\"252\" text-anchor=\"end\">nozzle, area 0.080 cm<tspan baseline-shift=\"super\" font-size=\"10\">2</tspan></text>\n    <text x=\"436\" y=\"94\" text-anchor=\"middle\">stopper</text>\n    <text x=\"260\" y=\"285\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 5.1</text>\n  </g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 6,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

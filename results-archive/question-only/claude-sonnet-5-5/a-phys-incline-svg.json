@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "a-phys-incline",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:39:16.115Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 380\" width=\"540\" height=\"380\">\n<rect width=\"540\" height=\"380\" fill=\"#fff\"/>\n<g stroke=\"#000\" fill=\"none\" stroke-width=\"1.5\">\n<polygon points=\"60,320 420,320 420,112\" stroke-width=\"3\"/>\n<path d=\"M110 320 A50 50 0 0 0 103.3 295\"/>\n<g transform=\"translate(185,248) rotate(-30)\"><rect x=\"0\" y=\"-34\" width=\"84\" height=\"34\"/></g>\n<circle cx=\"429\" cy=\"101\" r=\"12\"/>\n<line x1=\"249.2\" y1=\"191.3\" x2=\"423\" y2=\"90.6\"/>\n<line x1=\"441\" y1=\"101\" x2=\"441\" y2=\"160\"/>\n<rect x=\"423\" y=\"160\" width=\"36\" height=\"36\"/>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" fill=\"#000\" font-size=\"14\">\n<g transform=\"translate(185,248) rotate(-30)\"><text x=\"42\" y=\"-12\" text-anchor=\"middle\" font-size=\"13\">4.0 kg</text></g>\n<text x=\"472\" y=\"183\">3.0 kg</text>\n<text x=\"118\" y=\"313\">30°</text>\n<text x=\"260\" y=\"365\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\">Fig. 1.1</text>\n</g></svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 380\" width=\"540\" height=\"380\">\n<rect width=\"540\" height=\"380\" fill=\"#fff\"></rect>\n<g stroke=\"#000\" fill=\"none\" stroke-width=\"1.5\">\n<polygon points=\"60,320 420,320 420,112\" stroke-width=\"3\"></polygon>\n<path d=\"M110 320 A50 50 0 0 0 103.3 295\"></path>\n<g transform=\"translate(185,248) rotate(-30)\"><rect x=\"0\" y=\"-34\" width=\"84\" height=\"34\"></rect></g>\n<circle cx=\"429\" cy=\"101\" r=\"12\"></circle>\n<line x1=\"249.2\" y1=\"191.3\" x2=\"423\" y2=\"90.6\"></line>\n<line x1=\"441\" y1=\"101\" x2=\"441\" y2=\"160\"></line>\n<rect x=\"423\" y=\"160\" width=\"36\" height=\"36\"></rect>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" fill=\"#000\" font-size=\"14\">\n<g transform=\"translate(185,248) rotate(-30)\"><text x=\"42\" y=\"-12\" text-anchor=\"middle\" font-size=\"13\">4.0 kg</text></g>\n<text x=\"472\" y=\"183\">3.0 kg</text>\n<text x=\"118\" y=\"313\">30°</text>\n<text x=\"260\" y=\"365\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\">Fig. 1.1</text>\n</g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 5,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

@@ -1,0 +1,27 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "math-quadratic",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T04:55:59.235Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, scale=0.9]\n    % Draw grid\n    \\draw[lightgray!50, very thin] (-2.5, -4.5) grid (4.5, 6.5);\n    \n    % Axes\n    \\draw[-Stealth, thick] (-2.8, 0) -- (4.8, 0) node[right] {$x$};\n    \\draw[-Stealth, thick] (0, -4.8) -- (0, 7.2) node[above] {$y$};\n    \n    % Axis ticks and labels\n    \\foreach \\x in {-2, -1, 1, 2, 3, 4} {\n        \\draw (\\x, 0.1) -- (\\x, -0.1) node[below=2pt, font=\\small] {\\x};\n    }\n    \\foreach \\y in {-4, -3, -2, -1, 1, 2, 3, 4, 5, 6} {\n        \\draw (0.1, \\y) -- (-0.1, \\y) node[left=2pt, font=\\small] {\\y};\n    }\n    \\node at (-0.3, -0.3) [font=\\small] {0};\n\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"277.062\" height=\"428.005\" viewBox=\"-72 -72 207.797 321.003\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-width=\".2\" d=\"M-64.188 227.848h179.251m-179.25-25.608h179.25m-179.25-25.607h179.25m-179.25-25.607h179.25m-179.25-25.608h179.25m-179.25-25.607h179.25m-179.25-25.607h179.25m-179.25-25.608h179.25M-64.187 22.99h179.25M-64.187-2.618h179.25m-179.25-25.607h179.25M-51.384 240.65v-281.68m25.607 281.68v-281.68M-.17 240.651v-281.68m25.608 281.68v-281.68m25.607 281.68v-281.68m25.607 281.68v-281.68m25.608 281.68v-281.68m12.803 0\"></path><g stroke-width=\".8\"><path fill=\"none\" d=\"M-71.87 125.418h190.49\"></path><path d=\"m121.606 125.418-4.169-1.576 1.383 1.576-1.383 1.577Z\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(126.648 2.153)\">x</text></g><g stroke-width=\".8\"><path fill=\"none\" d=\"M-.17 248.333V-54.828\"></path><path d=\"m-.17-57.815-1.576 4.17 1.576-1.383 1.577 1.382Z\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(-2.63 -190.05)\">y</text></g><path fill=\"none\" d=\"M-51.384 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-55.069 13.894)\">-2</text><path fill=\"none\" d=\"M-25.777 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-29.461 13.894)\">-1</text><path fill=\"none\" d=\"M25.438 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(23.295 13.894)\">1</text><path fill=\"none\" d=\"M51.045 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(48.902 13.894)\">2</text><path fill=\"none\" d=\"M76.652 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(74.51 13.894)\">3</text><path fill=\"none\" d=\"M102.26 122.857v5.122\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(100.117 13.894)\">4</text><path fill=\"none\" d=\"M2.391 227.848H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-15.802 105.33)\">-4</text><path fill=\"none\" d=\"M2.391 202.24H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-15.802 79.722)\">-3</text><path fill=\"none\" d=\"M2.391 176.633H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-15.802 54.115)\">-2</text><path fill=\"none\" d=\"M2.391 151.026H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-15.802 28.507)\">-1</text><path fill=\"none\" d=\"M2.391 99.811H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -22.707)\">1</text><path fill=\"none\" d=\"M2.391 74.204H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -48.315)\">2</text><path fill=\"none\" d=\"M2.391 48.596H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -73.922)\">3</text><path fill=\"none\" d=\"M2.391 22.99H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -99.53)\">4</text><path fill=\"none\" d=\"M2.391-2.618H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -125.136)\">5</text><path fill=\"none\" d=\"M2.391-28.225H-2.73\"></path><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-12.719 -150.744)\">6</text><text x=\"-.17\" y=\"125.418\" stroke=\"none\" font-family=\"cmr9\" font-size=\"9\" transform=\"translate(-9.995 10.582)\">0</text></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 17408,
+   "inputTokens": 1893,
+   "outputTokens": 330
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

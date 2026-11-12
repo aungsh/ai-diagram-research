@@ -1,0 +1,44 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "scene",
+ "questionId": "bio-osmosis",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:44:54.517Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\"unit\": 48, \"font\": \"sans\", \"caption\": \"Fig. 2.1\",\n \"points\": {},\n \"elements\": [\n   {\"type\": \"polyline\", \"points\": [[0, 4.5], [0, 0], [6, 0], [6, 4.5]], \"weight\": \"normal\"},\n   {\"type\": \"liquid\", \"points\": [[0, 0], [6, 0], [6, 3.6], [0, 3.6]], \"fill\": {\"grey\": 0.1}},\n   {\"type\": \"rect\", \"at\": [2.9, 4.1], \"w\": 0.2, \"h\": 3.1, \"fill\": \"none\", \"weight\": \"normal\"},\n   {\"type\": \"liquid\", \"points\": [[2.9, 4.1], [3.1, 4.1], [3.1, 6.2], [2.9, 6.2]], \"fill\": {\"grey\": 0.25}},\n   {\"type\": \"ellipse\", \"center\": [3.0, 3.1], \"rx\": 0.9, \"ry\": 1.0, \"fill\": {\"grey\": 0.35}},\n   {\"type\": \"callout\", \"target\": [3.05, 7.0], \"text\": \"capillary tube\", \"dir\": \"ne\", \"dist\": 1},\n   {\"type\": \"callout\", \"target\": [3.0, 6.2], \"text\": \"liquid level\", \"dir\": \"w\", \"dist\": 1.2},\n   {\"type\": \"callout\", \"target\": [3.9, 2.9], \"text\": \"Visking tubing\", \"dir\": \"se\", \"dist\": 1},\n   {\"type\": \"callout\", \"target\": [2.6, 2.4], \"text\": \"concentrated sucrose solution\", \"dir\": \"sw\", \"dist\": 1.2},\n   {\"type\": \"callout\", \"target\": [5.0, 1.8], \"text\": \"distilled water\", \"dir\": \"e\", \"dist\": 1}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-14 -398.66 442.75 442.66\" width=\"442.75\" height=\"442.66\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-14\" y=\"-398.66\" width=\"442.75\" height=\"442.66\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0 -216L0 0L288 0L288 -216\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L288 0L288 -172.8L0 -172.8Z\" fill=\"rgb(230,230,230)\" stroke=\"none\"/><path d=\"M0 -172.8H288\" stroke-width=\"1\"/><path d=\"M139.2 -196.8L148.8 -196.8L148.8 -345.6L139.2 -345.6Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M139.2 -196.8L148.8 -196.8L148.8 -297.6L139.2 -297.6Z\" fill=\"rgb(191,191,191)\" stroke=\"none\"/><path d=\"M139.2 -297.6H148.8\" stroke-width=\"1\"/><ellipse cx=\"144\" cy=\"-148.8\" rx=\"43.2\" ry=\"48\" fill=\"rgb(166,166,166)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M146.4 -336L196.7 -365.41\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M144 -297.6L91.48 -333.8\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M187.2 -139.2L217 -97.51\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M124.8 -115.2L124.8 -59.6\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M240 -86.4L310 -86.4\" stroke=\"#000\" stroke-width=\"0.9\"/></g><text x=\"214.87\" y=\"-376.04\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">capillary tube</text><text x=\"76.06\" y=\"-344.43\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">liquid level</text><text x=\"224.6\" y=\"-86.89\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">Visking tubing</text><text x=\"124.8\" y=\"-48.97\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">concentrated sucrose solution</text><text x=\"363.38\" y=\"-86.4\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">distilled water</text><text x=\"207.38\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "The distilled water leader line runs through the Visking tubing label, so the two labels collide"
+    ]
+   },
+   "accepted": false,
+   "ms": 13,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "{\"unit\": 48, \"font\": \"sans\", \"caption\": \"Fig. 2.1\",\n \"points\": {},\n \"elements\": [\n   {\"type\": \"polyline\", \"points\": [[0, 4.5], [0, 0], [6, 0], [6, 4.5]], \"weight\": \"normal\"},\n   {\"type\": \"liquid\", \"points\": [[0, 0], [6, 0], [6, 3.6], [0, 3.6]], \"fill\": {\"grey\": 0.1}},\n   {\"type\": \"rect\", \"at\": [2.9, 4.1], \"w\": 0.2, \"h\": 3.1, \"fill\": \"none\", \"weight\": \"normal\"},\n   {\"type\": \"liquid\", \"points\": [[2.9, 4.1], [3.1, 4.1], [3.1, 6.2], [2.9, 6.2]], \"fill\": {\"grey\": 0.25}},\n   {\"type\": \"ellipse\", \"center\": [3.0, 3.1], \"rx\": 0.9, \"ry\": 1.0, \"fill\": {\"grey\": 0.35}},\n   {\"type\": \"callout\", \"target\": [3.05, 7.0], \"text\": \"capillary tube\", \"dir\": \"ne\", \"dist\": 1},\n   {\"type\": \"callout\", \"target\": [3.0, 6.2], \"text\": \"liquid level\", \"dir\": \"w\", \"dist\": 1.2},\n   {\"type\": \"callout\", \"target\": [3.8, 3.6], \"text\": \"Visking tubing\", \"dir\": \"ne\", \"dist\": 1.2},\n   {\"type\": \"callout\", \"target\": [2.6, 2.4], \"text\": \"concentrated sucrose solution\", \"dir\": \"sw\", \"dist\": 1.2},\n   {\"type\": \"callout\", \"target\": [5.6, 1.0], \"text\": \"distilled water\", \"dir\": \"se\", \"dist\": 1}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-14 -398.66 439.99 442.66\" width=\"439.99\" height=\"442.66\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><rect x=\"-14\" y=\"-398.66\" width=\"439.99\" height=\"442.66\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M0 -216L0 0L288 0L288 -216\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L288 0L288 -172.8L0 -172.8Z\" fill=\"rgb(230,230,230)\" stroke=\"none\"/><path d=\"M0 -172.8H288\" stroke-width=\"1\"/><path d=\"M139.2 -196.8L148.8 -196.8L148.8 -345.6L139.2 -345.6Z\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M139.2 -196.8L148.8 -196.8L148.8 -297.6L139.2 -297.6Z\" fill=\"rgb(191,191,191)\" stroke=\"none\"/><path d=\"M139.2 -297.6H148.8\" stroke-width=\"1\"/><ellipse cx=\"144\" cy=\"-148.8\" rx=\"43.2\" ry=\"48\" fill=\"rgb(166,166,166)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M146.4 -336L196.7 -365.41\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M144 -297.6L91.48 -333.8\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M182.4 -172.8L216.34 -223.36\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M124.8 -115.2L124.8 -59.6\" stroke=\"#000\" stroke-width=\"0.9\"/><path d=\"M268.8 -48L315.59 -36.96\" stroke=\"#000\" stroke-width=\"0.9\"/></g><text x=\"214.87\" y=\"-376.04\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">capillary tube</text><text x=\"76.06\" y=\"-344.43\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">liquid level</text><text x=\"223.47\" y=\"-233.98\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">Visking tubing</text><text x=\"124.8\" y=\"-48.97\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">concentrated sucrose solution</text><text x=\"360.61\" y=\"-26.33\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">distilled water</text><text x=\"205.99\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 13,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

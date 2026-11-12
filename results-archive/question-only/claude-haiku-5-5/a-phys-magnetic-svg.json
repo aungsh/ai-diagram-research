@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "svg",
+ "questionId": "a-phys-magnetic",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:44:58.148Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 390\" width=\"400\" height=\"390\">\n  <rect x=\"0\" y=\"0\" width=\"400\" height=\"390\" fill=\"#ffffff\"/>\n  <!-- boundary of the magnetic field region -->\n  <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"330\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-dasharray=\"8,6\"/>\n  <!-- semicircular path of the electron -->\n  <path d=\"M 120 120 A 80 80 0 0 1 120 280\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"/>\n  <!-- radius r -->\n  <line x1=\"120\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"#000000\" stroke-width=\"1.2\" stroke-dasharray=\"6,5\"/>\n  <!-- velocity arrow of the electron entering the field -->\n  <line x1=\"30\" y1=\"120\" x2=\"112\" y2=\"120\" stroke=\"#000000\" stroke-width=\"2\"/>\n  <polygon points=\"112,115 121,120 112,125\" fill=\"#000000\"/>\n  <!-- field into the page: crosses -->\n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"16\" fill=\"#000000\" text-anchor=\"middle\">\n    <text x=\"170\" y=\"66\">×</text>\n    <text x=\"230\" y=\"66\">×</text>\n    <text x=\"290\" y=\"66\">×</text>\n    <text x=\"340\" y=\"140\">×</text>\n    <text x=\"330\" y=\"200\">×</text>\n    <text x=\"340\" y=\"260\">×</text>\n    <text x=\"170\" y=\"346\">×</text>\n    <text x=\"230\" y=\"346\">×</text>\n    <text x=\"290\" y=\"346\">×</text>\n    <text x=\"280\" y=\"30\" font-size=\"14\">B into page</text>\n    <text x=\"160\" y=\"190\" font-size=\"14\">r</text>\n    <text x=\"62\" y=\"140\" font-size=\"14\">v</text>\n    <text x=\"30\" y=\"100\" font-size=\"14\" text-anchor=\"start\">electron</text>\n    <text x=\"200\" y=\"372\" font-size=\"14\" font-weight=\"bold\">Fig. 3.1</text>\n  </g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 390\" width=\"400\" height=\"390\">\n  <rect x=\"0\" y=\"0\" width=\"400\" height=\"390\" fill=\"#ffffff\"></rect>\n  \n  <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"330\" stroke=\"#000000\" stroke-width=\"1.5\" stroke-dasharray=\"8,6\"></line>\n  \n  <path d=\"M 120 120 A 80 80 0 0 1 120 280\" fill=\"none\" stroke=\"#000000\" stroke-width=\"2\"></path>\n  \n  <line x1=\"120\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"#000000\" stroke-width=\"1.2\" stroke-dasharray=\"6,5\"></line>\n  \n  <line x1=\"30\" y1=\"120\" x2=\"112\" y2=\"120\" stroke=\"#000000\" stroke-width=\"2\"></line>\n  <polygon points=\"112,115 121,120 112,125\" fill=\"#000000\"></polygon>\n  \n  <g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"16\" fill=\"#000000\" text-anchor=\"middle\">\n    <text x=\"170\" y=\"66\">×</text>\n    <text x=\"230\" y=\"66\">×</text>\n    <text x=\"290\" y=\"66\">×</text>\n    <text x=\"340\" y=\"140\">×</text>\n    <text x=\"330\" y=\"200\">×</text>\n    <text x=\"340\" y=\"260\">×</text>\n    <text x=\"170\" y=\"346\">×</text>\n    <text x=\"230\" y=\"346\">×</text>\n    <text x=\"290\" y=\"346\">×</text>\n    <text x=\"280\" y=\"30\" font-size=\"14\">B into page</text>\n    <text x=\"160\" y=\"190\" font-size=\"14\">r</text>\n    <text x=\"62\" y=\"140\" font-size=\"14\">v</text>\n    <text x=\"30\" y=\"100\" font-size=\"14\" text-anchor=\"start\">electron</text>\n    <text x=\"200\" y=\"372\" font-size=\"14\" font-weight=\"bold\">Fig. 3.1</text>\n  </g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 6,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "a-chem-cell",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:40:01.475Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 380\" width=\"520\" height=\"380\">\n<rect width=\"520\" height=\"380\" fill=\"#fff\"/>\n<g fill=\"none\" stroke=\"#000\" stroke-width=\"2\">\n<path d=\"M30 160 V300 H180 V160\"/>\n<path d=\"M340 160 V300 H490 V160\"/>\n<path d=\"M30 200 H180 M340 200 H490\" stroke-width=\"1\"/>\n<rect x=\"75\" y=\"100\" width=\"16\" height=\"170\" fill=\"#aaa\"/>\n<rect x=\"430\" y=\"100\" width=\"16\" height=\"170\" fill=\"#aaa\"/>\n<path d=\"M135 235 V130 H385 V235 H360 V155 H160 V235 Z\" fill=\"#ececec\"/>\n<path d=\"M83 100 V45 H225 M438 100 V45 H295\" stroke-width=\"1.2\"/>\n<circle cx=\"260\" cy=\"45\" r=\"28\" stroke-width=\"1.2\"/>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000\" text-anchor=\"middle\">\n<text x=\"260\" y=\"51\" font-size=\"18\">V</text>\n<text x=\"260\" y=\"120\">salt bridge</text>\n<text x=\"55\" y=\"130\" text-anchor=\"end\">zinc</text>\n<text x=\"470\" y=\"130\" text-anchor=\"start\">copper</text>\n<text x=\"105\" y=\"325\">1.0 mol dm<tspan font-size=\"10\" dy=\"-5\">-3</tspan><tspan dy=\"5\"> ZnSO</tspan><tspan font-size=\"10\" dy=\"3\">4</tspan><tspan dy=\"-3\">(aq)</tspan></text>\n<text x=\"415\" y=\"325\">1.0 mol dm<tspan font-size=\"10\" dy=\"-5\">-3</tspan><tspan dy=\"5\"> CuSO</tspan><tspan font-size=\"10\" dy=\"3\">4</tspan><tspan dy=\"-3\">(aq)</tspan></text>\n<text x=\"260\" y=\"365\">Fig. 6.1</text>\n</g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 380\" width=\"520\" height=\"380\">\n<rect width=\"520\" height=\"380\" fill=\"#fff\"></rect>\n<g fill=\"none\" stroke=\"#000\" stroke-width=\"2\">\n<path d=\"M30 160 V300 H180 V160\"></path>\n<path d=\"M340 160 V300 H490 V160\"></path>\n<path d=\"M30 200 H180 M340 200 H490\" stroke-width=\"1\"></path>\n<rect x=\"75\" y=\"100\" width=\"16\" height=\"170\" fill=\"#aaa\"></rect>\n<rect x=\"430\" y=\"100\" width=\"16\" height=\"170\" fill=\"#aaa\"></rect>\n<path d=\"M135 235 V130 H385 V235 H360 V155 H160 V235 Z\" fill=\"#ececec\"></path>\n<path d=\"M83 100 V45 H225 M438 100 V45 H295\" stroke-width=\"1.2\"></path>\n<circle cx=\"260\" cy=\"45\" r=\"28\" stroke-width=\"1.2\"></circle>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" fill=\"#000\" text-anchor=\"middle\">\n<text x=\"260\" y=\"51\" font-size=\"18\">V</text>\n<text x=\"260\" y=\"120\">salt bridge</text>\n<text x=\"55\" y=\"130\" text-anchor=\"end\">zinc</text>\n<text x=\"470\" y=\"130\" text-anchor=\"start\">copper</text>\n<text x=\"105\" y=\"325\">1.0 mol dm<tspan font-size=\"10\" dy=\"-5\">-3</tspan><tspan dy=\"5\"> ZnSO</tspan><tspan font-size=\"10\" dy=\"3\">4</tspan><tspan dy=\"-3\">(aq)</tspan></text>\n<text x=\"415\" y=\"325\">1.0 mol dm<tspan font-size=\"10\" dy=\"-5\">-3</tspan><tspan dy=\"5\"> CuSO</tspan><tspan font-size=\"10\" dy=\"3\">4</tspan><tspan dy=\"-3\">(aq)</tspan></text>\n<text x=\"260\" y=\"365\">Fig. 6.1</text>\n</g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

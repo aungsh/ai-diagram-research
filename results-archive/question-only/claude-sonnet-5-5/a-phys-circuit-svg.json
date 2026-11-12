@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "a-phys-circuit",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:40:24.385Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 400\" width=\"520\" height=\"400\">\n<rect width=\"520\" height=\"400\" fill=\"#fff\"/>\n<g stroke=\"#000\" fill=\"none\" stroke-width=\"1.8\">\n<polyline points=\"100,330 100,240\"/>\n<polyline points=\"100,225 100,130 200,130\"/>\n<rect x=\"200\" y=\"118\" width=\"60\" height=\"24\"/>\n<polyline points=\"260,130 420,130 420,200\"/>\n<rect x=\"410\" y=\"200\" width=\"20\" height=\"60\"/>\n<line x1=\"398\" y1=\"268\" x2=\"442\" y2=\"192\"/>\n<polyline points=\"420,260 420,330 100,330\"/>\n<line x1=\"85\" y1=\"225\" x2=\"115\" y2=\"225\"/>\n<line x1=\"92\" y1=\"240\" x2=\"108\" y2=\"240\" stroke-width=\"5\"/>\n<polyline points=\"180,130 180,70 220,70\"/>\n<circle cx=\"240\" cy=\"70\" r=\"20\"/>\n<polyline points=\"260,70 280,70 280,130\"/>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" fill=\"#000\" font-size=\"18\">\n<text x=\"240\" y=\"76\" text-anchor=\"middle\">V</text>\n<text x=\"230\" y=\"170\" text-anchor=\"middle\">R</text>\n<text x=\"455\" y=\"236\">T</text>\n<text x=\"70\" y=\"238\" text-anchor=\"end\">12 V</text>\n<text x=\"260\" y=\"380\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 2.1</text>\n</g></svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 400\" width=\"520\" height=\"400\">\n<rect width=\"520\" height=\"400\" fill=\"#fff\"></rect>\n<g stroke=\"#000\" fill=\"none\" stroke-width=\"1.8\">\n<polyline points=\"100,330 100,240\"></polyline>\n<polyline points=\"100,225 100,130 200,130\"></polyline>\n<rect x=\"200\" y=\"118\" width=\"60\" height=\"24\"></rect>\n<polyline points=\"260,130 420,130 420,200\"></polyline>\n<rect x=\"410\" y=\"200\" width=\"20\" height=\"60\"></rect>\n<line x1=\"398\" y1=\"268\" x2=\"442\" y2=\"192\"></line>\n<polyline points=\"420,260 420,330 100,330\"></polyline>\n<line x1=\"85\" y1=\"225\" x2=\"115\" y2=\"225\"></line>\n<line x1=\"92\" y1=\"240\" x2=\"108\" y2=\"240\" stroke-width=\"5\"></line>\n<polyline points=\"180,130 180,70 220,70\"></polyline>\n<circle cx=\"240\" cy=\"70\" r=\"20\"></circle>\n<polyline points=\"260,70 280,70 280,130\"></polyline>\n</g>\n<g font-family=\"Helvetica, Arial, sans-serif\" fill=\"#000\" font-size=\"18\">\n<text x=\"240\" y=\"76\" text-anchor=\"middle\">V</text>\n<text x=\"230\" y=\"170\" text-anchor=\"middle\">R</text>\n<text x=\"455\" y=\"236\">T</text>\n<text x=\"70\" y=\"238\" text-anchor=\"end\">12 V</text>\n<text x=\"260\" y=\"380\" text-anchor=\"middle\" font-weight=\"bold\">Fig. 2.1</text>\n</g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 9,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

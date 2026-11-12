@@ -1,0 +1,44 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "svg",
+ "questionId": "phys-water-gun",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:41:29.171Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 220\" width=\"520\" height=\"220\">\n<rect width=\"520\" height=\"220\" fill=\"#fff\"/>\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0 L8 4 L0 8 Z\"/></marker></defs>\n<polygon points=\"115,60 290,60 330,85 380,85 380,105 330,105 290,130 115,130\" fill=\"#e4e4f4\"/>\n<g stroke=\"#000\" stroke-width=\"3\" fill=\"none\">\n<polyline points=\"60,60 290,60 330,85 400,85\"/>\n<polyline points=\"60,130 290,130 330,105 400,105\"/>\n</g>\n<rect x=\"100\" y=\"60\" width=\"15\" height=\"70\" fill=\"#999\" stroke=\"#000\" stroke-width=\"2\"/>\n<line x1=\"100\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#000\" stroke-width=\"3\"/>\n<rect x=\"25\" y=\"75\" width=\"20\" height=\"40\" fill=\"#ddd\" stroke=\"#000\" stroke-width=\"2\"/>\n<line x1=\"-10\" y1=\"95\" x2=\"22\" y2=\"95\" stroke=\"#000\" stroke-width=\"2.5\" marker-end=\"url(#a)\"/>\n<rect x=\"380\" y=\"85\" width=\"22\" height=\"20\" fill=\"#888\" stroke=\"#000\" stroke-width=\"2\"/>\n<g stroke=\"#000\" stroke-width=\"1\"><line x1=\"35\" y1=\"40\" x2=\"35\" y2=\"75\"/><line x1=\"107\" y1=\"40\" x2=\"107\" y2=\"80\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"90\"/><line x1=\"330\" y1=\"150\" x2=\"335\" y2=\"105\"/><line x1=\"410\" y1=\"150\" x2=\"395\" y2=\"105\"/></g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">\n<text x=\"35\" y=\"35\">trigger</text><text x=\"107\" y=\"35\">piston</text><text x=\"200\" y=\"35\">water</text>\n<text x=\"330\" y=\"166\">nozzle</text><text x=\"410\" y=\"166\">stopper</text>\n<text x=\"230\" y=\"205\" font-weight=\"bold\">Fig. 5.1</text>\n</g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 220\" width=\"520\" height=\"220\">\n<rect width=\"520\" height=\"220\" fill=\"#fff\"></rect>\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0 L8 4 L0 8 Z\"></path></marker></defs>\n<polygon points=\"115,60 290,60 330,85 380,85 380,105 330,105 290,130 115,130\" fill=\"#e4e4f4\"></polygon>\n<g stroke=\"#000\" stroke-width=\"3\" fill=\"none\">\n<polyline points=\"60,60 290,60 330,85 400,85\"></polyline>\n<polyline points=\"60,130 290,130 330,105 400,105\"></polyline>\n</g>\n<rect x=\"100\" y=\"60\" width=\"15\" height=\"70\" fill=\"#999\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<line x1=\"100\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#000\" stroke-width=\"3\"></line>\n<rect x=\"25\" y=\"75\" width=\"20\" height=\"40\" fill=\"#ddd\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<line x1=\"-10\" y1=\"95\" x2=\"22\" y2=\"95\" stroke=\"#000\" stroke-width=\"2.5\" marker-end=\"url(#a)\"></line>\n<rect x=\"380\" y=\"85\" width=\"22\" height=\"20\" fill=\"#888\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<g stroke=\"#000\" stroke-width=\"1\"><line x1=\"35\" y1=\"40\" x2=\"35\" y2=\"75\"></line><line x1=\"107\" y1=\"40\" x2=\"107\" y2=\"80\"></line><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"90\"></line><line x1=\"330\" y1=\"150\" x2=\"335\" y2=\"105\"></line><line x1=\"410\" y1=\"150\" x2=\"395\" y2=\"105\"></line></g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">\n<text x=\"35\" y=\"35\">trigger</text><text x=\"107\" y=\"35\">piston</text><text x=\"200\" y=\"35\">water</text>\n<text x=\"330\" y=\"166\">nozzle</text><text x=\"410\" y=\"166\">stopper</text>\n<text x=\"230\" y=\"205\" font-weight=\"bold\">Fig. 5.1</text>\n</g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "Force arrow at the trigger is cut off at the left edge of the picture"
+    ]
+   },
+   "accepted": false,
+   "ms": 6,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-60 0 580 220\" width=\"580\" height=\"220\">\n<rect width=\"580\" height=\"220\" fill=\"#fff\"/>\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0 L8 4 L0 8 Z\"/></marker></defs>\n<polygon points=\"115,60 290,60 330,85 380,85 380,105 330,105 290,130 115,130\" fill=\"#e4e4f4\"/>\n<g stroke=\"#000\" stroke-width=\"3\" fill=\"none\">\n<polyline points=\"60,60 290,60 330,85 400,85\"/>\n<polyline points=\"60,130 290,130 330,105 400,105\"/>\n</g>\n<rect x=\"100\" y=\"60\" width=\"15\" height=\"70\" fill=\"#999\" stroke=\"#000\" stroke-width=\"2\"/>\n<line x1=\"100\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#000\" stroke-width=\"3\"/>\n<rect x=\"25\" y=\"75\" width=\"20\" height=\"40\" fill=\"#ddd\" stroke=\"#000\" stroke-width=\"2\"/>\n<line x1=\"-10\" y1=\"95\" x2=\"22\" y2=\"95\" stroke=\"#000\" stroke-width=\"2.5\" marker-end=\"url(#a)\"/>\n<rect x=\"380\" y=\"85\" width=\"22\" height=\"20\" fill=\"#888\" stroke=\"#000\" stroke-width=\"2\"/>\n<g stroke=\"#000\" stroke-width=\"1\"><line x1=\"35\" y1=\"40\" x2=\"35\" y2=\"75\"/><line x1=\"107\" y1=\"40\" x2=\"107\" y2=\"80\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"90\"/><line x1=\"330\" y1=\"150\" x2=\"335\" y2=\"105\"/><line x1=\"410\" y1=\"150\" x2=\"395\" y2=\"105\"/></g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">\n<text x=\"35\" y=\"35\">trigger</text><text x=\"107\" y=\"35\">piston</text><text x=\"200\" y=\"35\">water</text>\n<text x=\"330\" y=\"166\">nozzle</text><text x=\"410\" y=\"166\">stopper</text>\n<text x=\"230\" y=\"205\" font-weight=\"bold\">Fig. 5.1</text>\n</g>\n</svg>",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-60 0 580 220\" width=\"580\" height=\"220\">\n<rect width=\"580\" height=\"220\" fill=\"#fff\"></rect>\n<defs><marker id=\"a\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0 L8 4 L0 8 Z\"></path></marker></defs>\n<polygon points=\"115,60 290,60 330,85 380,85 380,105 330,105 290,130 115,130\" fill=\"#e4e4f4\"></polygon>\n<g stroke=\"#000\" stroke-width=\"3\" fill=\"none\">\n<polyline points=\"60,60 290,60 330,85 400,85\"></polyline>\n<polyline points=\"60,130 290,130 330,105 400,105\"></polyline>\n</g>\n<rect x=\"100\" y=\"60\" width=\"15\" height=\"70\" fill=\"#999\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<line x1=\"100\" y1=\"95\" x2=\"45\" y2=\"95\" stroke=\"#000\" stroke-width=\"3\"></line>\n<rect x=\"25\" y=\"75\" width=\"20\" height=\"40\" fill=\"#ddd\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<line x1=\"-10\" y1=\"95\" x2=\"22\" y2=\"95\" stroke=\"#000\" stroke-width=\"2.5\" marker-end=\"url(#a)\"></line>\n<rect x=\"380\" y=\"85\" width=\"22\" height=\"20\" fill=\"#888\" stroke=\"#000\" stroke-width=\"2\"></rect>\n<g stroke=\"#000\" stroke-width=\"1\"><line x1=\"35\" y1=\"40\" x2=\"35\" y2=\"75\"></line><line x1=\"107\" y1=\"40\" x2=\"107\" y2=\"80\"></line><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"90\"></line><line x1=\"330\" y1=\"150\" x2=\"335\" y2=\"105\"></line><line x1=\"410\" y1=\"150\" x2=\"395\" y2=\"105\"></line></g>\n<g font-family=\"Helvetica, Arial, sans-serif\" font-size=\"14\" text-anchor=\"middle\">\n<text x=\"35\" y=\"35\">trigger</text><text x=\"107\" y=\"35\">piston</text><text x=\"200\" y=\"35\">water</text>\n<text x=\"330\" y=\"166\">nozzle</text><text x=\"410\" y=\"166\">stopper</text>\n<text x=\"230\" y=\"205\" font-weight=\"bold\">Fig. 5.1</text>\n</g>\n</svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 7,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 2,
+ "accepted": true
+}

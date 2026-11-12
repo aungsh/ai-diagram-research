@@ -1,0 +1,68 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "scene",
+ "questionId": "phys-climber",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:38:13.721Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "{\"unit\": 48, \"font\": \"sans\", \"caption\": \"Fig. 2.1\",\n \"points\": {\n  \"C0\": {\"at\": [-1.5, 0]}, \"C1\": {\"at\": [0, 0]}, \"C2\": {\"at\": [0, 6]}, \"C3\": {\"at\": [-1.5, 6]},\n  \"F\": {\"at\": [0.05, 0.8]},\n  \"H\": {\"at\": [1.0, 2.2]},\n  \"S\": {\"at\": [1.5, 3.6]},\n  \"Hd\": {\"at\": [1.7, 4.15]},\n  \"Hn\": {\"at\": [1.15, 3.8]},\n  \"Top\": {\"at\": [0.05, 6]}\n },\n \"elements\": [\n  {\"type\": \"polygon\", \"points\": [\"C0\", \"C1\", \"C2\", \"C3\"], \"fill\": {\"pattern\": \"hatch\"}},\n  {\"type\": \"segment\", \"from\": \"C1\", \"to\": \"C2\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"F\", \"to\": \"H\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"H\", \"to\": \"S\", \"weight\": \"thick\"},\n  {\"type\": \"circle\", \"center\": \"Hd\", \"r\": 0.3, \"fill\": \"none\"},\n  {\"type\": \"segment\", \"from\": \"S\", \"to\": \"Hn\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"Hn\", \"to\": \"Top\"},\n  {\"type\": \"segment\", \"from\": \"H\", \"to\": [0.35, 0.3], \"weight\": \"thick\"},\n  {\"type\": \"text\", \"at\": [0.9, 5], \"text\": \"rope\", \"anchor\": \"w\"}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-86 -302 196 346\" width=\"196\" height=\"346\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><defs><pattern id=\"phys-climber-scene-1-hatch-0\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path d=\"M0 0V7\" stroke=\"#000\" stroke-width=\"0.8\"/></pattern></defs><rect x=\"-86\" y=\"-302\" width=\"196\" height=\"346\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M-72 0L0 0L0 -288L-72 -288Z\" fill=\"url(#phys-climber-scene-1-hatch-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L0 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M2.4 -38.4L48 -105.6\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M48 -105.6L72 -172.8\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><ellipse cx=\"81.6\" cy=\"-199.2\" rx=\"14.4\" ry=\"14.4\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M72 -172.8L55.2 -182.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M55.2 -182.4L2.4 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M48 -105.6L16.8 -14.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/></g><text x=\"23.4\" y=\"-240\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">rope</text><text x=\"12\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "Head circle is detached from the body",
+     "A stray second leg line goes below the foot and does not touch the cliff",
+     "The rope label is crossed by the rope line",
+     "Climber figure is crude and the arm/rope junction looks odd"
+    ]
+   },
+   "accepted": false,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "{\"unit\": 48, \"font\": \"sans\", \"caption\": \"Fig. 2.1\",\n \"points\": {\n  \"C0\": {\"at\": [-1.5, 0]}, \"C1\": {\"at\": [0, 0]}, \"C2\": {\"at\": [0, 6]}, \"C3\": {\"at\": [-1.5, 6]},\n  \"F\": {\"at\": [0.05, 0.8]},\n  \"H\": {\"at\": [1.0, 2.2]},\n  \"S\": {\"at\": [1.5, 3.6]},\n  \"Hd\": {\"at\": [1.65, 4.05]},\n  \"Hn\": {\"at\": [1.15, 3.8]},\n  \"Top\": {\"at\": [0.05, 6]}\n },\n \"elements\": [\n  {\"type\": \"polygon\", \"points\": [\"C0\", \"C1\", \"C2\", \"C3\"], \"fill\": {\"pattern\": \"hatch\"}},\n  {\"type\": \"segment\", \"from\": \"C1\", \"to\": \"C2\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"F\", \"to\": \"H\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"H\", \"to\": \"S\", \"weight\": \"thick\"},\n  {\"type\": \"circle\", \"center\": \"Hd\", \"r\": 0.35, \"fill\": \"none\"},\n  {\"type\": \"segment\", \"from\": \"S\", \"to\": \"Hn\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"Hn\", \"to\": \"Top\"},\n  {\"type\": \"text\", \"at\": [1.2, 5.3], \"text\": \"rope\", \"anchor\": \"w\", \"halo\": true}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-86 -302 196 346\" width=\"196\" height=\"346\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><defs><pattern id=\"phys-climber-scene-2-hatch-0\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path d=\"M0 0V7\" stroke=\"#000\" stroke-width=\"0.8\"/></pattern></defs><rect x=\"-86\" y=\"-302\" width=\"196\" height=\"346\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M-72 0L0 0L0 -288L-72 -288Z\" fill=\"url(#phys-climber-scene-2-hatch-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L0 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M2.4 -38.4L48 -105.6\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M48 -105.6L72 -172.8\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><ellipse cx=\"79.2\" cy=\"-194.4\" rx=\"16.8\" ry=\"16.8\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M72 -172.8L55.2 -182.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M55.2 -182.4L2.4 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/></g><text x=\"37.8\" y=\"-254.4\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" paint-order=\"stroke\" stroke=\"#fff\" stroke-width=\"4.2\" stroke-linejoin=\"round\">rope</text><text x=\"12\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "Head circle floats above the shoulder at an odd angle, climber figure is crude",
+     "The rope label halo cuts into the rope line"
+    ]
+   },
+   "accepted": false,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 3,
+   "source": "{\"unit\": 48, \"font\": \"sans\", \"caption\": \"Fig. 2.1\",\n \"points\": {\n  \"C0\": {\"at\": [-1.5, 0]}, \"C1\": {\"at\": [0, 0]}, \"C2\": {\"at\": [0, 6]}, \"C3\": {\"at\": [-1.5, 6]},\n  \"F\": {\"at\": [0.05, 0.8]},\n  \"H\": {\"at\": [1.0, 2.2]},\n  \"S\": {\"at\": [1.5, 3.6]},\n  \"Hd\": {\"at\": [1.62, 4.0]},\n  \"Hn\": {\"at\": [1.15, 3.8]},\n  \"Top\": {\"at\": [0.05, 6]}\n },\n \"elements\": [\n  {\"type\": \"polygon\", \"points\": [\"C0\", \"C1\", \"C2\", \"C3\"], \"fill\": {\"pattern\": \"hatch\"}},\n  {\"type\": \"segment\", \"from\": \"C1\", \"to\": \"C2\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"F\", \"to\": \"H\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"H\", \"to\": \"S\", \"weight\": \"thick\"},\n  {\"type\": \"circle\", \"center\": \"Hd\", \"r\": 0.4, \"fill\": \"none\"},\n  {\"type\": \"segment\", \"from\": \"S\", \"to\": \"Hn\", \"weight\": \"thick\"},\n  {\"type\": \"segment\", \"from\": \"Hn\", \"to\": \"Top\"},\n  {\"type\": \"text\", \"at\": [1.3, 5.3], \"text\": \"rope\", \"anchor\": \"w\"}\n ]}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-86 -302 196.96 346\" width=\"196.96\" height=\"346\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\"><defs><pattern id=\"phys-climber-scene-3-hatch-0\" width=\"7\" height=\"7\" patternUnits=\"userSpaceOnUse\" patternTransform=\"rotate(45)\"><path d=\"M0 0V7\" stroke=\"#000\" stroke-width=\"0.8\"/></pattern></defs><rect x=\"-86\" y=\"-302\" width=\"196.96\" height=\"346\" fill=\"#fff\"/><g fill=\"none\" stroke=\"#000\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M-72 0L0 0L0 -288L-72 -288Z\" fill=\"url(#phys-climber-scene-3-hatch-0)\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M0 0L0 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M2.4 -38.4L48 -105.6\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M48 -105.6L72 -172.8\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><ellipse cx=\"77.76\" cy=\"-192\" rx=\"19.2\" ry=\"19.2\" fill=\"none\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/><path d=\"M72 -172.8L55.2 -182.4\" stroke=\"rgb(0,0,0)\" stroke-width=\"2.2\"/><path d=\"M55.2 -182.4L2.4 -288\" stroke=\"rgb(0,0,0)\" stroke-width=\"1.4\"/></g><text x=\"42.6\" y=\"-254.4\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\">rope</text><text x=\"12.48\" y=\"26\" font-size=\"15\" font-family=\"'Helvetica Neue', Helvetica, Arial, 'DejaVu Sans', sans-serif\" text-anchor=\"middle\" dominant-baseline=\"central\" font-weight=\"bold\">Fig. 2.1</text></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "Head circle overlaps the arm and rope junction",
+     "Climber is a crude stick figure with no clear arm gripping the rope or feet on the cliff"
+    ]
+   },
+   "accepted": false,
+   "ms": 4,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 3,
+ "accepted": false
+}

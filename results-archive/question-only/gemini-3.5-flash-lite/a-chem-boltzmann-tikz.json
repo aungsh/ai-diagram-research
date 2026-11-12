@@ -1,0 +1,27 @@
+{
+ "modelId": "gemini-3.5-flash-lite",
+ "modelName": "Gemini 3.5 Flash Lite",
+ "method": "tikz",
+ "questionId": "a-chem-boltzmann",
+ "runBy": "Gemini API, run by our script",
+ "ranAt": "2026-11-12T04:39:11.843Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, thick]\n  % Axes\n  \\draw[->] (0,0) -- (6.5,0) node[right] {Energy};\n  \\draw[->] (0,0) -- (0,4.5) node[above] {Number of molecules};\n\n  % Curves\n  % T1: taller and narrower (lower temperature)\n  \\draw[smooth, domain=0:5.5] plot (\\x, {4 * exp(-(\\x-1.5)*(\\x-1.5)/0.4)});\n  \n  % T2: flatter and shifted to the right (higher temperature)\n  \\draw[smooth, domain=0:6] plot (\\x, {2.6 * exp(-(\\x-2.3)*(\\x-2.3)/1.1)});\n\n  % Labels for curves\n  \\node at (1.2, 3.2) {$T_1$};\n  \\node at (3.5, 2.5) {$T_2$};\n\n  % Activation energy line\n  \\draw[dashed] (4.2, 0) -- (4.2, 4.0);\n  \\node[above] at (4.2, 4.0) {$E_a$};\n\n  % Caption\n  \\node at (3.2, -0.8) {Fig. 5.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"357.456\" height=\"230.117\" viewBox=\"-72 -72 268.092 172.587\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".8\"><path fill=\"none\" d=\"M-24.798 69.778h184.143\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M157.185 66.655c.467 1.874 1.51 2.758 2.56 3.123-1.05.364-2.093 1.249-2.56 3.122\"></path><text x=\"-24.798\" y=\"69.778\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(188.676 2.5)\">Energy</text><path fill=\"none\" d=\"M-24.798 69.778V-57.46\"></path><path fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M-27.92-55.3c1.873-.467 2.758-1.51 3.122-2.56.364 1.05 1.249 2.093 3.122 2.56\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-24.798\" y=\"69.778\" transform=\"translate(-44.139 -131.77)\">Numb</text><text x=\".841\" y=\"69.778\" transform=\"translate(-44.139 -131.77)\">er</text><text x=\"12.035\" y=\"69.778\" transform=\"translate(-44.139 -131.77)\">of</text><text x=\"23.424\" y=\"69.778\" transform=\"translate(-44.139 -131.77)\">molecules</text></g><path fill=\"none\" d=\"M-24.798 69.368s4.71-.602 6.52-1.593c1.81-.99 4.71-2.792 6.52-5.545s4.711-8.6 6.52-14.297c1.81-5.697 4.711-18.253 6.52-26.763 1.81-8.51 4.711-26.129 6.52-34.573 1.81-8.444 4.711-22.455 6.52-26.285 1.81-3.83 4.712-4.546 6.52-1.322 1.81 3.224 4.712 16.347 6.521 24.556s4.71 25.939 6.52 34.607c1.81 8.669 4.71 21.872 6.52 27.868s4.711 12.366 6.52 15.345c1.81 2.978 4.711 5.024 6.52 6.125 1.81 1.1 4.711 1.5 6.52 1.807 1.81.307 4.711.337 6.52.403 1.81.067 4.712.065 6.52.075 1.81.01 4.712 0 6.521 0h52.161\"></path><path fill=\"none\" d=\"M-24.798 69.175s5.14-.562 7.113-1.017 5.14-1.334 7.113-2.264 5.14-2.77 7.113-4.44 5.14-4.98 7.114-7.592c1.974-2.613 5.139-7.71 7.113-11.24s5.14-10.17 7.113-14.199c1.974-4.03 5.14-11.122 7.113-14.844s5.14-9.533 7.113-11.98c1.974-2.446 5.14-5.212 7.114-5.653 1.973-.44 5.139.776 7.113 2.48s5.14 6.472 7.113 9.796 5.14 10.142 7.113 14.163 5.14 11.017 7.113 14.821 5.14 9.593 7.114 12.595c1.973 3.001 5.139 7.01 7.113 9.041 1.974 2.03 5.139 4.4 7.113 5.594s5.14 2.396 7.113 3.012 5.14 1.148 7.113 1.428 5.14.475 7.113.587 5.14.178 7.114.218 5.139.058 7.113.071 5.14.021 7.113.025c1.974.003 5.14 0 7.113 0h7.113\"></path><g stroke=\"none\"><text x=\"-24.798\" y=\"69.778\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(28.978 -88.382)\">T</text><text x=\"-18.954\" y=\"71.278\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(28.978 -88.382)\">1</text></g><g stroke=\"none\"><text x=\"-24.798\" y=\"69.778\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(94.42 -68.465)\">T</text><text x=\"-18.954\" y=\"71.278\" font-family=\"cmr7\" font-size=\"7\" transform=\"translate(94.42 -68.465)\">2</text></g><path fill=\"none\" stroke-dasharray=\"3.0,3.0\" d=\"M94.703 69.778V-44.033\"></path><g stroke=\"none\"><text x=\"-24.798\" y=\"69.778\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(113.392 -119.044)\">E</text><text x=\"-17.416\" y=\"71.278\" font-family=\"cmmi7\" font-size=\"7\" transform=\"translate(113.392 -119.044)\">a</text></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-24.798\" y=\"69.778\" transform=\"translate(74.507 25.262)\">Fig.</text><text x=\"-4.492\" y=\"69.778\" transform=\"translate(74.507 25.262)\">5.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 16148,
+   "inputTokens": 1845,
+   "outputTokens": 347
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

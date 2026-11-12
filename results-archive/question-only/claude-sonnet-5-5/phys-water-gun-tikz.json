@@ -1,0 +1,27 @@
+{
+ "modelId": "claude-sonnet-5-5",
+ "modelName": "Claude Sonnet 5.5",
+ "method": "tikz",
+ "questionId": "phys-water-gun",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:41:10.679Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\begin{tikzpicture}[font=\\sffamily, >=Stealth]\n  \\fill[blue!10] (1.9,0.5) rectangle (5,1.9) -- (5.8,1.4) -- (6.7,1.4) -- (6.7,1.0) -- (5.8,1.0) -- (5,0.5) -- cycle;\n  \\draw[very thick] (1,1.9) -- (5,1.9) -- (5.8,1.4) -- (7.2,1.4);\n  \\draw[very thick] (1,0.5) -- (5,0.5) -- (5.8,1.0) -- (7.2,1.0);\n  \\draw[thick, fill=gray!60] (1.6,0.5) rectangle (1.9,1.9);\n  \\draw[very thick] (1.6,1.2) -- (0.6,1.2);\n  \\draw[thick, fill=gray!30] (0.2,0.7) rectangle (0.6,1.7);\n  \\draw[->, very thick] (-1,1.2) -- (0.2,1.2);\n  \\draw[thick, fill=gray!70] (6.7,1.0) rectangle (7.2,1.4);\n  \\node (t) at (0.4,2.7) {trigger};  \\draw (0.4,2.45) -- (0.4,1.7);\n  \\node at (1.75,2.7) {piston};      \\draw (1.75,2.45) -- (1.75,1.6);\n  \\node at (3.5,2.7) {water};        \\draw (3.5,2.45) -- (3.5,1.5);\n  \\node at (5.8,0) {nozzle};         \\draw (5.8,0.25) -- (5.9,1.0);\n  \\node at (7.2,0) {stopper};        \\draw (7.2,0.25) -- (6.95,1.0);\n  \\node at (3.1,-0.9) {Fig. 5.1};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"336.938\" height=\"157.212\" viewBox=\"-72 -72 252.704 117.909\"><g stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"#e6e6ff\" stroke=\"none\" d=\"M10.843-1.972v-39.834h88.203v39.834Zm88.203-39.834 22.763 14.227h25.607v11.38h-25.607L99.046-1.971Z\"></path><path fill=\"none\" stroke-width=\"1.2\" d=\"M-14.765-41.806H99.046l22.763 14.227h39.833M-14.765-1.972H99.046l22.763-14.226h39.833\"></path><path fill=\"#b3b3b3\" stroke-width=\".8\" d=\"M2.307-1.972v-39.834h8.536v39.834Zm8.536-39.834\"></path><path fill=\"none\" stroke-width=\"1.2\" d=\"M2.307-21.889h-28.452\"></path><path fill=\"#d9d9d9\" stroke-width=\".8\" d=\"M-37.527-7.663v-28.452h11.382v28.452Zm11.382-28.452\"></path><g stroke-width=\"1.2\"><path fill=\"none\" d=\"M-71.67-21.889h28.967\"></path><path d=\"m-39.236-21.889-4.753-1.802 1.586 1.802-1.586 1.802Z\"></path></g><path fill=\"#a6a6a6\" stroke-width=\".8\" d=\"M147.416-16.198V-27.58h14.226v11.38Zm14.226-11.381\"></path><text x=\"-43.217\" y=\"12.254\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(-2.258 -74.398)\">trigger</text><path fill=\"none\" d=\"M-31.836-57.455v21.34\"></path><text x=\"-43.217\" y=\"12.254\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(37.209 -74.398)\">piston</text><path fill=\"none\" d=\"M6.575-57.455v24.185\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-43.217\" y=\"12.254\" transform=\"translate(88.168 -73.965)\">w</text><text x=\"-36.662\" y=\"12.254\" transform=\"translate(88.168 -73.965)\">ater</text></g><path fill=\"none\" d=\"M56.367-57.455v27.03\"></path><text x=\"-43.217\" y=\"12.254\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(152.179 3.472)\">nozzle</text><path fill=\"none\" d=\"m121.809 5.141 2.845-21.34\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-43.217\" y=\"12.254\" transform=\"translate(189.401 1.885)\">stopp</text><text x=\"-20.162\" y=\"12.254\" transform=\"translate(189.401 1.885)\">er</text></g><path fill=\"none\" d=\"m161.642 5.141-7.113-21.34\"></path><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-43.217\" y=\"12.254\" transform=\"translate(71.662 28.107)\">Fig.</text><text x=\"-22.912\" y=\"12.254\" transform=\"translate(71.662 28.107)\">5.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 509,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 1,
+ "accepted": true
+}

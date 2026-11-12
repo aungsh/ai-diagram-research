@@ -1,0 +1,62 @@
+{
+ "modelId": "claude-haiku-5-5",
+ "modelName": "Claude Haiku 5.5",
+ "method": "tikz",
+ "questionId": "a-phys-circuit",
+ "runBy": "Claude Code helper agent playing the model, same prompts and checks",
+ "ranAt": "2026-11-12T04:43:01.231Z",
+ "attempts": [
+  {
+   "n": 1,
+   "source": "\\usepackage{circuitikz}\n\\begin{tikzpicture}[font=\\sffamily, circuit ee IEC, line cap=round]\n  % battery of e.m.f. 12 V on the left side\n  \\draw (0,0) to[battery1, l=12\\,V] (0,4);\n  % top branch: fixed resistor R, with voltmeter in parallel across it\n  \\draw (0,4) -- (2,4) to[R, l=$R$] (5,4) -- (8,4);\n  % right side: thermistor T\n  \\draw (8,4) to[thermistor, l=$T$] (8,0);\n  % bottom wire\n  \\draw (8,0) -- (0,0);\n  % voltmeter connected across R\n  \\draw (2,4) -- (2,5.5) to[voltmeter, l=V] (5,5.5) -- (5,4);\n  % caption\n  \\node[below] at (4,-0.8) {\\textbf{Fig. 2.1}};\n\\end{tikzpicture}",
+   "svg": "",
+   "drew": false,
+   "autoIssues": [
+    "It did not draw. TeX error: ! Package pgfkeys Error: I do not know the key '/tikz/circuit ee IEC' and I am \ngoing to ignore it. Perhaps you misspelled it.\nSee the pgfkeys package documentation for explanation.\n! Emergency stop.\n ...                                      "
+   ],
+   "visual": {
+    "pass": false,
+    "issues": []
+   },
+   "accepted": false,
+   "ms": 869,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 2,
+   "source": "\\usepackage{circuitikz}\n\\begin{tikzpicture}[font=\\sffamily, line cap=round]\n  % battery of e.m.f. 12 V on the left side\n  \\draw (0,0) to[battery1, l=12\\,V] (0,4);\n  % top branch: fixed resistor R, with voltmeter in parallel across it\n  \\draw (0,4) -- (2,4) to[R, l=$R$] (5,4) -- (8,4);\n  % right side: thermistor T\n  \\draw (8,4) to[thermistor, l=$T$] (8,0);\n  % bottom wire\n  \\draw (8,0) -- (0,0);\n  % voltmeter connected across R\n  \\draw (2,4) -- (2,5.5) to[voltmeter, l=V] (5,5.5) -- (5,4);\n  % caption\n  \\node[below] at (4,-0.8) {\\textbf{Fig. 2.1}};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"376.225\" height=\"295.195\" viewBox=\"-72 -72 282.169 221.396\"><g stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"M-37.562 110.61v-.2m0 .19899999999999807V59.68m0-11.95v-50.93m0 .19899999999999807v-.2M-37.562 51.732v-4.004m0 7.947v4.004\"></path><g stroke-width=\".8\"><path fill=\"none\" d=\"M-43.537 51.732h11.95m-17.925 3.943h23.9\"></path></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-37.562\" y=\"110.609\" transform=\"translate(-33.094 -54.753)\">12</text><text x=\"-25.895\" y=\"110.609\" transform=\"translate(-33.094 -54.753)\">V</text></g><path fill=\"none\" d=\"M-37.562-3.202h57.106m-.201 0H46.09m31.867 0h26.746m-.2 0h85.558\"></path><g stroke-linejoin=\"bevel\" stroke-width=\".8\"><path fill=\"none\" d=\"m45.69-3.202 3.088-5.975 5.378 11.95 5.378-11.95 5.378 11.95 5.378-11.95 5.377 11.95 2.69-5.975\"></path></g><text x=\"-37.562\" y=\"110.609\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(95.75 -123.613)\">R</text><path fill=\"none\" d=\"M190.06-3.202v.2m0-.2V37.77m0 31.867v40.972m0-.2v.2\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M184.093 69.637V37.77h11.934v31.867Zm11.934-31.867\"></path><path fill=\"none\" d=\"M198.584 69.637 179.831 47.33v-9.56\"></path><text x=\"-37.562\" y=\"110.609\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(238.613 -54.753)\">T</text><path fill=\"none\" d=\"M190.06 110.61H-37.562M19.344-3.202V-45.88h.2m-.2010000000000005 0h30.73m23.9 0h30.729m-.20000000000000284 0h.2v42.68M50.073-45.881h1.195m21.51 0h1.195\"></path><path fill=\"none\" stroke-width=\".8\" d=\"M72.778-45.881c0-5.94-4.815-10.755-10.755-10.755s-10.755 4.815-10.755 10.755 4.815 10.755 10.755 10.755S72.778-39.94 72.778-45.88Zm-10.755 0\"></path><path fill=\"none\" d=\"m50.073-33.93 21.354-21.356\"></path><path stroke=\"none\" d=\"M73.973-57.831c-.896.613-2.546 1.414-3.889 1.768l2.121 2.12c.354-1.343 1.155-2.993 1.768-3.888\"></path><text x=\"-37.562\" y=\"110.609\" stroke=\"none\" font-family=\"cmbx10\" font-size=\"10\" transform=\"translate(95.158 -153.06)\">V</text><text x=\"-37.562\" y=\"110.609\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(96.251 -172.865)\">V</text><g stroke=\"none\" font-family=\"cmssbx10\" font-size=\"10\"><text x=\"-37.562\" y=\"110.609\" transform=\"translate(95.728 33.24)\">Fig.</text><text x=\"-15.451\" y=\"110.609\" transform=\"translate(95.728 33.24)\">2.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": false,
+    "issues": [
+     "A stray arrow runs through the voltmeter symbol and a second V label sits above it, so the meter is labelled twice",
+     "The thermistor symbol has a stray stroke at its top-left corner"
+    ]
+   },
+   "accepted": false,
+   "ms": 854,
+   "inputTokens": 0,
+   "outputTokens": 0
+  },
+  {
+   "n": 3,
+   "source": "\\usepackage{circuitikz}\n\\begin{tikzpicture}[font=\\sffamily, line cap=round]\n  % battery of e.m.f. 12 V on the left side\n  \\draw (0,0) to[battery1, l=12\\,V] (0,4);\n  % top branch: fixed resistor R\n  \\draw (0,4) -- (2,4) to[R, l=$R$] (5,4) -- (8,4);\n  % right side: thermistor T drawn as a rectangle with a diagonal\n  \\draw (8,4) -- (8,3.1);\n  \\draw[line width=0.6pt] (7.8,3.1) rectangle (8.2,0.9);\n  \\draw (7.6,3.4) -- (8.4,0.6);\n  \\draw (8,0.9) -- (8,0);\n  \\node[right] at (8.3,2.0) {$T$};\n  % bottom wire\n  \\draw (8,0) -- (0,0);\n  % voltmeter connected across R\n  \\draw (2,4) -- (2,5.5) -- (3.0,5.5);\n  \\draw (3.5,5.5) circle (0.5);\n  \\node at (3.5,5.5) {V};\n  \\draw (4.0,5.5) -- (5,5.5) -- (5,4);\n  % caption\n  \\node[below] at (4,-0.8) {\\textbf{Fig. 2.1}};\n\\end{tikzpicture}",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"379.953\" height=\"279.245\" viewBox=\"-72 -72 284.965 209.434\"><g stroke=\"#000\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\".4\"><path fill=\"none\" d=\"M-37.562 98.646v-.2m0 .20000000000000284v-50.93m0-11.95v-50.93m0 .19899999999999807v-.2M-37.562 39.77v-4.004m0 7.947v4.003\"></path><g stroke-width=\".8\"><path fill=\"none\" d=\"M-43.537 39.77h11.95m-17.925 3.943h23.9\"></path></g><g stroke=\"none\" font-family=\"cmss10\" font-size=\"10\"><text x=\"-37.562\" y=\"98.646\" transform=\"translate(-33.094 -54.753)\">12</text><text x=\"-25.895\" y=\"98.646\" transform=\"translate(-33.094 -54.753)\">V</text></g><path fill=\"none\" d=\"M-37.562-15.165h57.106m-.201 0H46.09m31.867 0h26.746m-.2 0h85.558\"></path><g stroke-linejoin=\"bevel\" stroke-width=\".8\"><path fill=\"none\" d=\"m45.69-15.165 3.088-5.975 5.378 11.95 5.378-11.95 5.378 11.95 5.378-11.95 5.377 11.95 2.69-5.975\"></path></g><text x=\"-37.562\" y=\"98.646\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(95.75 -123.613)\">R</text><path fill=\"none\" d=\"M190.06-15.165v25.608\"></path><path fill=\"none\" stroke-width=\".6\" d=\"M184.37 10.443v62.596h11.38V10.443Zm11.38 62.596\"></path><path fill=\"none\" d=\"m178.68 1.907 22.761 79.668M190.06 73.04v25.606\"></path><text x=\"-37.562\" y=\"98.646\" stroke=\"none\" font-family=\"cmmi10\" font-size=\"10\" transform=\"translate(239.69 -53.489)\">T</text><path fill=\"none\" d=\"M190.06 98.646H-37.562M19.344-15.165v-42.679h28.452\"></path><path fill=\"none\" d=\"M76.249-57.844c0-7.857-6.37-14.226-14.226-14.226S47.796-65.7 47.796-57.844s6.37 14.227 14.227 14.227 14.226-6.37 14.226-14.227Zm-14.226 0\"></path><text x=\"-37.562\" y=\"98.646\" stroke=\"none\" font-family=\"cmss10\" font-size=\"10\" transform=\"translate(96.251 -153.018)\">V</text><path fill=\"none\" d=\"M76.25-57.844h28.452v42.68\"></path><g stroke=\"none\" font-family=\"cmssbx10\" font-size=\"10\"><text x=\"-37.562\" y=\"98.646\" transform=\"translate(95.728 33.24)\">Fig.</text><text x=\"-15.451\" y=\"98.646\" transform=\"translate(95.728 33.24)\">2.1</text></g></g></svg>",
+   "drew": true,
+   "autoIssues": [],
+   "visual": {
+    "pass": true,
+    "issues": []
+   },
+   "accepted": true,
+   "ms": 768,
+   "inputTokens": 0,
+   "outputTokens": 0
+  }
+ ],
+ "chosen": 3,
+ "accepted": true
+}
