@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Diagram Lab (prototype)
 
-## Getting Started
-
-First, run the development server:
+Demo of **code-based** exam diagram generation with Claude, for E-Math, Physics, Chemistry and Biology.
+See `../plan.md` for the reasoning behind the approach.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What's in it
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+22 preset questions: 13 at O Level across E-Math, Physics, Chemistry and Biology, and 9 at A Level across Physics, Chemistry and Biology. Each one has three Claude-written outputs:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Approach | File | How it renders |
+|---|---|---|
+| **C: Scene spec** | `fixtures/<id>/scene.json` | Our renderer (`lib/scene/`). Exact geometry, automatic label placement, Zod-validated. |
+| **B: TikZ** | `fixtures/<id>/tikz.tex` | node-tikzjax (TeX compiled to WebAssembly) on the server (`lib/tikz/compile.ts`). |
+| **B: Raw SVG** | `fixtures/<id>/svg.svg` | Sanitised with DOMPurify (`lib/svg/sanitize.ts`). |
 
-## Learn More
+`fixtures/<id>/meta.json` holds the question, a reference figure (where we have one) and the **review log**: what was wrong after each render-and-check round, and how it was fixed.
 
-To learn more about Next.js, take a look at the following resources:
+Outputs were written by Claude (Opus 5.5) in Claude Code. There are **no live API calls yet**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+On every preset page you can edit the source and press **Re-render** (it calls `POST /api/render`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Re-render all fixtures to PNG (the visual review loop)
 
-## Deploy on Vercel
+```bash
+npx tsx scripts/render.ts /tmp/diagram-out            # all presets
+npx tsx scripts/render.ts /tmp/diagram-out phys-wave  # one preset
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cost and time estimates
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`npx tsx scripts/stats.ts` measures every fixture and writes `lib/stats.json`. The How it works page turns that into cost and time per diagram using the assumptions in `lib/estimates.ts`. Rerun it after changing fixtures.
+
+## Known limits
+
+- TikZ `pattern=` fills are broken in node-tikzjax. The house preamble provides `\hatchregion`, `\dotregion` and `\surface` instead.
+- Loading pgfplots together with circuitikz runs TeX out of memory, so pgfplots is only loaded when the code draws a graph, and compiles stop after 20 s.
+- node-tikzjax is not safe to run concurrently, so compiles are serialised (about 0.4 to 1.4 s each, then cached).
+- The scene schema has no triangle-solving helpers (SSS/ASA) yet. For bearings and trigonometry the model still does the maths.
+- Label placement is heuristic. It occasionally makes odd but legible choices (e.g. the barometer "glass tube" label).
+
+## Next step
+
+Add a live `DiagramProvider` that calls the Claude API: generate, then render, then run the static checks (schema, compile errors, label collisions), then a vision check of the PNG, then retry.
