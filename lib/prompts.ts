@@ -113,6 +113,18 @@ export function checkPrompt(question: string, figure?: string): string {
   return `${CHECK_PROMPT}\n\nQuestion:\n${question}${brief}`;
 }
 
+/** Exact wording used in the first round, before figure descriptions were added. Kept so that round can be shown accurately. */
+export function legacyQuestionPrompt(question: string): string {
+  return `Draw the figure for this question.\n\n${question}`;
+}
+export function legacyCheckPrompt(question: string): string {
+  const old = CHECK_PROMPT.replace(
+    "1. Everything the question and the figure description call for is in the picture: every named point, line, object, value and label.\n2. The picture agrees with the question and the figure description:",
+    "1. Everything the question refers to is in the picture: every named point, line, object, value and label.\n2. The picture agrees with the question:",
+  );
+  return `${old}\n\nQuestion:\n${question}`;
+}
+
 /** Pull the code out of a model reply. */
 export function extractCode(method: Approach, reply: string): string {
   const blocks = [...reply.matchAll(/```[a-zA-Z]*\s*\n([\s\S]*?)```/g)].map((m) => m[1].trim());

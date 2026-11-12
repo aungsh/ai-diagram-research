@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { APPROACH_NAME, type Approach } from "@/lib/approaches";
 import { whyNotChosen, type Attempt, type RunResult } from "@/lib/pipeline/attempts";
-import { checkPrompt, questionPrompt, retryPrompt, systemPrompt } from "@/lib/prompts";
+import { checkPrompt, legacyCheckPrompt, legacyQuestionPrompt, questionPrompt, retryPrompt, systemPrompt } from "@/lib/prompts";
 import { cn } from "@/lib/utils";
 
 function status(run: RunResult) {
@@ -17,12 +17,15 @@ export function RunPanel({
   question,
   figure,
   pending,
+  legacy,
 }: {
   method: Approach;
   run: RunResult | null;
   question: string;
   figure?: string;
   pending?: string;
+  /** First round: question only, older wording. */
+  legacy?: boolean;
 }) {
   const [shown, setShown] = useState(run?.chosen ?? 1);
   const [view, setView] = useState<"diagram" | "code" | "prompt">("diagram");
@@ -76,7 +79,7 @@ export function RunPanel({
       </div>
 
       {view === "prompt" ? (
-        <PromptView method={method} question={question} figure={figure} run={run} n={a.n} />
+        <PromptView method={method} question={question} figure={legacy ? undefined : figure} legacy={legacy} run={run} n={a.n} />
       ) : view === "diagram" ? (
         <div className="paper flex min-h-72 items-center justify-center overflow-hidden rounded-lg p-4">
           {a.svg ? (
@@ -96,7 +99,21 @@ export function RunPanel({
 }
 
 /** Exactly what the model received for this attempt, rebuilt from the same prompt functions the runs use. */
-function PromptView({ method, question, figure, run, n }: { method: Approach; question: string; figure?: string; run: RunResult; n: number }) {
+function PromptView({
+  method,
+  question,
+  figure,
+  legacy,
+  run,
+  n,
+}: {
+  method: Approach;
+  question: string;
+  figure?: string;
+  legacy?: boolean;
+  run: RunResult;
+  n: number;
+}) {
   const previous = run.attempts.filter((x) => x.n < n);
   const block = "max-h-72 overflow-auto whitespace-pre-wrap rounded-md border border-border bg-muted/40 p-3 font-mono text-xs leading-relaxed";
   const head = "mb-1.5 text-sm font-medium";
@@ -112,7 +129,7 @@ function PromptView({ method, question, figure, run, n }: { method: Approach; qu
         <div className="space-y-2">
           <div>
             <div className="mb-1 text-xs text-muted-foreground">Message</div>
-            <pre className={block}>{questionPrompt(question, figure)}</pre>
+            <pre className={block}>{legacy ? legacyQuestionPrompt(question) : questionPrompt(question, figure)}</pre>
           </div>
           {previous.map((p) => {
             const issues = [...p.autoIssues, ...(p.visual?.issues ?? [])];
@@ -136,7 +153,7 @@ function PromptView({ method, question, figure, run, n }: { method: Approach; qu
       <div>
         <div className={head}>Picture check</div>
         <p className="mb-2 text-xs text-muted-foreground">Sent in a fresh conversation with the rendered picture of try {n} attached.</p>
-        <pre className={block}>{checkPrompt(question, figure)}</pre>
+        <pre className={block}>{legacy ? legacyCheckPrompt(question) : checkPrompt(question, figure)}</pre>
       </div>
     </div>
   );

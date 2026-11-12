@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { connection } from "next/server";
 import { Shell } from "@/components/shell";
-import { allRuns, RUN_NOTES, testedModels } from "@/lib/results";
+import { ModelTable } from "@/components/model-table";
 import { APPROACH_NAME, APPROACHES, listPresets, SUBJECTS, tries, type Approach } from "@/lib/fixtures";
 import { cn } from "@/lib/utils";
 
@@ -15,24 +15,6 @@ export default async function Overview() {
   // Results are read from disk on each request, so new runs show up without a rebuild.
   await connection();
   const presets = listPresets();
-  const models = testedModels().map((m) => {
-    const runs = allRuns(m.id);
-    const by = (a: Approach) => runs.filter((r) => r.method === a);
-    return {
-      ...m,
-      cells: APPROACHES.map((a) => {
-        const rs = by(a);
-        return {
-          a,
-          ran: rs.length,
-          first: rs.filter((r) => r.accepted && r.chosen === 1).length,
-          later: rs.filter((r) => r.accepted && r.chosen > 1).length,
-          failed: rs.filter((r) => !r.accepted).length,
-        };
-      }),
-    };
-  });
-
   return (
     <Shell>
       <div className="mx-auto max-w-4xl">
@@ -55,71 +37,28 @@ export default async function Overview() {
           ))}
         </div>
 
-        {models.length > 0 && (
-          <section className="mt-14">
-            <h2 className="text-2xl font-semibold">Model test</h2>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-              Each model drew every question with every method through the same loop: up to three tries, each checked by our code and by the
-              model looking at its own picture. <Link href="/how-it-works#judging" className="text-foreground underline underline-offset-4">How attempts are judged</Link>.
-            </p>
-            <div className="mt-5 overflow-x-auto">
-              <table className="w-full min-w-[640px] text-sm">
-                <thead>
-                  <tr className="text-left text-muted-foreground">
-                    <th className="pb-3 font-normal">Model</th>
-                    {APPROACHES.map((a) => (
-                      <th key={a} className="pb-3 font-normal">
-                        {APPROACH_NAME[a]}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {models.map((m) => (
-                    <tr key={m.id} className="border-t border-border align-top">
-                      <td className="py-3 pr-4">
-                        <div className="font-medium">{m.name}</div>
-                        <div className="text-xs text-muted-foreground">{m.runBy.startsWith("Claude Code") ? "Run as a Claude Code helper agent" : "Run through the Gemini API"}</div>
-                      </td>
-                      {m.cells.map((c) => (
-                        <td key={c.a} className="py-3 pr-4">
-                          {c.ran === 0 ? (
-                            <span className="text-muted-foreground">Not run yet</span>
-                          ) : (
-                            <>
-                              <div>
-                                <span className="text-lime">{c.first + c.later}</span>
-                                <span className="text-muted-foreground"> of {c.ran} accepted</span>
-                              </div>
-                              <div className="text-xs text-muted-foreground">
-                                {c.first} first try, {c.later} after retries, {c.failed} not accepted
-                                {c.ran < presets.length ? `. ${presets.length - c.ran} still to run` : ""}
-                              </div>
-                            </>
-                          )}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="mt-6 space-y-4">
-              {models
-                .filter((m) => RUN_NOTES[m.id]?.length)
-                .map((m) => (
-                  <div key={m.id}>
-                    <h3 className="text-sm font-medium">Notes on {m.name}</h3>
-                    <ul className="mt-1 list-disc space-y-1 pl-5 text-sm leading-relaxed text-muted-foreground">
-                      {RUN_NOTES[m.id].map((n, i) => (
-                        <li key={i}>{n}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-            </div>
-          </section>
-        )}
+        <section className="mt-14">
+          <h2 className="text-2xl font-semibold">Model test</h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Each model drew every question with every method through the same loop: up to three tries, each checked by our code and by the model
+            looking at its own picture.
+          </p>
+          <h3 className="mt-8 font-semibold">With a figure description</h3>
+          <p className="mt-1 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The current round. Each model gets the question and a short description of what the figure must show, the way an exam setter would
+            brief it. The Claude helper agents were also told to judge their pictures strictly this time, because the first round showed some
+            lenient passes, so part of the difference between the rounds comes from that and not only from the description. After this
+            round we fixed three problems in our renderer&apos;s graph axes that models kept running into: axis numbers and titles touching the
+            curve, and a solid zero line that was always drawn. The results for our renderer on graph questions were made before that fix.
+          </p>
+          <ModelTable round="brief" total={presets.length} />
+          <h3 className="mt-12 font-semibold">Question only</h3>
+          <p className="mt-1 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            The first round, kept for comparison. Models got only the question text, so for questions like the barometer they had to guess what
+            the apparatus looked like.
+          </p>
+          <ModelTable round="question-only" total={presets.length} />
+        </section>
 
         <h2 className="mt-14 text-2xl font-semibold">Hand checked reference set</h2>
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">

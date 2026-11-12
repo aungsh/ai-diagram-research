@@ -6,7 +6,7 @@ import { RunPanel } from "@/components/run-panel";
 import { Shell } from "@/components/shell";
 import { APPROACHES, listPresets, loadPreset, tries } from "@/lib/fixtures";
 import { renderSource } from "@/lib/outputs";
-import { getRun, PENDING, testedModels } from "@/lib/results";
+import { getRun, PENDING, ROUNDS, roundOf, testedModels } from "@/lib/results";
 import { cn } from "@/lib/utils";
 
 export default async function PresetPage({
@@ -18,7 +18,8 @@ export default async function PresetPage({
 }) {
   const { id } = await params;
   const sp = await searchParams;
-  const models = testedModels();
+  const round = roundOf(sp.round);
+  const models = testedModels(round);
   const model = typeof sp.model === "string" && models.some((m) => m.id === sp.model) ? sp.model : null;
   const preset = loadPreset(id);
   if (!preset) notFound();
@@ -41,7 +42,16 @@ export default async function PresetPage({
         <h1 className="mt-1 text-3xl font-bold tracking-tight">{meta.title}</h1>
 
         <div className="mt-8 grid gap-10 xl:grid-cols-[minmax(0,1fr)_360px]">
-          <p className="max-w-3xl whitespace-pre-line leading-relaxed text-foreground/90">{meta.question}</p>
+          <div className="max-w-3xl">
+            <p className="whitespace-pre-line leading-relaxed text-foreground/90">{meta.question}</p>
+            {meta.figure && (
+              <div className="mt-6">
+                <h2 className="text-sm font-medium">What the figure must show</h2>
+                <p className="mt-1 text-xs text-muted-foreground">Given to every model with the question, in the current round.</p>
+                <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-foreground/80">{meta.figure}</p>
+              </div>
+            )}
+          </div>
           {meta.reference && (
             <figure>
               <a href={meta.reference} target="_blank" rel="noreferrer" className="paper block overflow-hidden rounded-lg">
@@ -53,6 +63,18 @@ export default async function PresetPage({
         </div>
 
         <div className="mt-14 flex flex-wrap items-center gap-2">
+          <span className="mr-2 text-sm text-muted-foreground">Round</span>
+          {ROUNDS.map((r) => (
+            <Link
+              key={r.id}
+              href={`/p/${id}?round=${r.id}${model && testedModels(r.id).some((m) => m.id === model) ? `&model=${model}` : ""}`}
+              className={cn("rounded-md border px-3 py-1.5 text-sm", round === r.id ? "border-lime/50 bg-muted" : "border-border text-muted-foreground hover:text-foreground")}
+            >
+              {r.name}
+            </Link>
+          ))}
+        </div>
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           <span className="mr-2 text-sm text-muted-foreground">Drawn by</span>
           <Link
             href={`/p/${id}`}
@@ -63,7 +85,7 @@ export default async function PresetPage({
           {models.map((m) => (
             <Link
               key={m.id}
-              href={`/p/${id}?model=${m.id}`}
+              href={`/p/${id}?round=${round}&model=${m.id}`}
               className={cn("rounded-md border px-3 py-1.5 text-sm", model === m.id ? "border-lime/50 bg-muted" : "border-border text-muted-foreground hover:text-foreground")}
             >
               {m.name}
@@ -77,7 +99,15 @@ export default async function PresetPage({
         </p>
 
         <div className="mt-8 grid gap-x-10 gap-y-14 lg:grid-cols-2 2xl:grid-cols-3">
-          {model && APPROACHES.map((a) => <RunPanel key={`${model}-${a}`} method={a} run={getRun(model, id, a)} question={meta.question} figure={meta.figure} pending={PENDING[model]} />)}
+          {model && APPROACHES.map((a) => <RunPanel
+                key={`${round}-${model}-${a}`}
+                method={a}
+                run={getRun(model, id, a, round)}
+                question={meta.question}
+                figure={meta.figure}
+                legacy={round === "question-only"}
+                pending={round === "brief" ? PENDING[model] : "This model did not reach this question in this round."}
+              />)}
           {outputs.map((o) =>
             o ? (
               <OutputPanel
@@ -94,7 +124,7 @@ export default async function PresetPage({
 
         {next && (
           <div className="mt-16 border-t border-border pt-6 text-right">
-            <Link href={`/p/${next.id}${model ? `?model=${model}` : ""}`} className="text-sm text-muted-foreground hover:text-lime">
+            <Link href={`/p/${next.id}${model ? `?round=${round}&model=${model}` : ""}`} className="text-sm text-muted-foreground hover:text-lime">
               Next: {next.title}
             </Link>
           </div>
